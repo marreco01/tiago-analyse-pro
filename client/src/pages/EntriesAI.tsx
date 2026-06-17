@@ -205,7 +205,7 @@ export default function EntriesAI() {
                 <Badge>Brasileirão Série A</Badge>
                 <Badge>Brasileirão Série B</Badge>
                 <Badge>Libertadores</Badge>
-                <Badge>Hoje + 48h</Badge>
+                
               </div>
             </div>
             <div className="flex flex-col gap-2 sm:flex-row">
