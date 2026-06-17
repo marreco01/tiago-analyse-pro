@@ -1,0 +1,5 @@
+Correção aplicada:
+- Removido patchedDependencies do package.json.
+- Removida pasta patches se existia.
+- Mantido nixpacks.toml com pnpm install --no-frozen-lockfile.
+- Campos removidos: pnpm.patchedDependencies.

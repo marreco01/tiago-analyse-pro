@@ -1,0 +1,18 @@
+ALTERAÇÃO ADMIN MENSAGENS / CHAT POR PARTIDA
+
+- Criada área única no ADM: Mensagens.
+- Menu ADM organizado com item Mensagens entre Assinaturas e Logs.
+- Removido chat geral da navegação pública.
+- Chat agora abre apenas por partida, usando roomId exclusivo match:<id-da-partida>.
+- Botão Geral removido da janela do chat.
+- Backend bloqueia roomId general para impedir mistura de conversas.
+- Painel de Mensagens mostra:
+  - total online
+  - salas por partida
+  - total de mensagens
+  - usuários bloqueados
+  - filtro por sala
+  - usuários online por sala
+  - bloqueio/desbloqueio de usuários
+  - botão para limpar mensagens
+- Removidas funções de pagamentos dentro do painel de chat; pagamentos continuam na área Assinaturas.

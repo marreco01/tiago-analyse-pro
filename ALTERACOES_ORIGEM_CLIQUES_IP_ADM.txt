@@ -1,0 +1,38 @@
+ALTERAÇÃO FEITA — ORIGEM DOS CLIQUES POR IP NO ADM
+
+Foi atualizado o contador de cliques para mostrar melhor de onde veio cada acesso.
+
+O que foi adicionado:
+
+1. O contador não registra cliques dentro da área /admin.
+2. O botão Atualizar do ADM não gera clique falso.
+3. O painel atualiza os dados a cada 30 segundos sem aumentar a contagem.
+4. O mesmo IP na mesma página só conta 1 vez por minuto.
+5. Agora cada clique pode salvar:
+   - IP
+   - página acessada
+   - origem/referrer
+   - utm_source
+   - utm_medium
+   - utm_campaign
+   - cidade aproximada
+   - estado/região
+   - país
+   - provedor de internet
+   - navegador/dispositivo
+
+6. No ADM > Sistema foi adicionada a área "Origem dos cliques".
+7. A lista de IPs agora mostra:
+   - cidade aproximada
+   - estado
+   - país
+   - provedor
+   - origem do clique
+   - última página acessada
+
+Observação importante:
+A localização pelo IP é aproximada. Em internet móvel, VPN ou operadora grande, a cidade pode aparecer diferente.
+Para saber origem exata de campanha, use links com UTM, exemplo:
+
+https://seudominio.com/?utm_source=instagram&utm_medium=bio&utm_campaign=lancamento
+

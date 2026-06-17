@@ -1,0 +1,14 @@
+ALTERAÇÃO - BOTÃO ZERAR CONTADOR ADM
+
+- Adicionado botão "Zerar contador" em ADMIN > Sistema/Estatísticas.
+- O botão pede confirmação antes de apagar.
+- O reset apaga somente os cliques/estatísticas de acesso.
+- Não apaga usuários, pagamentos, assinaturas, análises ou configurações.
+- O painel mostra "Última atualização" e "Último reset" com data e hora.
+- O IP do administrador é marcado como IP interno após acessar o ADM.
+- Cliques do administrador não entram na contagem, mesmo fora da rota /admin.
+- As rotas /admin, /api, assets, favicon e arquivos estáticos continuam ignoradas.
+
+ENDPOINTS:
+GET  /api/admin/analytics
+POST /api/admin/analytics/reset

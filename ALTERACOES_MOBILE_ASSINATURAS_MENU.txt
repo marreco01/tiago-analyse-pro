@@ -1,0 +1,13 @@
+ANALYSE PRO 2.0 — CORREÇÃO MOBILE
+
+Aplicado:
+- Removido Planos/Assinaturas da navegação superior mobile.
+- Navegação superior agora usa: Início, Ao Vivo, Análises, Copa 2026, Meus Times.
+- Barra inferior usa Menu no lugar de Conta.
+- Criada página /mobile-menu com seção própria "Assinaturas".
+- Card PRO removido do início mobile.
+- Card Sócio VIP removido do início mobile.
+- Espaço ocupado por:
+  - Card Copa do Mundo 2026;
+  - Card Índice Analyse Pro.
+- Assinaturas continuam acessíveis no menu, mas não ocupam a navegação principal.

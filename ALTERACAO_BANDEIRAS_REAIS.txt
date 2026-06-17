@@ -1,0 +1,5 @@
+Correção aplicada:
+- Removidos blocos com siglas tipo CA, US, MX.
+- Fallback agora usa imagens reais de bandeiras via flagcdn.
+- Quando a API retornar os escudos/bandeiras oficiais, o sistema continua usando os dados da API.
+- Mantido railway.toml e .npmrc para evitar erro de frozen-lockfile no Railway.

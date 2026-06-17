@@ -1,0 +1,1 @@
+Removido o número vermelho 12 do botão Ao Vivo/Jogos na navegação mobile pública e interna.

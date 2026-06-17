@@ -1,0 +1,9 @@
+AJUSTES DESTA VERSAO - ANALYSE PRO 2.0
+
+- Menu central superior removido da landing page; mantidos logo, Entrar e Criar Conta.
+- Campo de senha com botao mostrar/ocultar.
+- Fluxo de recuperacao de senha criado: solicitar link, abrir link, definir nova senha.
+- Recuperacao pronta para envio real por email via RESEND_API_KEY e RESET_EMAIL_FROM.
+- Em testes, usar ALLOW_RESET_PREVIEW=true para exibir o link de redefinicao na tela.
+- Aviso visivel: Chave PIX copiada com sucesso!
+- Aviso visivel: Comprovante enviado com sucesso!

@@ -1,0 +1,14 @@
+V36 - Compact UI Global
+
+Objetivo:
+- Reduzir tamanho dos cards em todas as abas.
+- Diminuir altura dos heros, cards principais, cards laterais, menu lateral, tabelas, listas e botões.
+- Mostrar mais informação por tela sem perder identidade premium.
+
+Alterações principais:
+- client/src/index.css: criado bloco global ANALYSE PRO 2.0 - V36 Compact UI Global.
+- client/src/components/PremiumShell.tsx: sidebar e grid principal reduzidos.
+- client/src/pages/Brasileirao.tsx: hero do Brasileirão e colunas compactadas.
+
+Observação:
+- Build local não foi executado neste ambiente porque as dependências node_modules/vite não estão instaladas aqui.

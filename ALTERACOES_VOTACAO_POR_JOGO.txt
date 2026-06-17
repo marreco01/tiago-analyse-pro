@@ -1,0 +1,10 @@
+ALTERAÇÃO FEITA - VOTAÇÃO POR JOGO
+
+- Removidos votos falsos/iniciais automáticos.
+- Cada partida agora começa com 0 votos.
+- Cada jogo usa uma chave própria no localStorage: fixtureId/id + liga + mandante + visitante + status/minuto.
+- Ao clicar em Casa, Empate ou Fora, o voto é salvo apenas para aquele jogo.
+- Jogos diferentes não compartilham contagem.
+- As porcentagens só aparecem depois do clique do usuário naquele jogo.
+
+Observação: esta versão salva os votos no navegador do usuário. Para todos os visitantes enxergarem os mesmos votos reais, é necessário integrar Supabase/Firebase.

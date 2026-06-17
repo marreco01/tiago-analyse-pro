@@ -1,0 +1,41 @@
+ALTERAÇÃO BRASILEIRÃO - ROBÔ COMPLETO
+
+Foi atualizado o robô de classificação do Brasileirão com:
+
+1. Classificação com zonas destacadas:
+   - 🟢 Libertadores
+   - 🔵 Pré-Libertadores
+   - 🟡 Sul-Americana
+   - 🔴 Rebaixamento
+
+2. Escudos maiores:
+   - Tabela com escudos maiores
+   - Grade de análise IA com escudos maiores
+   - Cards de confronto com escudos maiores
+
+3. Últimos 5 jogos:
+   - Coluna Últimos 5 adicionada na tabela
+   - Bolinhas verdes/amarelas/vermelhas por forma recente
+
+4. Artilharia do Brasileirão:
+   - Bloco novo abaixo da tabela
+   - Cache vindo do robô/fallback calculado por ataque dos clubes
+
+5. Próxima rodada:
+   - Bloco novo abaixo da tabela
+   - Lista de jogos com escudos e horários
+
+6. Painel Admin:
+   - Botão Reiniciar Brasileirão
+   - Status do robô
+   - Última execução
+   - Tempo de resposta
+   - Total de clubes
+   - Total de artilheiros
+   - Total de jogos da próxima rodada
+
+Arquivos principais alterados:
+- server/scraper/brasileiraoTableScraper.ts
+- server/admin-robots.ts
+- client/src/pages/Brasileirao.tsx
+- client/src/pages/AdminRobots.tsx

@@ -1,0 +1,8 @@
+V34 - Entradas IA Operacional
+
+- Robô Entradas Master agora coleta jogos do Calendário Master, Próximos Jogos, Copa, Brasileirão e cache geral.
+- Se as fontes públicas ficarem vazias, usa fallback controlado para não deixar a aba zerada.
+- Gera mercados automáticos: Over 1.5, Over 2.5, Ambas Marcam, Escanteios, Cartões e Favorito.
+- Calcula confiança, odd justa, risco, stake sugerida e ranking por relevância.
+- Endpoint atualizado: /api/entries-master/opportunities
+- Fonte exibida: entries-master-v34-operacional

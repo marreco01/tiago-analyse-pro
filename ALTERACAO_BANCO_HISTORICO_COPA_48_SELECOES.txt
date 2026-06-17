@@ -1,0 +1,25 @@
+ALTERAÇÃO — BANCO HISTÓRICO COPA 2026
+
+Foi adicionada a base local para as 48 seleções da Copa 2026:
+
+1) server/data/worldcup-history.json
+   - Lista das 48 seleções por grupo
+   - Campo last10 preparado para receber os últimos 10 jogos
+   - Estatísticas recalculadas automaticamente pelo backend
+
+2) server/data/worldcup-history-import.csv
+   - Modelo de importação manual/semi-automática dos resultados
+
+3) server/worldcup-history.ts
+   - Carrega o banco local
+   - Salva o banco local
+   - Calcula estatísticas dos últimos jogos
+   - Retorna análise esportiva estimada entre duas seleções
+
+4) Rotas adicionadas em server/football-live.ts
+   GET  /api/football/world-cup/history
+   POST /api/football/world-cup/history/save
+   GET  /api/football/world-cup/history/analyze?home=Brazil&away=Portugal
+
+IMPORTANTE:
+A estrutura está pronta para receber os 10 jogos de cada seleção. O arquivo já tem as 48 seleções cadastradas.

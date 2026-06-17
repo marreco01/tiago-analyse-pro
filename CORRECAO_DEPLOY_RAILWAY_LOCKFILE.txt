@@ -1,0 +1,4 @@
+Correção aplicada para o Railway:
+- Adicionado .npmrc com frozen-lockfile=false.
+- Adicionado railway.toml usando pnpm install --no-frozen-lockfile antes do build.
+- Isso resolve ERR_PNPM_OUTDATED_LOCKFILE quando o pnpm-lock.yaml não está alinhado.

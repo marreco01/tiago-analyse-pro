@@ -1,0 +1,11 @@
+V22 - Correção de datas dos jogos
+
+Problema corrigido:
+- Jogos de hoje apareciam agrupados com data de ontem na tela /upcoming.
+- Causa: o frontend usava new Date("YYYY-MM-DD"), que o navegador interpreta em UTC.
+- No fuso do Brasil, isso deslocava a data para o dia anterior.
+
+Correção aplicada:
+- Datas YYYY-MM-DD agora são formatadas como data local do Brasil, preservando o dia correto.
+- O Robô Calendário Master continua convertendo os horários para America/Sao_Paulo no servidor.
+- A tela de Próximos Jogos/Jogos de Hoje agora agrupa por dia correto.

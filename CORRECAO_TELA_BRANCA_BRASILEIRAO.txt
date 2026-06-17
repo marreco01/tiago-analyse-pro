@@ -1,0 +1,4 @@
+Correção aplicada:
+- A tela branca foi causada por uso do ícone Crown sem importação em PremiumShell.tsx.
+- Import Crown adicionado corretamente em lucide-react.
+- Nenhuma alteração em package.json, pnpm-lock, Railway, Nixpacks ou dependências.

@@ -1,0 +1,12 @@
+cd C:\Users\edmil\Downloads\analyse-pro-barra-copa-rolante
+
+Remove-Item -Recurse -Force .git -ErrorAction SilentlyContinue
+
+git init
+git branch -M main
+git remote add origin https://github.com/marreco01/tiago-analyse-pro.git
+
+git add .
+git commit -m "Adiciona barra rolante da Copa no topo"
+
+git push -f origin main

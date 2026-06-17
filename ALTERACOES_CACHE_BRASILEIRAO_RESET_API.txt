@@ -1,0 +1,59 @@
+ALTERAÇÕES REALIZADAS — CACHE + BRASILEIRÃO + RESET API
+
+1) Cache avançado da API-Football
+Arquivo alterado:
+- server/football-live.ts
+
+O que foi feito:
+- Criado cache persistente em disco na pasta .data/api-football-cache.
+- O cache agora sobrevive a reinício/deploy do servidor, quando o volume/pasta .data estiver preservado.
+- Cache em memória continua ativo para respostas rápidas.
+- Tempo de cache ajustado por tipo de dado:
+  - Ao vivo: 45 segundos.
+  - Estatísticas de jogo ao vivo: 45 segundos.
+  - Classificação: 30 minutos.
+  - Fixtures de liga/temporada: 30 minutos.
+  - Times/ligas: 12 horas.
+  - Cache padrão: 5 minutos.
+- Escudos agora usam header de cache mais longo: 7 dias com immutable.
+- Endpoint /api/football/status agora informa cache persistente ativo.
+
+2) Brasileirão com cara de Série A
+Arquivo alterado:
+- client/src/pages/Brasileirao.tsx
+
+O que foi feito:
+- Banner reforçado para identidade de Brasileirão Série A.
+- Removida sensação de tela estilo Copa do Mundo.
+- Destaque para pontos corridos, G4, Z4, clubes, rodadas e próximos jogos.
+- Painel lateral agora mostra líder, clubes, jogos, ao vivo e Z4.
+- Visual mais brasileiro: verde, amarelo, azul, campeonato nacional, turno e returno.
+
+3) Zeramento automático diário da API
+Arquivo alterado:
+- server/api-usage-control.ts
+
+O que foi feito:
+- Mantido reset automático ao detectar novo dia.
+- Adicionado agendamento automático para zerar o contador na virada do dia pelo horário de Brasília.
+- Painel de uso passa a informar autoResetEnabled: true.
+
+COMANDO PARA SUBIR NO GITHUB
+
+cd C:\Users\edmil\Downloads\analyse-pro-cache-brasileirao-reset-api
+
+Remove-Item -Recurse -Force .git -ErrorAction SilentlyContinue
+
+git init
+git branch -M main
+git remote add origin https://github.com/marreco01/tiago-analyse-pro.git
+
+git add .
+git commit -m "Adiciona cache persistente e melhora tela do Brasileirao"
+
+git push -f origin main
+
+OBSERVAÇÃO IMPORTANTE
+No Railway, para o cache persistente funcionar melhor, mantenha DATA_DIR apontando para uma pasta preservada/volume, se disponível.
+Exemplo recomendado:
+DATA_DIR=/app/.data

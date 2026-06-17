@@ -1,0 +1,3 @@
+Layout premium aplicado com segurança nas páginas Home e Dashboard.
+Mantidas rotas, login, admin, pagamentos e chat sem alterar backend.
+Tema preto/dourado/vermelho inspirado na referência enviada.

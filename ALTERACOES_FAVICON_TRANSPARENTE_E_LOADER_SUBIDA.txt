@@ -1,0 +1,4 @@
+Aplicado:
+- favicon transparente com 4 barras
+- index.html priorizando PNG e forçando atualização com ?v=5transparent
+- loading de Gerar análise ajustado para animação sempre em sentido de subida, preenchendo as barras uma por uma

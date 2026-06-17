@@ -1,0 +1,19 @@
+ANALYSE PRO 2.0 — COPA DO MUNDO 2026
+
+Aplicado:
+- Nova aba temática: /world-cup.
+- Tema visual exclusivo em verde, dourado e referências aos três países-sede.
+- Grade completa de jogos da competição.
+- Filtros por fase e por seleção/cidade.
+- Aba de resultados.
+- Aba de classificação dos grupos.
+- Aba de mata-mata.
+- Jogos ao vivo sinalizados.
+- Loader personalizado ao carregar dados.
+- Endpoint backend /api/football/world-cup.
+- Dados reais por API-Football usando league=1 e season=2026.
+- Cache de 10 minutos integrado ao controle de consumo da API.
+- Menu lateral com destaque Copa do Mundo 2026.
+
+Observação:
+- A classificação e o chaveamento exibem apenas o que a API retornar no momento.

@@ -1,0 +1,50 @@
+ALTERAÇÕES IMPLEMENTADAS
+
+1. Chat persistente
+- Mensagens agora são salvas em .data/tiago-analyse-pro.json.
+- Histórico do chat permanece após reiniciar o servidor enquanto o arquivo .data existir.
+
+2. Login real
+- Criadas rotas /api/auth/register, /api/auth/login, /api/auth/me, /api/auth/logout e /api/auth/forgot.
+- Senhas salvas com hash PBKDF2 + salt.
+- Frontend de login/registro agora usa backend real.
+- Perfil aceita avatar por URL.
+
+3. Chat avançado
+- Contador de usuários online.
+- Lista de usuários online no painel admin.
+- Responder mensagem.
+- Emojis rápidos.
+- Mensagem privada para contas PRO/VIP.
+- Notificação sonora simples ao receber mensagem.
+- Moderação por bloqueio de nome.
+
+4. Painel Admin
+- /admin/chat mostra mensagens, usuários online, bloqueados, pagamentos e auditoria.
+- Limpar chat.
+- Bloquear/desbloquear usuário.
+- Aprovar pagamento manualmente pelo ID.
+
+5. Área VIP e PIX
+- Planos FREE/PRO/VIP.
+- /payments cria pagamento PIX demo.
+- Estrutura pronta para Mercado Pago via MERCADO_PAGO_ACCESS_TOKEN.
+- Webhook /api/payments/webhook criado.
+- Aprovação de pagamento libera PRO/VIP por 30 dias.
+
+6. Favoritos reais
+- /api/favorites criado com dados salvos por usuário.
+
+VARIÁVEIS RECOMENDADAS NO RAILWAY
+API_FOOTBALL_KEY=sua_chave
+THESPORTSDB_API_KEY=123
+PUBLIC_URL=https://seu-dominio.up.railway.app
+MERCADO_PAGO_ACCESS_TOKEN=seu_token_mercado_pago
+DATA_DIR=.data
+
+COMANDOS
+pnpm install --no-frozen-lockfile
+npm run build
+git add .
+git commit -m "Login chat persistente painel admin pix vip"
+git push -f origin main

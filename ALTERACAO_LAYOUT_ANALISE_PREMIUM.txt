@@ -1,0 +1,6 @@
+Alteração aplicada: layout da tela Análise IA.
+- Seletores de Time A e Time B nas laterais.
+- Botão Gerar Análise centralizado entre os seletores.
+- Botão Trocar lados abaixo do botão central.
+- Fontes e elementos principais reduzidos para visual mais limpo.
+- Logo e nome ANALYSE PRO 2.0 preservados.

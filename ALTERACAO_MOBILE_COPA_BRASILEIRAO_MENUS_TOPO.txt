@@ -1,0 +1,7 @@
+ALTERAÇÃO MOBILE COPA E BRASILEIRÃO
+
+- Recolocada Copa no menu mobile superior.
+- Menus internos da Copa e Brasileirão ficam no topo em mobile.
+- Cards de seleção, bandeiras, escudos e estatísticas reduzidos em telas pequenas.
+- Grid mobile sem rolagem lateral.
+- Copa e Brasileirão mantidos com padrão visual mais próximo no desktop e responsivo no celular.

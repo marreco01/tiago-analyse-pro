@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0f172a"/><stop offset="1" stop-color="#020617"/></linearGradient></defs>
+<circle cx="128" cy="128" r="118" fill="url(#g)" stroke="#22c55e" stroke-width="10"/>
+<path d="M128 54l58 30v44c0 42-24 68-58 86-34-18-58-44-58-86V84l58-30z" fill="none" stroke="#fff" stroke-width="10"/>
+<text x="128" y="148" text-anchor="middle" font-family="Arial,sans-serif" font-size="48" font-weight="800" fill="#fff">TIME</text>
+</svg>

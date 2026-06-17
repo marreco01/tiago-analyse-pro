@@ -1,0 +1,13 @@
+ANALYSE PRO 2.0 — LOADER PERSONALIZADO EM PROCESSOS DE ANÁLISE
+
+Aplicado:
+- Criado componente único AnalysisProcessLoader com a logo de 4 barras.
+- Loader exibido ao clicar em GERAR ANÁLISE.
+- Loader exibido ao clicar em COMPARAR AGORA.
+- Loader exibido ao carregar/atualizar os Rankings inteligentes.
+- Animação ajustada para carregar sempre de baixo para cima, barra por barra:
+  branca → amarela → laranja → vermelha.
+- Navegação comum e menus continuam sem carregamento global.
+
+Arquivo-base:
+- Versão com rankings funcionais e API integrada.

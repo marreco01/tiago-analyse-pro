@@ -1,0 +1,17 @@
+ALTERAÇÕES - ADMIN PAYMENTS
+
+Criado painel administrativo em /admin/payments com:
+- Tabela de pagamentos: Cliente, Email, Plano, Valor, Status, Data e ID do pagamento.
+- Cards de resumo: total recebido, pendente, cancelado/recusado e assinaturas ativas.
+- Filtros por status, plano e busca por cliente/email/ID.
+- Aprovação manual de pagamento pendente.
+- Cancelamento manual de pagamento pendente.
+- Proteção para acesso somente ADMIN.
+
+Backend:
+- GET /api/admin/payments
+- POST /api/payments/admin/cancel
+
+Rotas:
+- /admin/payments adicionada ao App.tsx.
+- Link de acesso adicionado no painel /admin/chat.

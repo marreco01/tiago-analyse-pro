@@ -1,0 +1,8 @@
+V16 - Tema claro corrigido sem bloquear alternância.
+- Fundo claro trocado de branco puro para cinza azulado suave.
+- Hero escuro preservado com texto branco legível.
+- Sidebar clara com borda/sombra e melhor separação.
+- Cards claros com contraste, sombra e menos branco estourado.
+- Inputs, selects e botões com bordas visíveis.
+- Alertas amarelos com texto escuro legível.
+- Correção de textos que ficavam apagados em fundos claros.

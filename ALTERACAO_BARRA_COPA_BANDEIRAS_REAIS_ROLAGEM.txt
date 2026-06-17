@@ -1,0 +1,11 @@
+ALTERAÇÃO FEITA
+
+- A barra de rolagem superior da Copa 2026 agora usa imagens reais das bandeiras via flagcdn.com.
+- Removidos emojis de bandeiras na barra para evitar aparecer letras/códigos no Windows ou navegador.
+- Mantido contador fixo parado no lado esquerdo.
+- Mantida rolagem lenta já configurada no CSS.
+- Grupos A até L preenchidos com bandeiras reais.
+- Slots ainda em repescagem ficam com símbolo "?".
+
+Arquivo alterado:
+client/src/components/PremiumShell.tsx

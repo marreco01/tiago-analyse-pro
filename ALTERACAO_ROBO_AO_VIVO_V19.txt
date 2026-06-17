@@ -1,0 +1,9 @@
+V19 - Robô Ao Vivo reforçado
+
+- Robô Ao Vivo deixou de depender apenas de cache/API-Football.
+- Agora busca partidas ao vivo em fontes públicas por competição.
+- Prioridade: Copa do Mundo, Mundial de Clubes, Libertadores, Champions, Brasileirão e principais ligas.
+- Atualização automática a cada 1 minuto.
+- Rota pública /api/live-robot/games agora força atualização automática quando cache está vazio ou vencido.
+- Mantém cache interno e remove mensagem antiga de que API não foi chamada automaticamente.
+- Ao detectar jogo ao vivo, retorna placar, status, liga, horário, alertas e sala de chat independente.

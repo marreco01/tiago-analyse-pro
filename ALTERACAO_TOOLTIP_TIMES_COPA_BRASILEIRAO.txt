@@ -1,0 +1,9 @@
+ALTERAÇÃO REALIZADA
+
+Corrigido hover das bandeiras e escudos nas abas Copa do Mundo e Brasileirão.
+
+Agora ao passar o mouse em cima:
+- aparece o nome da seleção/time dentro do próprio card;
+- mantém title nativo do navegador;
+- funciona sem ser cortado por containers com overflow;
+- vale para seleção de Time A e Time B em modo teste.

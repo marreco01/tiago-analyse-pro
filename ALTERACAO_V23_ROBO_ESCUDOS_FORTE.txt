@@ -1,0 +1,9 @@
+V23 - Robô de Escudos Forte
+
+Correções:
+- Robô de escudos agora busca também ESPN pública Série A e Série B.
+- Adicionada normalização de nomes/aliases para Remo, Mirassol, Vitória, Chapecoense, Coritiba, Cuiabá, Goiás, Guarani, Sport, Ceará, Vasco, São Paulo e Atlético-MG.
+- Escudos passam por normalizador Sharp 160x160 antes de serem servidos pelo endpoint /api/brasileirao/logo/:team.
+- Corrige escudos enormes, desalinhados, cortados ou trocados por fonte errada.
+- Frontend força cache v=23 e limita os escudos dentro de caixas fixas.
+- Robô atualiza a cada 12 horas e mantém cache local.

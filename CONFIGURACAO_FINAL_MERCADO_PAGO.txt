@@ -1,0 +1,35 @@
+ANALYSE PRO 2.0 — CHECKOUT MERCADO PAGO FINAL
+
+Versão destinada a uma plataforma informativa de estatísticas de futebol.
+
+PLANOS
+- PRO: R$ 19,90 — acesso por 30 dias
+- VIP: R$ 39,90 — acesso por 30 dias
+- SÓCIO VIP FUNDADOR: R$ 197,00 — acesso VIP por 12 meses
+
+FORMAS DE PAGAMENTO
+O Checkout Pro foi configurado sem excluir tipos de pagamento e com parcelamento de até 12x. O Mercado Pago apresenta os meios que estiverem habilitados para sua conta, como Pix, cartão e boleto.
+
+RAILWAY — PRIMEIRO TESTE
+MERCADO_PAGO_ACCESS_TOKEN=COLE_AQUI_NO_RAILWAY_O_ACCESS_TOKEN_DE_TESTE
+MERCADO_PAGO_MODE=test
+MERCADO_PAGO_WEBHOOK_SECRET=COLE_A_ASSINATURA_SECRETA_DO_WEBHOOK
+APP_URL=https://analyse-pro-production.up.railway.app
+
+WEBHOOK NO MERCADO PAGO
+URL: https://analyse-pro-production.up.railway.app/api/payments/webhook
+Evento: Pagamentos / Payments
+
+SEGURANÇA IMPLEMENTADA
+- Token usado apenas no backend.
+- Liberação de acesso somente pelo pagamento aprovado consultado no Mercado Pago.
+- Webhook valida assinatura secreta quando configurada.
+- Valor e moeda são verificados antes de liberar o plano.
+- Notificações repetidas não renovam o acesso indevidamente.
+- Retorno ao site verifica o status sem aprovar sozinho.
+
+PARA PRODUÇÃO
+Após testar o checkout e o webhook, troque o token de teste pelo token de produção e altere MERCADO_PAGO_MODE=production. Em produção, configure obrigatoriamente MERCADO_PAGO_WEBHOOK_SECRET.
+
+RENOVAÇÃO
+PRO e VIP funcionam como acesso de 30 dias com nova compra na renovação. Cobrança automática mensal não está ativa nesta versão; requer integração específica de Assinaturas.

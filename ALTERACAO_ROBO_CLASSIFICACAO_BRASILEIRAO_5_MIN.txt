@@ -1,0 +1,22 @@
+ALTERAÇÃO FEITA
+
+Criado Robô Classificação Brasileirão usando fonte pública alternativa.
+
+Arquivos alterados/criados:
+- server/scraper/brasileiraoTableScraper.ts
+- server/scraper/index.ts
+- server/admin-robots.ts
+- client/src/pages/Brasileirao.tsx
+
+Funcionalidades:
+- Busca classificação do Brasileirão em fonte pública alternativa.
+- Atualização automática a cada 5 minutos.
+- Cache no servidor para não depender de recarregar toda hora.
+- Endpoint público: /api/brasileirao/table
+- Endpoint admin executar agora: /api/admin/robots/brasileirao-table/run
+- Endpoint admin cache: /api/admin/robots/brasileirao-table/cache
+- Status/logs aparecem junto com os robôs no painel Admin.
+- Aba Brasileirão usa o robô para atualizar a tabela de classificação.
+
+Observação:
+Se a fonte pública falhar no momento, o site mantém fallback interno e tenta atualizar novamente no próximo ciclo.

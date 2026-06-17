@@ -1,0 +1,15 @@
+ANALYSE PRO 2.0 — FAVICON + LOADING 4 BARRAS
+
+Aplicado:
+- Favicon atualizado para 4 barras da marca:
+  1. branca
+  2. amarela
+  3. laranja
+  4. vermelha
+- Atualizados: favicon.svg, favicon.png, favicon.ico e apple-touch-icon.png.
+- Loading de "Gerar análise" atualizado com a logo animada de 4 barras.
+- Chat/logo auxiliar também ajustado para 4 barras.
+
+Resultado:
+- A espera de carregamento agora segue a identidade nova da marca.
+- O ícone do navegador também fica coerente com os 4 planos/logo.

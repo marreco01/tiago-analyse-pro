@@ -1,0 +1,14 @@
+BRASILEIRAO V10 - ROBO ESCUDOS
+
+Criado robô exclusivo para escudos dos clubes:
+- server/scraper/brasileiraoLogoBot.ts
+- rota pública: /api/brasileirao/logo/:team
+- status público: /api/brasileirao/logos/status
+- execução admin: POST /api/admin/robots/brasileirao-logos/run
+- integrado ao painel /api/admin/robots
+- atualização automática diária
+- cache de imagem em memória
+- fontes públicas ESPN + CDN pública
+- fallback SVG com iniciais, sem ícone Shield amarelo quebrado
+
+Objetivo: impedir que Classificação, Análise IA, Melhor Partida, Grade, Resultados e Ao Vivo percam os escudos quando uma fonte externa falhar.

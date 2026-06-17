@@ -1,0 +1,7 @@
+ANALYSE PRO 2.0 — FAVORITOS E HISTÓRICO
+
+- Favoritar dentro da análise gerada.
+- Histórico com busca, filtro favoritos, remoção e analisar novamente.
+- Favoritos com busca, remoção e analisar novamente.
+- Limites: FREE 5; PRO 50; VIP e SÓCIO VIP ilimitado.
+- Histórico separado por utilizador no navegador.

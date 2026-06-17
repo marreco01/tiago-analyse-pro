@@ -1,0 +1,22 @@
+ANALYSE PRO 2.0 — VERSÃO INFORMATIVA + MERCADO PAGO EM TESTE
+
+O QUE FOI MUDADO
+- Removidos textos e áreas de aposta: tips, odds, gestão de banca e oportunidades de entrada.
+- A plataforma foi convertida para dados e estatísticas informativas de futebol.
+- "Tips do Dia" virou "Relatórios".
+- Jogos ao vivo agora mostram observações e atividade ofensiva, sem sugestões de aposta.
+- Pagamento manual por PIX/comprovante foi substituído pelo Checkout Pro do Mercado Pago.
+
+PAGAMENTOS
+- PRO: R$ 19,90 por acesso de 30 dias (renovação manual pelo Checkout Pro).
+- VIP: R$ 39,90 por acesso de 30 dias (renovação manual pelo Checkout Pro).
+- SÓCIO VIP FUNDADOR: R$ 197,00 por 12 meses.
+- A liberação acontece apenas após o webhook confirmar o pagamento aprovado.
+
+VARIÁVEIS NO RAILWAY — NÃO COLE TOKEN NO CHAT
+MERCADO_PAGO_ACCESS_TOKEN=SEU_ACCESS_TOKEN_DE_TESTE
+APP_URL=https://analyse-pro-production.up.railway.app
+
+IMPORTANTE
+- Esta versão está preparada para TESTES.
+- Antes de aceitar pagamentos reais, deve ser feita uma validação final do webhook e da segurança das notificações.

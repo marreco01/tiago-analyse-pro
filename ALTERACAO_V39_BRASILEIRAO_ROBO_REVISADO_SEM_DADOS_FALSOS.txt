@@ -1,0 +1,10 @@
+V39 - Revisão forte do Robô Brasileirão
+
+- Robô de classificação agora valida se a fonte é realmente Brasileirão Série A.
+- Bloqueia mistura com clubes estrangeiros e dados de outras ligas.
+- Remove fallback que inventava tabela, pontos e últimos 5 jogos.
+- Últimos 5 jogos passam a tentar busca real via scoreboard público da ESPN.
+- Se não houver histórico real, a tela mostra "sem dados" em vez de bolinhas falsas.
+- Fallback local não cria mais tabela inventada.
+- Melhor partida da rodada não cria confronto fake quando a classificação real não está disponível.
+- Artilharia sem fonte real aparece como indisponível, não inventada.

@@ -1,0 +1,19 @@
+ALTERAÇÃO COPA VISUAL PROFISSIONAL
+
+Arquivo principal alterado:
+- client/src/pages/WorldCup.tsx
+
+O que foi feito:
+- Hero da Copa reformulado no estilo dashboard premium.
+- Card com taça/ícone central e contadores principais.
+- Grupo em destaque com classificação ao vivo.
+- Jogos em destaque na aba Resumo.
+- Líderes dos grupos em lista compacta.
+- Todos os grupos em cards compactos.
+- Caminho até a final visual.
+- Cards de notícias e estatísticas gerais.
+- Mantidas as abas atuais: Resumo, Grupos, Jogos, Mata-mata, Análise IA e Copa Master.
+- Mantidos robôs e endpoints existentes.
+
+Observação:
+- Não foi possível rodar build local porque o ZIP não contém node_modules/vite instalado no ambiente.

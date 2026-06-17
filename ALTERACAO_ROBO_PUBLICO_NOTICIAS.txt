@@ -1,0 +1,21 @@
+ALTERAÇÃO FEITA
+
+1. Criada a pasta correta:
+   server/scraper
+
+2. Criados os arquivos:
+   server/scraper/newsScraper.ts
+   server/scraper/index.ts
+
+3. O robô agora:
+   - busca notícias públicas via RSS;
+   - organiza por categoria;
+   - usa cache automático de 20 minutos;
+   - inicia junto com o servidor;
+   - não quebra o site se uma fonte sair do ar.
+
+4. Rotas disponíveis:
+   /api/news
+   /api/public/news
+
+5. A aba Notícias continua usando /api/news e agora também existe a rota pública /api/public/news.

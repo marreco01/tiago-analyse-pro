@@ -1,0 +1,14 @@
+ANALYSE PRO 2.0 — ABA COMPARAR TIMES FUNCIONAL
+
+Aplicado:
+- Nova página Comparar Times totalmente visual e integrada ao endpoint real /api/web-analyze.
+- Seleção dos dois times com escudos e ligas.
+- Botão para trocar os lados.
+- Comparação por médias de gols feitos, gols sofridos e escanteios.
+- Confronto direto: vitórias, empates e gols de cada equipa.
+- Forma recente e resultados dos últimos jogos.
+- Métricas gerais e qualidade dos dados.
+- Botão Abrir análise completa mantendo os times selecionados.
+- Tela Analisar agora recebe os times por parâmetros da URL.
+
+Fonte utilizada pela aplicação: API-Football configurada no backend.

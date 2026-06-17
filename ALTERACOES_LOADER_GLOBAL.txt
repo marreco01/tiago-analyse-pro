@@ -1,0 +1,9 @@
+ANALYSE PRO 2.0 — LOADER GLOBAL PREMIUM
+
+Aplicado:
+- Tela de carregamento global do site.
+- Loader ao trocar páginas e menus internos.
+- Loader inicial ao abrir a plataforma.
+- Animação das 4 barras refinada e mais premium.
+- Loader da tela "Gerar análise" unificado com o novo padrão visual.
+- Pontos animados de progresso adicionados.

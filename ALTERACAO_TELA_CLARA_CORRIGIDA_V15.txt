@@ -1,0 +1,14 @@
+V15 - Tela clara corrigida sem bloquear o tema claro
+
+Correções:
+- Tema claro voltou a funcionar.
+- Removido bloqueio que forçava o site inteiro para o modo escuro.
+- Fundo branco puro trocado por fundo claro premium em cinza/azul suave.
+- Cards claros ganharam transparência, borda e sombra para separar melhor os blocos.
+- Textos brancos/cinzas que sumiam no modo claro foram corrigidos.
+- Tabelas, rankings, sidebar, header mobile, botões, inputs e badges receberam contraste no tema claro.
+- Alternância claro/escuro voltou a funcionar pelo botão.
+- Botão agora mostra Tela clara/Tela escura conforme o tema atual.
+
+Objetivo:
+Manter a tela clara disponível, porém legível e profissional, sem ficar branca estourada.

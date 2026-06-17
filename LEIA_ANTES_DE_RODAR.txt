@@ -1,0 +1,15 @@
+TIAGO ANALYSE PRO - CORREÇÃO SOFASCORE
+
+1) Crie/edite .env.local na raiz:
+TAVILY_API_KEY=sua_chave_nova_da_tavily
+
+2) Instale:
+npm install
+
+3) Rode:
+npm run dev
+
+Notas:
+- Últimos jogos agora tentam vir primeiro do SofaScore usando IDs conhecidos + busca do SofaScore.
+- Tavily fica como apoio de notícia/contexto.
+- Se o SofaScore bloquear a sua rede, o terminal vai mostrar logs [SofaScore] explicando onde falhou.

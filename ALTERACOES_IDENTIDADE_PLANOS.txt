@@ -1,0 +1,21 @@
+ANALYSE PRO 2.0 — IDENTIDADE VISUAL DOS PLANOS
+
+- Logo global alterada para quatro barras:
+  1. branca = FREE
+  2. amarela = PRO
+  3. laranja = VIP
+  4. vermelha = SÓCIO VIP FUNDADOR
+
+- Cards e botões atualizados:
+  FREE: borda branca
+  PRO: borda amarela/dourada
+  VIP mensal: borda laranja
+  SÓCIO VIP FUNDADOR: borda vermelha e destaque premium
+
+- Aplicado em Home, página de Planos, Checkout/Pagamento e identificação do plano no Admin.
+
+- Valores mantidos:
+  FREE: R$ 0,00/mês
+  PRO: R$ 19,90/mês
+  VIP: R$ 39,90/mês
+  SÓCIO VIP FUNDADOR: R$ 197,00 pagamento único / 12 meses.

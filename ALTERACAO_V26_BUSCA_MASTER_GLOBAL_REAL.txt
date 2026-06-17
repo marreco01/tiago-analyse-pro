@@ -1,0 +1,45 @@
+V26 - Busca Master Global aplicada de verdade
+
+Objetivo:
+- Parar de deixar cada robô buscar dados sozinho.
+- Fazer todos os robôs críticos consumirem o mesmo núcleo Master de busca, cache e normalização.
+
+Alterado:
+- server/scraper/masterSearchRobot.ts
+  - Agora sincroniza: notícias, jogos base, Copa, calendário, ao vivo, próximos jogos, classificação, escudos, rankings, estatísticas, escanteios, cartões e gols.
+  - Cache central: master-search-v26-global.
+  - Status agora informa quantidade de itens por módulo e 13 robôs sincronizados.
+  - Logs centralizados de todos os robôs principais.
+
+- server/admin-robots.ts
+  - /api/robot-games usa Master Calendar.
+  - /api/robot-games/today usa Master Calendar.
+  - /api/robot-games/teams usa Master Calendar.
+  - /api/calendar-master/events usa Master Global.
+  - /api/world-cup/robot usa Master Global.
+  - /api/world-cup/compare atualiza via Master Global.
+  - /api/statistics/robot usa Master Statistics.
+  - /api/statistics/compare atualiza via Master Global.
+  - /api/corners/robot usa Master Corners.
+  - /api/corners/compare atualiza via Master Global.
+  - /api/cards/robot usa Master Cards.
+  - /api/cards/compare atualiza via Master Global.
+  - /api/goals/robot usa Master Goals.
+  - /api/goals/compare atualiza via Master Global.
+  - /api/live-robot/games usa Master Live.
+  - /api/upcoming-robot/games usa Master Calendar.
+  - /api/brasileirao/table usa Master Brasileirão.
+  - /api/admin/robots/rankings/run executa Master Global.
+
+- server/football-live.ts
+  - /api/jogos-hoje e /api/football/today usam Master Calendar.
+  - /api/football/upcoming usa Master Calendar.
+  - /api/football/live usa Master Live.
+  - /api/football/brasileirao usa Master Brasileirão.
+  - /api/football/rankings continua usando Master + Ranking.
+
+Resultado esperado:
+- Datas iguais em todas as abas.
+- Últimos jogos mais consistentes.
+- Próximos jogos, rankings, ao vivo e classificação puxando do mesmo cache central.
+- Menos divergência entre Brasileirão, Análise IA, Rankings, Jogos de Hoje e Próximos Jogos.

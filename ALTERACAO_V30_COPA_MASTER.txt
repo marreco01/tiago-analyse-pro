@@ -1,0 +1,8 @@
+V30 - Robô Copa com Busca Master
+
+- Robô Copa agora consome caches do Calendário Master, Próximos Jogos e Ao Vivo.
+- Master Search executa Calendário/Ao Vivo/Próximos antes do Robô Copa.
+- Copa mescla calendário interno com jogos reais encontrados na Busca Master.
+- Normaliza nomes das seleções e valida apenas seleções da Copa.
+- Evita Mundial de Clubes entrar na Copa do Mundo.
+- Mantém fallback local caso as fontes públicas falhem.

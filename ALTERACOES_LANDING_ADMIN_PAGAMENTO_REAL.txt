@@ -1,0 +1,14 @@
+Alterações aplicadas:
+- Página inicial transformada em landing page com apresentação, estádio, bolas caindo, login, criar conta e planos.
+- Plano grátis sem acesso ao chat.
+- Chat liberado somente para PRO, VIP e ADMIN.
+- Backend do chat bloqueia usuários FREE mesmo que tentem chamar API diretamente.
+- Admin separado dos usuários comuns.
+- Painel /admin/chat protegido por login de administrador.
+- Endpoints admin protegidos por autenticação admin.
+- Usuário admin inicial configurado por ADMIN_NAME, ADMIN_EMAIL e ADMIN_PASSWORD.
+- Pagamento demo removido.
+- Pagamento PIX real via Mercado Pago Payments API.
+- Webhook Mercado Pago libera PRO/VIP automaticamente ao aprovar pagamento.
+- Página de pagamento mostra QR Code PIX, copia e cola e link de pagamento quando disponível.
+- Variáveis adicionadas no .env.example.

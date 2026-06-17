@@ -1,0 +1,7 @@
+ALTERAÇÕES APLICADAS — PADRÃO VISUAL ESCURO PREMIUM
+
+- Home restaurada para o padrão escuro comercial com planos FREE, PRO e VIP preservados.
+- Jogador integrado ao banner da home, sem bloco quadrado sobreposto.
+- Página de Análise com hero escuro, título branco/dourado e jogador integrado ao estádio.
+- Tema inicial definido como escuro para evitar o visual claro indevido.
+- Marca ANALYSE PRO 2.0 e valores dos planos mantidos.

@@ -1,0 +1,7 @@
+ANALYSE PRO 2.0 — LOADING CORRIGIDO
+
+- Removido o loader global ao abrir o site e trocar páginas.
+- Mantido carregamento somente ao clicar em Gerar análise.
+- Logo de 4 barras mantida no loader.
+- Nova animação estilo bateria: barras sobem uma por uma e descem no sentido inverso.
+- Favicon PNG com 4 barras mantido.

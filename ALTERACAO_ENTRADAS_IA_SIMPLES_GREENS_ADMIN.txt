@@ -1,0 +1,10 @@
+Alteração Entradas IA - Simples + Top 3 + Greens/Admin
+
+- Removidas da tela as caixas de múltipla conservadora, moderada e agressiva.
+- Removida a área de combinação/odd justa combinada da experiência principal.
+- Aba Entradas IA agora trabalha com partida única: 1 jogo = até 3 melhores mercados.
+- Robô continua calculando todos os mercados internamente, mas publica só TOP 3 por jogo.
+- Mantida janela de hoje até +48h.
+- Adicionado contador organizado de greens, reds, pendentes e assertividade.
+- Robô Entradas IA mantém status/logs no painel Admin junto dos outros robôs.
+- Status do robô agora também expõe green/red/pendente/assertividade.

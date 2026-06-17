@@ -1,0 +1,9 @@
+V32 - BRASILEIRÃO MASTER SELECTOR
+
+- Corrige o card Melhor Partida da Rodada do Brasileirão.
+- Card deixa de depender de jogo fraco/único da grade e passa a calcular candidato master pela classificação.
+- Evita Coritiba x Palmeiras fixo quando o Master tem jogo mais forte disponível.
+- Normaliza forma recente para todos os clubes e evita 5 bolinhas amarelas por fallback fraco.
+- Padroniza texto da competição para Brasileirão Série A 2026.
+- Remove linguagem técnica no selo público: Grade 10 min -> Dados em tempo real.
+- Confiança passa a mostrar Confiança IA.

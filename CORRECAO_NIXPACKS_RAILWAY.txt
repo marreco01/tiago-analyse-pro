@@ -1,0 +1,13 @@
+Correção aplicada:
+- Removido pnpm-lock.yaml antigo.
+- Adicionado nixpacks.toml para forçar o Railway/Nixpacks a usar:
+  pnpm install --no-frozen-lockfile
+  pnpm run build
+- Mantido .npmrc com frozen-lockfile=false.
+- Mantido railway.toml apenas com builder NIXPACKS e startCommand.
+
+IMPORTANTE:
+Se o repositório antigo ainda tiver pnpm-lock.yaml rastreado no GitHub, rode:
+git rm -f pnpm-lock.yaml
+git commit -m "Remove lockfile antigo"
+git push -f origin main

@@ -1,0 +1,18 @@
+TIAGO ANALYSE PRO - API combinada
+
+Este pacote usa:
+1) API-Football / API-Sports como fonte principal de jogos, confrontos e estatísticas quando disponíveis.
+2) TheSportsDB como fallback gratuito para últimos jogos, escudos e dados básicos.
+
+Configure o arquivo .env.local na raiz:
+
+API_FOOTBALL_KEY=SUA_CHAVE_DA_API_SPORTS
+THESPORTSDB_API_KEY=123
+
+Depois rode:
+npm install
+npm run dev
+
+Observação:
+- Escanteios e cartões podem ficar N/D quando a API não retorna dados confiáveis.
+- TheSportsDB não fornece estatísticas avançadas de escanteios/cartões.

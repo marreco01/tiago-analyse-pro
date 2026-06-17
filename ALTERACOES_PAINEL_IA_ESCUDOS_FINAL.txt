@@ -1,0 +1,6 @@
+Ajustes finais do painel IA premium:
+- painel reorganizado para ficar mais próximo do mockup aprovado;
+- seletor nativo branco removido/substituído por dropdown escuro premium com busca;
+- escudos usam lista de candidatos e fallback automático;
+- se o primeiro escudo falhar, tenta outra URL antes de usar a logo do site;
+- cards do confronto, métricas, botão e hero refinados no padrão preto/dourado/laranja.

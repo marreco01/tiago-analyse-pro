@@ -1,0 +1,26 @@
+V45 - Correção real: remoção de dados falsos/fallbacks
+
+Alterado:
+- client/src/pages/Brasileirao.tsx
+  - Removido fallbackClubs.
+  - Removido uso de base interna para escudos/clubes.
+  - Removido gerador de melhor partida inventada por ranking.
+  - Brasileirão só monta grade, clubes e melhor partida com dados vindos do Robô Master.
+
+- server/scraper/brasileiraoTableScraper.ts
+  - Removido fallback-local como fonte inicial.
+  - Removido fallbackTopScorers.
+  - Removido fallbackTeams.
+  - Mantém somente dados reais, cache válido ou snapshot válido.
+
+- server/admin-robots.ts
+  - Removidas entradas fake do Entradas IA.
+  - Sem jogos fallback-master quando o Master não entrega jogos.
+
+- client/src/pages/LeagueHub.tsx
+  - Removidos jogos fake das ligas principais.
+  - Liga só mostra jogos reais da Busca Master.
+
+Regra nova:
+- Se não houver dado real/cache/snapshot válido, a tela mostra indisponibilidade.
+- O sistema não inventa jogo, forma, escudo, artilharia ou entrada.

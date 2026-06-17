@@ -1,0 +1,38 @@
+V42 - Robôs por Campeonato e por Área de Análise
+
+Objetivo:
+- Parar de exibir/operar robôs soltos no painel.
+- Organizar os módulos em pipelines por campeonato e por área de análise.
+- Cada pipeline executa a Busca Master + os módulos necessários daquele campeonato/área.
+
+Novos arquivos:
+- server/scraper/competitionAreaMaster.ts
+
+Alterados:
+- server/scraper/index.ts
+- server/admin-robots.ts
+- client/src/pages/AdminRobots.tsx
+
+Novas rotas Admin:
+- GET  /api/admin/robots/architecture
+- POST /api/admin/robots/championship/:groupId/run
+- POST /api/admin/robots/analysis-area/:groupId/run
+
+Pipelines por campeonato:
+- Brasileirão Série A
+- Copa do Mundo
+- Mundial de Clubes
+- Champions League
+- Libertadores
+- Principais Ligas Europeias
+
+Pipelines por área:
+- Calendário / Datas
+- Classificações
+- Escudos / Bandeiras
+- Mercados de Análise
+- Ao Vivo / Pressão
+- Notícias / Conteúdo
+
+Observação:
+Os módulos antigos continuam existindo internamente porque são usados como peças de execução, mas a operação passa a ser feita por pipelines organizados. Isso evita tratar cada robô como uma ilha solta.

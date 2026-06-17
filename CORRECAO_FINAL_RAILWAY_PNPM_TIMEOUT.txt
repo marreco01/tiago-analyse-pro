@@ -1,0 +1,18 @@
+Correção aplicada para o erro do Railway no pnpm install:
+
+1. Removido node_modules do ZIP.
+2. Criado .dockerignore e .gitignore para não subir node_modules/dist/.env.
+3. Removido pnpm e add de devDependencies.
+4. Corrigido pnpm-lock.yaml que estava apontando tarballs para proxy interno packages.applied-caas-gateway1...
+5. Forçado registry público https://registry.npmjs.org/ no .npmrc, nixpacks.toml e railway.toml.
+6. Mantido build: pnpm run build e start: pnpm run start.
+
+Comando de atualização:
+cd C:\Users\edmil\Downloads\analyse-pro-railway-pnpm-timeout-final
+Remove-Item -Recurse -Force .git -ErrorAction SilentlyContinue
+git init
+git branch -M main
+git remote add origin https://github.com/marreco01/tiago-analyse-pro.git
+git add .
+git commit -m "Corrige pnpm install no Railway"
+git push -f origin main

@@ -1,0 +1,15 @@
+ALTERAÇÃO - BRASILEIRÃO COM IDENTIDADE DE SÉRIE A
+
+Arquivos alterados:
+- client/src/pages/Brasileirao.tsx
+
+O que foi ajustado:
+- Banner principal trocado para visual de Brasileirão Série A.
+- Removida aparência de torneio genérico/Copa do Mundo.
+- Destaque para Brasil, 20 clubes, 38 rodadas e pontos corridos.
+- Cards laterais alterados para resumo da Série A: rodada atual, clubes, jogos e ao vivo.
+- Abas renomeadas com ícones: Classificação, Rodadas, Resultados e Ao vivo.
+- Faixa de clubes melhorada para parecer grade de clubes brasileiros.
+- Tabela mantém classificação com destaque de Libertadores, Sul-Americana e Z4.
+
+Sem alteração de dependências, package.json, build ou API.

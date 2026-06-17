@@ -1,0 +1,1991 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+:root {
+  --primary: oklch(0.623 0.214 259.815);
+  --primary-foreground: oklch(0.985 0 0);
+  --sidebar-primary: oklch(0.623 0.214 259.815);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --chart-1: oklch(0.623 0.214 259.815);
+  --chart-2: oklch(0.623 0.214 259.815);
+  --chart-3: oklch(0.623 0.214 259.815);
+  --chart-4: oklch(0.623 0.214 259.815);
+  --chart-5: oklch(0.623 0.214 259.815);
+  --radius: 0.65rem;
+  /* ANALYSE PRO 2.0 - Tema claro premium global */
+  --background: #f5f7fb;
+  --foreground: #111827;
+  --card: #ffffff;
+  --card-foreground: #111827;
+  --popover: #ffffff;
+  --popover-foreground: #111827;
+  --secondary: #eef2f7;
+  --secondary-foreground: #1f2937;
+  --muted: #e5e7eb;
+  --muted-foreground: #64748b;
+  --accent: #facc15;
+  --accent-foreground: #111827;
+  --destructive: #ef4444;
+  --destructive-foreground: #ffffff;
+  --border: rgba(15, 23, 42, 0.10);
+  --input: rgba(15, 23, 42, 0.12);
+  --ring: #facc15;
+  --sidebar: #ffffff;
+  --sidebar-foreground: #111827;
+  --sidebar-accent: #fff7d6;
+  --sidebar-accent-foreground: #111827;
+  --sidebar-border: rgba(15, 23, 42, 0.10);
+  --sidebar-ring: #facc15;
+}
+
+.dark {
+  --primary: oklch(0.8 0.2 142);
+  --primary-foreground: oklch(0.985 0 0);
+  --sidebar-primary: oklch(0.8 0.2 142);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --background: oklch(0.08 0.01 286);
+  --foreground: oklch(0.95 0.01 65);
+  --card: oklch(0.15 0.01 286);
+  --card-foreground: oklch(0.95 0.01 65);
+  --popover: oklch(0.15 0.01 286);
+  --popover-foreground: oklch(0.95 0.01 65);
+  --secondary: oklch(0.2 0.01 286);
+  --secondary-foreground: oklch(0.85 0.01 65);
+  --muted: oklch(0.3 0.01 286);
+  --muted-foreground: oklch(0.7 0.01 286);
+  --accent: oklch(0.8 0.2 142);
+  --accent-foreground: oklch(0.08 0.01 286);
+  --destructive: oklch(0.704 0.191 22.216);
+  --destructive-foreground: oklch(0.985 0 0);
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: oklch(0.8 0.2 142);
+  --chart-1: oklch(0.8 0.2 142);
+  --chart-2: oklch(0.623 0.214 259.815);
+  --chart-3: oklch(0.7 0.15 200);
+  --chart-4: oklch(0.6 0.15 280);
+  --chart-5: oklch(0.5 0.15 320);
+  --sidebar: oklch(0.12 0.01 286);
+  --sidebar-foreground: oklch(0.95 0.01 65);
+  --sidebar-accent: oklch(0.8 0.2 142);
+  --sidebar-accent-foreground: oklch(0.08 0.01 286);
+  --sidebar-border: oklch(1 0 0 / 10%);
+  --sidebar-ring: oklch(0.8 0.2 142);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+  }
+  button:not(:disabled),
+  [role="button"]:not([aria-disabled="true"]),
+  [type="button"]:not(:disabled),
+  [type="submit"]:not(:disabled),
+  [type="reset"]:not(:disabled),
+  a[href],
+  select:not(:disabled),
+  input[type="checkbox"]:not(:disabled),
+  input[type="radio"]:not(:disabled) {
+    @apply cursor-pointer;
+  }
+}
+
+@layer components {
+  /**
+   * Custom container utility that centers content and adds responsive padding.
+   *
+   * This overrides Tailwind's default container behavior to:
+   * - Auto-center content (mx-auto)
+   * - Add responsive horizontal padding
+   * - Set max-width for large screens
+   *
+   * Usage: <div className="container">...</div>
+   *
+   * For custom widths, use max-w-* utilities directly:
+   * <div className="max-w-6xl mx-auto px-4">...</div>
+   */
+  .container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem; /* 16px - mobile padding */
+    padding-right: 1rem;
+  }
+
+  .flex {
+    min-height: 0;
+    min-width: 0;
+  }
+
+  @media (min-width: 640px) {
+    .container {
+      padding-left: 1.5rem; /* 24px - tablet padding */
+      padding-right: 1.5rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .container {
+      padding-left: 2rem; /* 32px - desktop padding */
+      padding-right: 2rem;
+      max-width: 1280px; /* Standard content width */
+    }
+  }
+
+  /* Glassmorphism effects */
+  .glass {
+    @apply bg-white/10 backdrop-blur-md border border-white/20 rounded-lg;
+  }
+
+  .glass-dark {
+    @apply bg-black/20 backdrop-blur-md border border-white/10 rounded-lg;
+  }
+
+  .glass-card {
+    @apply bg-white/5 backdrop-blur-lg border border-white/10 rounded-xl shadow-2xl;
+  }
+
+  .glass-premium {
+    @apply bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-xl border border-white/20 rounded-2xl shadow-2xl;
+  }
+
+  /* Premium buttons */
+  .btn-premium {
+    @apply px-6 py-3 rounded-lg font-semibold transition-all duration-300;
+    @apply bg-gradient-to-r from-green-500 to-emerald-600 text-black;
+    @apply hover:shadow-lg hover:shadow-green-500/50 hover:scale-105;
+  }
+
+  .btn-premium-outline {
+    @apply px-6 py-3 rounded-lg font-semibold transition-all duration-300;
+    @apply border-2 border-green-500 text-green-500 bg-transparent;
+    @apply hover:bg-green-500/10 hover:shadow-lg hover:shadow-green-500/30;
+  }
+
+  /* Gradient text */
+  .gradient-text {
+    @apply bg-gradient-to-r from-green-400 via-blue-500 to-green-500 bg-clip-text text-transparent;
+  }
+
+  /* Smooth animations */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slideInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes glow {
+    0%, 100% {
+      box-shadow: 0 0 5px rgba(34, 197, 94, 0.3);
+    }
+    50% {
+      box-shadow: 0 0 20px rgba(34, 197, 94, 0.6);
+    }
+  }
+
+  .animate-fade-in-up {
+    animation: fadeInUp 0.6s ease-out;
+  }
+
+  .animate-slide-in-left {
+    animation: slideInLeft 0.6s ease-out;
+  }
+
+  .animate-glow {
+    animation: glow 2s ease-in-out infinite;
+  }
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--background));
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--border));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--muted));
+}
+@keyframes soccerBallFall {
+  0% {
+    transform: translate3d(0, -12vh, 0) rotate(0deg);
+  }
+  100% {
+    transform: translate3d(28px, 112vh, 0) rotate(520deg);
+  }
+}
+
+.soccer-ball-fall {
+  top: -10vh;
+  animation-name: soccerBallFall;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  filter: drop-shadow(0 0 8px rgba(255,255,255,0.35));
+}
+
+@keyframes fall {
+  0% { transform: translateY(-15vh) rotate(0deg); }
+  100% { transform: translateY(120vh) rotate(360deg); }
+}
+
+@keyframes apbar {
+  0%, 100% {
+    transform: translateY(0) scaleY(0.62);
+    opacity: 0.66;
+    filter: brightness(0.92);
+  }
+  50% {
+    transform: translateY(-3px) scaleY(1.16);
+    opacity: 1;
+    filter: brightness(1.08);
+  }
+}
+
+@keyframes loaderDotPulse {
+  0%, 100% {
+    transform: translateY(0) scale(0.9);
+    opacity: 0.45;
+  }
+  50% {
+    transform: translateY(-4px) scale(1.08);
+    opacity: 1;
+  }
+}
+
+
+/* =========================================================
+   ANALYSE PRO 2.0 - Premium Light UI Overrides
+   Mantém a marca, mas deixa o sistema inteiro mais limpo.
+   ========================================================= */
+:root.light {
+  color-scheme: light;
+}
+
+.light body {
+  background:
+    radial-gradient(circle at 10% 0%, rgba(250, 204, 21, 0.12), transparent 28%),
+    linear-gradient(180deg, #f8fafc 0%, #eef2f7 100%) !important;
+  color: #111827 !important;
+}
+
+.light main,
+.light [data-slot="sidebar-inset"],
+.light .min-h-screen {
+  background: transparent !important;
+}
+
+.light [class*="bg-[#02060d]"],
+.light [class*="bg-[#030405]"],
+.light [class*="bg-[#05070b]"],
+.light [class*="bg-[#07080c]"],
+.light [class*="bg-[#07090d]"],
+.light [class*="bg-[#07111f]"],
+.light [class*="bg-slate-950"],
+.light [class*="bg-black/"],
+.light [class*="bg-white/[0.03]"],
+.light [class*="bg-white/[0.035]"],
+.light [class*="bg-white/[0.04]"],
+.light [class*="bg-white/[0.05]"],
+.light .glass,
+.light .glass-dark,
+.light .glass-card,
+.light .glass-premium {
+  background: rgba(255, 255, 255, 0.92) !important;
+  border-color: rgba(15, 23, 42, 0.10) !important;
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.08) !important;
+  backdrop-filter: blur(14px);
+}
+
+.light [class*="border-white/"],
+.light [class*="border-yellow-400/"] {
+  border-color: rgba(15, 23, 42, 0.10) !important;
+}
+
+.light .text-white,
+.light [class*="text-slate-100"],
+.light [class*="text-slate-200"] {
+  color: #111827 !important;
+}
+
+.light [class*="text-slate-300"],
+.light [class*="text-slate-400"],
+.light [class*="text-slate-500"] {
+  color: #64748b !important;
+}
+
+.light .text-yellow-300,
+.light .text-yellow-400,
+.light [class*="text-yellow-300"],
+.light [class*="text-yellow-400"] {
+  color: #b77900 !important;
+}
+
+.light input,
+.light textarea,
+.light select,
+.light button[role="combobox"] {
+  background-color: #ffffff !important;
+  color: #111827 !important;
+  border-color: rgba(15, 23, 42, 0.14) !important;
+}
+
+.light input::placeholder,
+.light textarea::placeholder {
+  color: #94a3b8 !important;
+}
+
+.light .bg-gradient-to-r,
+.light .bg-gradient-to-br {
+  box-shadow: 0 14px 30px rgba(15, 23, 42, 0.10);
+}
+
+.light .bg-green-500,
+.light .bg-red-500,
+.light .bg-orange-500,
+.light .from-orange-500,
+.light .from-red-500,
+.light .from-green-500,
+.light .to-red-500,
+.light .to-orange-500,
+.light .to-emerald-600 {
+  color: #ffffff !important;
+}
+
+.light .from-yellow-400,
+.light .to-yellow-400,
+.light .to-orange-500,
+.light .bg-yellow-400 {
+  color: #111827 !important;
+}
+
+.light .shadow-2xl,
+.light [class*="shadow-[0_0"] {
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.10) !important;
+}
+
+.light h1,
+.light h2,
+.light h3 {
+  letter-spacing: -0.035em;
+}
+
+.light h1 {
+  font-size: clamp(1.9rem, 3.5vw, 3.2rem);
+}
+
+.light h2 {
+  font-size: clamp(1.25rem, 2vw, 1.7rem);
+}
+
+.light .rounded-\[2rem\],
+.light .rounded-3xl {
+  border-radius: 1.35rem !important;
+}
+
+.light .rounded-\[1\.5rem\],
+.light .rounded-2xl {
+  border-radius: 1.1rem !important;
+}
+
+.light [data-sidebar="sidebar"],
+.light [data-slot="sidebar"],
+.light aside {
+  background: rgba(255, 255, 255, 0.96) !important;
+  color: #111827 !important;
+  border-right: 1px solid rgba(15, 23, 42, 0.10) !important;
+  box-shadow: 12px 0 35px rgba(15, 23, 42, 0.06) !important;
+}
+
+.light [data-sidebar="menu-button"],
+.light [data-slot="sidebar-menu-button"] {
+  color: #334155 !important;
+}
+
+.light [data-active="true"],
+.light [data-state="active"] {
+  background: linear-gradient(135deg, rgba(250,204,21,.22), rgba(249,115,22,.12)) !important;
+  color: #111827 !important;
+}
+
+/* Página de análise: visual claro com botão central e seletores laterais */
+.light .analyse-selector-grid,
+.light .analysis-selector-grid {
+  background: #ffffff !important;
+  border-color: rgba(15,23,42,.10) !important;
+}
+
+.light .analyse-primary-action,
+.light .analysis-primary-action {
+  background: linear-gradient(135deg, #facc15, #fb923c) !important;
+  color: #111827 !important;
+  box-shadow: 0 18px 40px rgba(250, 204, 21, 0.28) !important;
+}
+
+/* =========================================================
+   AUTH / LOGIN BACKGROUND ANIMATIONS
+   ========================================================= */
+@keyframes authFloat {
+  0%, 100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(0, -18px, 0) scale(1.04);
+  }
+}
+
+@keyframes authPulse {
+  0%, 100% {
+    opacity: 0.18;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.34;
+    transform: scale(1.08);
+  }
+}
+
+@keyframes authTwinkle {
+  0%, 100% {
+    opacity: 0.15;
+    transform: scale(0.8);
+  }
+  50% {
+    opacity: 0.95;
+    transform: scale(1.1);
+  }
+}
+
+.auth-stadium-bg {
+  opacity: 0.62;
+  filter: brightness(0.9) saturate(1.15);
+}
+
+.auth-blob {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(60px);
+  pointer-events: none;
+  animation: authFloat 7s ease-in-out infinite;
+}
+
+.auth-blob-one {
+  top: 12%;
+  left: 10%;
+  height: 220px;
+  width: 220px;
+  background: rgba(250, 204, 21, 0.16);
+}
+
+.auth-blob-two {
+  right: 10%;
+  top: 16%;
+  height: 260px;
+  width: 260px;
+  background: rgba(249, 115, 22, 0.14);
+  animation-delay: 1.2s;
+}
+
+.auth-blob-three {
+  bottom: 10%;
+  left: 50%;
+  height: 280px;
+  width: 280px;
+  transform: translateX(-50%);
+  background: rgba(34, 197, 94, 0.1);
+  animation: authPulse 8s ease-in-out infinite;
+}
+
+.auth-particles {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.auth-particle {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  border-radius: 9999px;
+  background: rgba(255, 215, 64, 0.95);
+  box-shadow: 0 0 12px rgba(255, 215, 64, 0.75);
+  animation: authTwinkle 5s ease-in-out infinite;
+}
+
+@media (max-width: 640px) {
+  .auth-stadium-bg {
+    opacity: 0.72;
+    filter: brightness(1.02) saturate(1.08);
+  }
+
+  .auth-blob-one,
+  .auth-blob-two,
+  .auth-blob-three {
+    filter: blur(42px);
+    opacity: 0.85;
+  }
+}
+
+
+
+
+/* ANALYSE PRO 2.0 — carregamento personalizado para processos de análise */
+@keyframes analysisChargeFree {
+  0%, 5% { transform: scaleY(0.10); opacity: 0.18; }
+  15%, 82% { transform: scaleY(1); opacity: 1; }
+  96%, 100% { transform: scaleY(0.10); opacity: 0.18; }
+}
+@keyframes analysisChargePro {
+  0%, 18% { transform: scaleY(0.10); opacity: 0.18; }
+  30%, 82% { transform: scaleY(1); opacity: 1; }
+  96%, 100% { transform: scaleY(0.10); opacity: 0.18; }
+}
+@keyframes analysisChargeVip {
+  0%, 33% { transform: scaleY(0.10); opacity: 0.18; }
+  45%, 82% { transform: scaleY(1); opacity: 1; }
+  96%, 100% { transform: scaleY(0.10); opacity: 0.18; }
+}
+@keyframes analysisChargeFounder {
+  0%, 48% { transform: scaleY(0.10); opacity: 0.18; }
+  60%, 82% { transform: scaleY(1); opacity: 1; }
+  96%, 100% { transform: scaleY(0.10); opacity: 0.18; }
+}
+@keyframes analysisTextPulse {
+  0%, 100% { opacity: 0.55; }
+  50% { opacity: 1; }
+}
+@keyframes analysisShellGlow {
+  0%, 100% { box-shadow: inset 0 0 35px rgba(255,255,255,0.03), 0 0 20px rgba(250,204,21,0.07); }
+  50% { box-shadow: inset 0 0 35px rgba(255,255,255,0.04), 0 0 36px rgba(250,204,21,0.17); }
+}
+.analysis-charge-shell {
+  animation: analysisShellGlow 2.2s ease-in-out infinite;
+}
+.analysis-battery-bar {
+  transform-origin: bottom center;
+  will-change: transform, opacity;
+}
+.analysis-battery-free { animation: analysisChargeFree 2.6s cubic-bezier(0.4, 0, 0.2, 1) infinite; }
+.analysis-battery-pro { animation: analysisChargePro 2.6s cubic-bezier(0.4, 0, 0.2, 1) infinite; }
+.analysis-battery-vip { animation: analysisChargeVip 2.6s cubic-bezier(0.4, 0, 0.2, 1) infinite; }
+.analysis-battery-founder { animation: analysisChargeFounder 2.6s cubic-bezier(0.4, 0, 0.2, 1) infinite; }
+.analysis-loading-message { animation: analysisTextPulse 1.6s ease-in-out infinite; }
+
+
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Ajuste global de compactação do Analyse Pro: cards menores e mais dados visíveis */
+@layer components {
+  .ap-compact-card {
+    @apply rounded-xl border border-white/10 bg-[#07090d]/90 shadow-xl backdrop-blur;
+  }
+
+  @media (min-width: 1024px) {
+    .compact-dashboard section,
+    .compact-dashboard article {
+      border-radius: 0.9rem;
+    }
+  }
+}
+
+/* MOBILE FIRST - Analyse Pro app compactado */
+@layer utilities {
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  html, body, #root {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  body {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .mobile-app-header {
+    padding-left: max(0.75rem, env(safe-area-inset-left));
+    padding-right: max(0.75rem, env(safe-area-inset-right));
+  }
+
+  .compact-dashboard {
+    padding-top: 0.1rem;
+  }
+
+  .compact-dashboard h1 {
+    font-size: clamp(1.45rem, 7vw, 2.15rem) !important;
+    line-height: 1.05 !important;
+    letter-spacing: -0.04em !important;
+  }
+
+  .compact-dashboard h2 {
+    font-size: clamp(1.1rem, 5vw, 1.55rem) !important;
+    line-height: 1.12 !important;
+  }
+
+  .compact-dashboard h3 {
+    font-size: 1rem !important;
+  }
+
+  .compact-dashboard .rounded-3xl,
+  .compact-dashboard .rounded-\[2rem\],
+  .compact-dashboard .rounded-\[1\.7rem\],
+  .compact-dashboard .rounded-\[1\.5rem\] {
+    border-radius: 1rem !important;
+  }
+
+  .compact-dashboard .p-8,
+  .compact-dashboard .md\:p-8,
+  .compact-dashboard .lg\:p-10 {
+    padding: 1rem !important;
+  }
+
+  .compact-dashboard .p-7,
+  .compact-dashboard .md\:p-7,
+  .compact-dashboard .p-6,
+  .compact-dashboard .md\:p-6,
+  .compact-dashboard .p-5,
+  .compact-dashboard .md\:p-5 {
+    padding: 0.85rem !important;
+  }
+
+  .compact-dashboard .gap-6,
+  .compact-dashboard .gap-5,
+  .compact-dashboard .space-y-6 > :not([hidden]) ~ :not([hidden]),
+  .compact-dashboard .space-y-5 > :not([hidden]) ~ :not([hidden]) {
+    gap: 0.8rem !important;
+    margin-top: 0.8rem !important;
+  }
+
+  .compact-dashboard .text-5xl,
+  .compact-dashboard .md\:text-5xl {
+    font-size: 2rem !important;
+  }
+
+  .compact-dashboard .text-4xl,
+  .compact-dashboard .md\:text-4xl {
+    font-size: 1.65rem !important;
+  }
+
+  .compact-dashboard .text-3xl {
+    font-size: 1.35rem !important;
+  }
+
+  .compact-dashboard .text-2xl {
+    font-size: 1.15rem !important;
+  }
+
+  .compact-dashboard button,
+  .compact-dashboard a {
+    min-height: 36px;
+  }
+
+  .compact-dashboard table {
+    font-size: 0.78rem;
+  }
+
+  .compact-dashboard th,
+  .compact-dashboard td {
+    padding: 0.45rem !important;
+    white-space: nowrap;
+  }
+}
+
+/* Barra rolante da Copa do Mundo no topo do app */
+@keyframes worldcup-marquee {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.worldcup-ticker-track {
+  animation: worldcup-marquee 420s linear infinite;
+}
+
+.worldcup-ticker:hover .worldcup-ticker-track {
+  animation-play-state: paused;
+}
+
+@media (max-width: 640px) {
+  .worldcup-ticker-track {
+    animation-duration: 360s;
+  }
+}
+
+/* AJUSTE MOBILE ORGANIZADO - ícones e menus mais compactos no celular */
+@media (max-width: 767px) {
+  .mobile-app-header .lucide {
+    width: 0.9rem !important;
+    height: 0.9rem !important;
+    stroke-width: 2.35;
+  }
+
+  .mobile-app-header nav a {
+    min-height: 42px !important;
+  }
+
+  .mobile-app-header + * {
+    margin-top: 0.25rem;
+  }
+
+  nav.fixed.bottom-0 .lucide {
+    width: 1rem !important;
+    height: 1rem !important;
+  }
+
+  nav.fixed.bottom-0 a {
+    min-height: 42px !important;
+  }
+
+  .compact-dashboard svg.lucide {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .compact-dashboard .h-12.w-12,
+  .compact-dashboard .h-11.w-11,
+  .compact-dashboard .h-10.w-10 {
+    width: 2.15rem !important;
+    height: 2.15rem !important;
+  }
+
+  .compact-dashboard .grid {
+    gap: 0.75rem;
+  }
+}
+
+
+/* =========================================================
+   V15 - Tela clara corrigida, sem bloquear modo claro.
+   O site continua com alternância claro/escuro, mas o modo claro
+   agora usa cinza premium, cards com borda, textos fortes e
+   contraste seguro para tabelas, menus, inputs e botões.
+   ========================================================= */
+html, body, #root {
+  min-height: 100%;
+}
+
+html.light {
+  color-scheme: light;
+}
+
+html.light body {
+  background:
+    radial-gradient(circle at 82% 12%, rgba(250, 204, 21, 0.16), transparent 24%),
+    radial-gradient(circle at 12% 18%, rgba(37, 99, 235, 0.10), transparent 26%),
+    linear-gradient(180deg, #eef2f7 0%, #f6f8fc 48%, #e9eef6 100%) !important;
+  color: #0f172a !important;
+}
+
+html.light #root,
+html.light main,
+html.light [data-slot="sidebar-inset"],
+html.light .min-h-screen,
+html.light .compact-dashboard {
+  background: transparent !important;
+  color: #0f172a !important;
+}
+
+/* Cards no claro: nada de branco estourado. */
+html.light .bg-white,
+html.light [class*="bg-white"],
+html.light [class*="bg-slate-50"],
+html.light [class*="bg-gray-50"],
+html.light .glass,
+html.light .glass-card,
+html.light .glass-premium,
+html.light [class*="backdrop-blur"] {
+  background-color: rgba(255,255,255,0.78) !important;
+  color: #0f172a !important;
+  border-color: rgba(15,23,42,0.13) !important;
+  box-shadow: 0 14px 35px rgba(15,23,42,0.08) !important;
+}
+
+html.light [class*="bg-slate-100"],
+html.light [class*="bg-gray-100"],
+html.light [class*="bg-zinc-100"] {
+  background-color: rgba(226,232,240,0.78) !important;
+  color: #0f172a !important;
+  border-color: rgba(15,23,42,0.12) !important;
+}
+
+/* Textos que antes sumiam no fundo claro. */
+html.light [class*="text-white"],
+html.light [class*="text-slate-50"],
+html.light [class*="text-slate-100"],
+html.light [class*="text-gray-50"],
+html.light [class*="text-gray-100"] {
+  color: #0f172a !important;
+}
+
+html.light [class*="text-slate-200"],
+html.light [class*="text-slate-300"],
+html.light [class*="text-gray-200"],
+html.light [class*="text-gray-300"] {
+  color: #334155 !important;
+}
+
+html.light [class*="text-slate-400"],
+html.light [class*="text-gray-400"],
+html.light [class*="text-zinc-400"] {
+  color: #475569 !important;
+}
+
+html.light [class*="text-slate-500"],
+html.light [class*="text-gray-500"],
+html.light [class*="text-zinc-500"] {
+  color: #334155 !important;
+}
+
+/* Mantém cores de status visíveis no claro. */
+html.light [class*="text-yellow-"],
+html.light .text-yellow-300,
+html.light .text-yellow-400 {
+  color: #a16207 !important;
+}
+html.light [class*="text-green-"],
+html.light .text-green-300,
+html.light .text-green-400 {
+  color: #15803d !important;
+}
+html.light [class*="text-red-"],
+html.light .text-red-300,
+html.light .text-red-400 {
+  color: #dc2626 !important;
+}
+html.light [class*="text-blue-"],
+html.light .text-blue-300,
+html.light .text-blue-400 {
+  color: #2563eb !important;
+}
+
+/* Barras laterais, topo mobile e navegação no tema claro. */
+html.light aside,
+html.light .mobile-app-header,
+html.light nav.fixed.bottom-0,
+html.light header,
+html.light [class*="bg-[#030405]"],
+html.light [class*="bg-[#05070b]"] {
+  background: rgba(248,250,252,0.92) !important;
+  color: #0f172a !important;
+  border-color: rgba(15,23,42,0.12) !important;
+  box-shadow: 0 10px 30px rgba(15,23,42,0.08) !important;
+}
+
+html.light aside a,
+html.light header a,
+html.light nav.fixed.bottom-0 a,
+html.light aside button,
+html.light header button {
+  color: #1e293b !important;
+}
+
+html.light aside a:hover,
+html.light header a:hover,
+html.light nav.fixed.bottom-0 a:hover {
+  background: rgba(250,204,21,0.18) !important;
+  color: #854d0e !important;
+}
+
+/* Tabelas e rankings legíveis. */
+html.light table,
+html.light thead,
+html.light tbody,
+html.light tr,
+html.light td,
+html.light th {
+  color: #0f172a !important;
+  border-color: rgba(15,23,42,0.12) !important;
+}
+html.light thead,
+html.light [class*="bg-slate-900"],
+html.light [class*="bg-gray-900"],
+html.light [class*="bg-black"] {
+  background-color: rgba(226,232,240,0.92) !important;
+  color: #0f172a !important;
+}
+html.light tbody tr:hover,
+html.light tr:hover {
+  background-color: rgba(250,204,21,0.10) !important;
+}
+
+/* Inputs/selects/textarea. */
+html.light input,
+html.light textarea,
+html.light select,
+html.light button[role="combobox"] {
+  background: rgba(255,255,255,0.88) !important;
+  color: #0f172a !important;
+  border-color: rgba(15,23,42,0.18) !important;
+}
+html.light input::placeholder,
+html.light textarea::placeholder {
+  color: #64748b !important;
+}
+
+/* Botões claros não somem. */
+html.light button,
+html.light .btn,
+html.light [role="button"] {
+  border-color: rgba(15,23,42,0.14);
+}
+html.light .border-white\/10,
+html.light .border-white\/15,
+html.light .border-white\/20,
+html.light [class*="border-white"] {
+  border-color: rgba(15,23,42,0.12) !important;
+}
+html.light [class*="bg-white/"] {
+  background-color: rgba(15,23,42,0.04) !important;
+}
+
+/* Badges/pílulas no claro. */
+html.light [class*="bg-yellow-400/"],
+html.light [class*="bg-yellow-500/"] {
+  background-color: rgba(250,204,21,0.22) !important;
+  color: #713f12 !important;
+}
+html.light [class*="bg-green-400/"],
+html.light [class*="bg-green-500/"] {
+  background-color: rgba(34,197,94,0.18) !important;
+  color: #166534 !important;
+}
+html.light [class*="bg-red-400/"],
+html.light [class*="bg-red-500/"] {
+  background-color: rgba(239,68,68,0.14) !important;
+  color: #991b1b !important;
+}
+html.light [class*="bg-blue-400/"],
+html.light [class*="bg-blue-500/"] {
+  background-color: rgba(59,130,246,0.15) !important;
+  color: #1d4ed8 !important;
+}
+
+/* Mantém o modo escuro intacto e profissional. */
+html.dark body {
+  background:
+    radial-gradient(circle at 82% 12%, rgba(250, 204, 21, 0.12), transparent 24%),
+    radial-gradient(circle at 12% 18%, rgba(16, 185, 129, 0.10), transparent 24%),
+    linear-gradient(180deg, #030405 0%, #05070b 48%, #020304 100%) !important;
+  color: #f8fafc !important;
+}
+
+/* =========================================================
+   V16 - Correção real do TEMA CLARO, sem bloquear alternância
+   Objetivo: reduzir excesso de branco, restaurar contraste e manter
+   cards escuros/hero legíveis quando o usuário usa Tela branca.
+   ========================================================= */
+.light body {
+  background:
+    radial-gradient(circle at 12% 0%, rgba(250, 204, 21, 0.10), transparent 26%),
+    radial-gradient(circle at 90% 10%, rgba(16, 185, 129, 0.08), transparent 30%),
+    linear-gradient(180deg, #dfe7f0 0%, #edf2f7 42%, #d8e2ec 100%) !important;
+  color: #101827 !important;
+}
+
+.light main,
+.light [data-slot="sidebar-inset"] {
+  background: transparent !important;
+}
+
+/* Sidebar clara com separação profissional, sem ficar lavada */
+.light [data-sidebar="sidebar"],
+.light aside,
+.light nav[class*="sidebar"] {
+  background: linear-gradient(180deg, #f8fafc 0%, #eef2f7 100%) !important;
+  color: #162033 !important;
+  border-right: 1px solid rgba(15, 23, 42, 0.14) !important;
+  box-shadow: 18px 0 40px rgba(15, 23, 42, 0.10) !important;
+}
+
+.light [data-sidebar="sidebar"] a,
+.light [data-sidebar="sidebar"] button,
+.light aside a,
+.light aside button {
+  color: #243044 !important;
+}
+
+.light [data-sidebar="sidebar"] .bg-yellow-400,
+.light aside .bg-yellow-400,
+.light [data-sidebar="sidebar"] [class*="bg-yellow-400"],
+.light aside [class*="bg-yellow-400"] {
+  background: #facc15 !important;
+  color: #111827 !important;
+}
+
+/* Hero escuro deve continuar escuro e com texto branco no tema claro */
+.light section[class*="bg-[#030907]"],
+.light [class*="bg-[#030907]"] {
+  background: #03120d !important;
+  color: #f8fafc !important;
+  border-color: rgba(16, 185, 129, 0.42) !important;
+  box-shadow: 0 24px 70px rgba(2, 12, 8, 0.20) !important;
+}
+
+.light section[class*="bg-[#030907]"] .text-white,
+.light section[class*="bg-[#030907]"] [class*="text-slate-100"],
+.light section[class*="bg-[#030907]"] [class*="text-slate-200"] {
+  color: #f8fafc !important;
+}
+
+.light section[class*="bg-[#030907]"] [class*="text-slate-300"],
+.light section[class*="bg-[#030907]"] [class*="text-slate-400"] {
+  color: #cbd5e1 !important;
+}
+
+.light section[class*="bg-[#030907]"] .text-yellow-300,
+.light section[class*="bg-[#030907]"] .text-yellow-400,
+.light section[class*="bg-[#030907]"] [class*="text-yellow-300"],
+.light section[class*="bg-[#030907]"] [class*="text-yellow-400"] {
+  color: #facc15 !important;
+}
+
+/* Cards gerais claros: menos branco puro, mais contraste */
+.light .glass,
+.light .glass-dark,
+.light .glass-card,
+.light .glass-premium,
+.light [class*="bg-white/[0.03]"],
+.light [class*="bg-white/[0.04]"],
+.light [class*="bg-white/[0.05]"] {
+  background: linear-gradient(180deg, #f8fafc 0%, #edf2f7 100%) !important;
+  border-color: rgba(15, 23, 42, 0.14) !important;
+  color: #111827 !important;
+  box-shadow: 0 18px 38px rgba(15, 23, 42, 0.11) !important;
+}
+
+.light .glass .text-white,
+.light .glass-card .text-white,
+.light .glass-premium .text-white,
+.light .glass-dark .text-white {
+  color: #111827 !important;
+}
+
+.light .glass [class*="text-slate-300"],
+.light .glass [class*="text-slate-400"],
+.light .glass-card [class*="text-slate-300"],
+.light .glass-card [class*="text-slate-400"],
+.light .glass-premium [class*="text-slate-300"],
+.light .glass-premium [class*="text-slate-400"] {
+  color: #475569 !important;
+}
+
+/* Blocos escuros internos não podem virar branco apagado */
+.light [class*="bg-black/35"],
+.light [class*="bg-black/40"],
+.light [class*="bg-[#050b08]"],
+.light [class*="bg-[#05070b]"],
+.light [class*="bg-[#07090d]"] {
+  background: #e8eef5 !important;
+  border-color: rgba(15, 23, 42, 0.16) !important;
+  color: #111827 !important;
+}
+
+.light [class*="bg-black/35"] .text-white,
+.light [class*="bg-black/40"] .text-white,
+.light [class*="bg-[#050b08]"] .text-white,
+.light [class*="bg-[#05070b]"] .text-white,
+.light [class*="bg-[#07090d]"] .text-white {
+  color: #0f172a !important;
+}
+
+.light input,
+.light textarea,
+.light select,
+.light button[role="combobox"] {
+  background: #f8fafc !important;
+  border: 1px solid #b8c3cf !important;
+  color: #111827 !important;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.75) !important;
+}
+
+.light input:focus,
+.light textarea:focus,
+.light select:focus,
+.light button[role="combobox"]:focus {
+  border-color: #10b981 !important;
+  box-shadow: 0 0 0 3px rgba(16,185,129,0.16) !important;
+}
+
+.light input::placeholder,
+.light textarea::placeholder {
+  color: #64748b !important;
+}
+
+/* Alertas e faixas amarelas legíveis */
+.light [class*="bg-yellow-400/10"],
+.light [class*="bg-yellow-400/15"] {
+  background: #fff4bf !important;
+  color: #6b3f00 !important;
+  border-color: rgba(180, 83, 9, 0.24) !important;
+}
+
+.light [class*="bg-yellow-400/10"] .text-yellow-100,
+.light [class*="bg-yellow-400/10"] .text-yellow-200,
+.light [class*="bg-yellow-400/10"] [class*="text-yellow-100"],
+.light [class*="bg-yellow-400/10"] [class*="text-yellow-200"] {
+  color: #713f12 !important;
+}
+
+/* Botões importantes mais visíveis */
+.light button[class*="bg-emerald-500/10"],
+.light a[class*="bg-emerald-500/10"] {
+  background: #d8f5e9 !important;
+  color: #047857 !important;
+  border-color: rgba(5, 150, 105, 0.28) !important;
+}
+
+.light .bg-gradient-to-r.from-green-500,
+.light [class*="from-green-500"][class*="to-yellow-400"] {
+  color: #06120c !important;
+  box-shadow: 0 12px 28px rgba(16, 185, 129, 0.24) !important;
+}
+
+/* Tabelas e linhas mais fáceis de ler no claro */
+.light table,
+.light [class*="divide-y"] > * {
+  border-color: rgba(15, 23, 42, 0.10) !important;
+}
+
+.light tr:hover,
+.light [class*="hover:bg-white"]:hover {
+  background: rgba(15, 23, 42, 0.045) !important;
+}
+
+/* O chat no tema claro precisa continuar destacando */
+.light [class*="Chat"],
+.light [aria-label*="Chat"] {
+  color: inherit;
+}
+
+/* =========================================================
+   ANALYSE PRO 2.0 — V17 Tela clara profissional
+   Corrige contraste sem bloquear tema claro e remove visual lavado.
+   ========================================================= */
+.light body {
+  background: linear-gradient(180deg, #e8edf3 0%, #f4f6f9 42%, #eef2f7 100%) !important;
+  color: #0f172a !important;
+}
+
+.light h1,
+.light h2,
+.light h3,
+.light h4,
+.light .font-black,
+.light .font-bold {
+  font-weight: 900 !important;
+}
+
+.light p,
+.light span,
+.light button,
+.light a,
+.light label,
+.light td,
+.light th {
+  text-rendering: geometricPrecision;
+}
+
+.light [class*="text-slate-300"],
+.light [class*="text-slate-400"],
+.light [class*="text-slate-500"] {
+  color: #475569 !important;
+  font-weight: 700;
+}
+
+.light .text-white,
+.light [class*="text-slate-100"],
+.light [class*="text-slate-200"] {
+  color: #0f172a !important;
+}
+
+.light [class*="bg-white"],
+.light [class*="bg-black/30"],
+.light [class*="bg-black/40"],
+.light [class*="bg-black/50"],
+.light [class*="bg-white/[0.04]"],
+.light [class*="bg-white/[0.05]"] {
+  border-color: rgba(15, 23, 42, 0.12) !important;
+}
+
+.light .glass-card,
+.light .glass-premium,
+.light .glass,
+.light .glass-dark,
+.light [class*="rounded-2xl"],
+.light [class*="rounded-3xl"] {
+  box-shadow: 0 16px 36px rgba(15, 23, 42, 0.10) !important;
+}
+
+/* Hero escuro em tema claro: mantém título branco e legível */
+.light section[class*="overflow-hidden"] > .relative h1,
+.light section[class*="overflow-hidden"] > .relative h1 span {
+  color: #ffffff !important;
+  text-shadow: 0 4px 22px rgba(0, 0, 0, 0.55);
+}
+
+.light section[class*="overflow-hidden"] > .relative > div > div:first-child p:not([class*="rounded"]),
+.light section[class*="overflow-hidden"] > .relative > div > div:first-child .text-slate-300 {
+  color: #dbeafe !important;
+  font-weight: 800 !important;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.45);
+}
+
+/* Cards claros mais definidos */
+.light [class*="bg-white/"],
+.light [class*="bg-slate"],
+.light [class*="bg-black/"] {
+  background-color: rgba(255,255,255,0.94) !important;
+}
+
+.light input,
+.light textarea,
+.light select,
+.light button[role="combobox"] {
+  background: #ffffff !important;
+  color: #0f172a !important;
+  border: 1px solid rgba(15, 23, 42, 0.18) !important;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.75), 0 8px 20px rgba(15,23,42,.05) !important;
+  font-weight: 800 !important;
+}
+
+.light input::placeholder,
+.light textarea::placeholder {
+  color: #64748b !important;
+  font-weight: 700 !important;
+}
+
+.light [data-sidebar="sidebar"],
+.light [data-slot="sidebar"],
+.light aside {
+  background: linear-gradient(180deg, #ffffff 0%, #eef3f8 100%) !important;
+  box-shadow: 16px 0 42px rgba(15, 23, 42, 0.12) !important;
+}
+
+.light [data-sidebar="menu-button"],
+.light [data-slot="sidebar-menu-button"],
+.light aside a,
+.light aside button {
+  font-weight: 900 !important;
+  color: #334155 !important;
+}
+
+.light [data-active="true"],
+.light [data-state="active"] {
+  background: linear-gradient(135deg, #facc15, #f59e0b) !important;
+  color: #0f172a !important;
+  box-shadow: 0 12px 26px rgba(245, 158, 11, 0.25) !important;
+}
+
+.light .text-yellow-300,
+.light .text-yellow-400,
+.light [class*="text-yellow-300"],
+.light [class*="text-yellow-400"] {
+  color: #a16207 !important;
+  font-weight: 900 !important;
+}
+
+.light .text-green-300,
+.light .text-green-400,
+.light [class*="text-green-300"],
+.light [class*="text-green-400"],
+.light .text-emerald-300,
+.light [class*="text-emerald-300"] {
+  color: #047857 !important;
+  font-weight: 900 !important;
+}
+
+.light .text-red-200,
+.light .text-red-300,
+.light [class*="text-red-200"],
+.light [class*="text-red-300"] {
+  color: #b91c1c !important;
+  font-weight: 900 !important;
+}
+
+.light .text-blue-300,
+.light [class*="text-blue-300"] {
+  color: #1d4ed8 !important;
+  font-weight: 900 !important;
+}
+
+/* Botão chat não deve esconder conteúdo na tela clara */
+.light [class*="Chat ao vivo"] {
+  box-shadow: 0 16px 40px rgba(15,23,42,.18) !important;
+}
+
+/* =========================================================
+   V18 - Tema claro profissional: contraste real e cards legíveis
+   Referência visual: light mode com fundo suave, cards brancos e áreas hero escuras.
+   ========================================================= */
+.light body {
+  background: linear-gradient(180deg, #e9eef5 0%, #f6f8fb 42%, #eef3f8 100%) !important;
+  color: #0f172a !important;
+}
+
+/* Mantém os heros premium escuros mesmo na tela clara */
+.light section[class*="bg-[#030907]"],
+.light section[class*="bg-[#03100c]"],
+.light section[class*="bg-[#04070b]"],
+.light [class*="bg-[#030907]"],
+.light [class*="bg-[#03100c]"],
+.light [class*="bg-[#04070b]"] {
+  background-color: #020807 !important;
+  color: #f8fafc !important;
+}
+
+.light section[class*="bg-[#030907]"] .text-white,
+.light section[class*="bg-[#03100c]"] .text-white,
+.light section[class*="bg-[#04070b]"] .text-white,
+.light [class*="bg-black/"] .text-white,
+.light [class*="bg-[#030907]"] .text-white,
+.light [class*="bg-[#03100c]"] .text-white,
+.light [class*="bg-[#04070b]"] .text-white {
+  color: #ffffff !important;
+  text-shadow: 0 2px 14px rgba(0,0,0,.35);
+}
+
+.light section[class*="bg-[#030907]"] [class*="text-slate-300"],
+.light section[class*="bg-[#03100c]"] [class*="text-slate-300"],
+.light section[class*="bg-[#04070b]"] [class*="text-slate-300"],
+.light [class*="bg-black/"] [class*="text-slate-300"] {
+  color: #dbeafe !important;
+}
+
+.light section[class*="bg-[#030907]"] [class*="text-slate-400"],
+.light section[class*="bg-[#03100c]"] [class*="text-slate-400"],
+.light section[class*="bg-[#04070b]"] [class*="text-slate-400"],
+.light [class*="bg-black/"] [class*="text-slate-400"] {
+  color: #bfdbfe !important;
+}
+
+/* Cards claros: texto forte, não apagado */
+.light .glass,
+.light .glass-card,
+.light .glass-premium,
+.light [class*="bg-white/"],
+.light [class*="bg-white\/"] {
+  color: #0f172a !important;
+}
+
+.light .glass .text-white,
+.light .glass-card .text-white,
+.light .glass-premium .text-white,
+.light [class*="bg-white/"] .text-white,
+.light [class*="bg-white\/"] .text-white,
+.light [class*="bg-white/"] [class*="text-white/"],
+.light [class*="bg-white\/"] [class*="text-white/"] {
+  color: #0f172a !important;
+  text-shadow: none !important;
+}
+
+.light .glass [class*="text-slate-300"],
+.light .glass-card [class*="text-slate-300"],
+.light .glass-premium [class*="text-slate-300"],
+.light [class*="bg-white/"] [class*="text-slate-300"],
+.light [class*="bg-white\/"] [class*="text-slate-300"] {
+  color: #334155 !important;
+}
+
+.light .glass [class*="text-slate-400"],
+.light .glass-card [class*="text-slate-400"],
+.light .glass-premium [class*="text-slate-400"],
+.light [class*="bg-white/"] [class*="text-slate-400"],
+.light [class*="bg-white\/"] [class*="text-slate-400"] {
+  color: #475569 !important;
+}
+
+/* Métricas, estatísticas e cards de resumo */
+.light [class*="bg-green-400/"] {
+  background: #d8f3e6 !important;
+  color: #064e3b !important;
+}
+.light [class*="bg-yellow-400/"] {
+  background: #fff1b8 !important;
+  color: #713f12 !important;
+}
+.light [class*="bg-blue-500/"] {
+  background: #dbeafe !important;
+  color: #1d4ed8 !important;
+}
+.light [class*="bg-red-500/"] {
+  background: #fee2e2 !important;
+  color: #991b1b !important;
+}
+.light [class*="bg-emerald-500/"] {
+  background: #d1fae5 !important;
+  color: #065f46 !important;
+}
+
+.light [class*="text-emerald-300"],
+.light [class*="text-green-300"] { color: #047857 !important; }
+.light [class*="text-blue-300"] { color: #1d4ed8 !important; }
+.light [class*="text-red-300"] { color: #b91c1c !important; }
+.light [class*="text-yellow-300"],
+.light [class*="text-yellow-400"] { color: #b77900 !important; }
+
+/* Dentro dos heros escuros, amarelo e verde precisam seguir vivos */
+.light section[class*="bg-[#030907]"] [class*="text-yellow-"],
+.light section[class*="bg-[#03100c]"] [class*="text-yellow-"],
+.light section[class*="bg-[#04070b]"] [class*="text-yellow-"] {
+  color: #facc15 !important;
+}
+.light section[class*="bg-[#030907]"] [class*="text-emerald-"],
+.light section[class*="bg-[#03100c]"] [class*="text-emerald-"],
+.light section[class*="bg-[#04070b]"] [class*="text-emerald-"] {
+  color: #6ee7b7 !important;
+}
+
+/* Inputs e selects com borda forte */
+.light input,
+.light textarea,
+.light select,
+.light button[role="combobox"] {
+  background: #ffffff !important;
+  color: #0f172a !important;
+  border: 1px solid #cbd5e1 !important;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,.65), 0 8px 22px rgba(15,23,42,.06) !important;
+}
+
+/* Sidebar clara mais profissional */
+.light [data-sidebar="sidebar"],
+.light [data-slot="sidebar"],
+.light aside {
+  background: linear-gradient(180deg, #ffffff 0%, #eef3f8 100%) !important;
+  color: #0f172a !important;
+  border-right: 1px solid #cbd5e1 !important;
+  box-shadow: 14px 0 34px rgba(15,23,42,.10) !important;
+}
+
+.light [data-sidebar="menu-button"],
+.light [data-slot="sidebar-menu-button"] {
+  color: #1e293b !important;
+  font-weight: 800 !important;
+}
+
+/* Destaques principais em negrito e visíveis */
+.light h1,
+.light h2,
+.light h3,
+.light .font-black,
+.light .font-extrabold {
+  font-weight: 900 !important;
+}
+
+/* Botões principais com contraste */
+.light button,
+.light a[role="button"] {
+  font-weight: 800;
+}
+
+/* Evita cards totalmente lavados */
+.light .rounded-2xl,
+.light .rounded-3xl,
+.light .rounded-\[1\.5rem\],
+.light .rounded-\[2rem\] {
+  border-color: rgba(15,23,42,.12);
+}
+
+/* =========================================================
+   ANALYSE PRO 2.0 - V36 Compact UI Global
+   Reduz cards, headers e espaçamentos em todas as abas para
+   virar painel profissional com mais informação por tela.
+   ========================================================= */
+@media (min-width: 1024px) {
+  :root {
+    --ap-compact-scale: .88;
+  }
+
+  .compact-dashboard {
+    font-size: 0.92rem;
+  }
+
+  .compact-dashboard > .space-y-5,
+  .compact-dashboard .space-y-5 {
+    row-gap: 0.85rem !important;
+  }
+
+  .compact-dashboard .space-y-6 {
+    row-gap: 1rem !important;
+  }
+
+  .compact-dashboard .space-y-8,
+  .compact-dashboard .space-y-10 {
+    row-gap: 1.1rem !important;
+  }
+
+  .compact-dashboard section[class*="p-8"],
+  .compact-dashboard section[class*="p-9"],
+  .compact-dashboard div[class*="p-8"],
+  .compact-dashboard div[class*="p-9"] {
+    padding: 1.25rem !important;
+  }
+
+  .compact-dashboard section[class*="p-6"],
+  .compact-dashboard div[class*="p-6"] {
+    padding: 1rem !important;
+  }
+
+  .compact-dashboard .rounded-3xl,
+  .compact-dashboard .rounded-\[2rem\] {
+    border-radius: 1.25rem !important;
+  }
+
+  .compact-dashboard .rounded-2xl,
+  .compact-dashboard .rounded-\[1\.5rem\] {
+    border-radius: 1rem !important;
+  }
+
+  .compact-dashboard h1,
+  .compact-dashboard .text-6xl,
+  .compact-dashboard .text-7xl {
+    font-size: clamp(2.2rem, 3.45vw, 4.25rem) !important;
+    line-height: .95 !important;
+  }
+
+  .compact-dashboard .text-5xl {
+    font-size: clamp(1.9rem, 2.65vw, 3.2rem) !important;
+    line-height: 1 !important;
+  }
+
+  .compact-dashboard h2,
+  .compact-dashboard .text-4xl {
+    font-size: clamp(1.55rem, 2vw, 2.35rem) !important;
+    line-height: 1.08 !important;
+  }
+
+  .compact-dashboard h3,
+  .compact-dashboard .text-3xl {
+    font-size: clamp(1.25rem, 1.5vw, 1.75rem) !important;
+  }
+
+  .compact-dashboard p,
+  .compact-dashboard .text-base {
+    font-size: .88rem !important;
+    line-height: 1.45 !important;
+  }
+
+  .compact-dashboard .text-sm {
+    font-size: .78rem !important;
+  }
+
+  .compact-dashboard .text-xs {
+    font-size: .68rem !important;
+  }
+
+  .compact-dashboard button,
+  .compact-dashboard a,
+  .compact-dashboard input,
+  .compact-dashboard select {
+    min-height: 0;
+  }
+
+  .compact-dashboard button[class*="px-5"],
+  .compact-dashboard a[class*="px-5"] {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  .compact-dashboard button[class*="py-3"],
+  .compact-dashboard a[class*="py-3"],
+  .compact-dashboard input[class*="py-3"],
+  .compact-dashboard select[class*="py-3"] {
+    padding-top: .6rem !important;
+    padding-bottom: .6rem !important;
+  }
+
+  .compact-dashboard .grid[class*="gap-7"],
+  .compact-dashboard .grid[class*="gap-8"] {
+    gap: 1rem !important;
+  }
+
+  .compact-dashboard .grid[class*="gap-6"] {
+    gap: .9rem !important;
+  }
+
+  .compact-dashboard .gap-4,
+  .compact-dashboard .gap-5 {
+    gap: .8rem !important;
+  }
+
+  .compact-dashboard [class*="h-48"],
+  .compact-dashboard [class*="w-48"] {
+    max-height: 7rem !important;
+    max-width: 7rem !important;
+  }
+
+  .compact-dashboard [class*="h-14"],
+  .compact-dashboard [class*="w-14"] {
+    max-height: 2.75rem !important;
+    max-width: 2.75rem !important;
+  }
+
+  .compact-dashboard [class*="h-12"],
+  .compact-dashboard [class*="w-12"] {
+    max-height: 2.35rem !important;
+    max-width: 2.35rem !important;
+  }
+
+  .compact-dashboard img[class*="h-16"],
+  .compact-dashboard img[class*="w-16"] {
+    max-height: 3rem !important;
+    max-width: 3rem !important;
+  }
+
+  /* Hero cards / stat cards */
+  .compact-dashboard [class*="grid-cols-2"] > div[class*="rounded"],
+  .compact-dashboard [class*="grid-cols-4"] > div[class*="rounded"],
+  .compact-dashboard [class*="grid-cols-4"] > article[class*="rounded"] {
+    min-height: auto !important;
+  }
+
+  .compact-dashboard [class*="shadow-[0_0_70px"] {
+    box-shadow: 0 0 35px rgba(16,185,129,.10) !important;
+  }
+
+  /* Tables and list rows: more items visible */
+  .compact-dashboard table th,
+  .compact-dashboard table td {
+    padding-top: .48rem !important;
+    padding-bottom: .48rem !important;
+  }
+
+  .compact-dashboard li,
+  .compact-dashboard tr,
+  .compact-dashboard [role="row"] {
+    min-height: 0 !important;
+  }
+
+  .compact-dashboard [class*="py-5"],
+  .compact-dashboard [class*="py-6"] {
+    padding-top: .75rem !important;
+    padding-bottom: .75rem !important;
+  }
+
+  .compact-dashboard [class*="px-6"],
+  .compact-dashboard [class*="px-8"] {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  /* Cards in Entradas, Ranking, Ao Vivo, Próximos Jogos */
+  .compact-dashboard article,
+  .compact-dashboard .glass-card,
+  .compact-dashboard .glass-premium,
+  .compact-dashboard [class*="bg-[#07090d]"] {
+    border-radius: 1rem;
+  }
+
+  /* World Cup ticker thinner */
+  .worldcup-ticker a {
+    padding-top: .25rem !important;
+    padding-bottom: .25rem !important;
+  }
+  .worldcup-ticker [class*="h-[28px]"] {
+    height: 22px !important;
+    width: 38px !important;
+  }
+
+  /* Sidebar compact */
+  aside nav a {
+    min-height: 34px !important;
+  }
+  aside nav .space-y-5,
+  aside nav .space-y-4,
+  aside nav .space-y-3 {
+    row-gap: .6rem !important;
+  }
+}
+
+@media (max-width: 1023px) {
+  .compact-dashboard h1 {
+    font-size: clamp(1.75rem, 9vw, 2.6rem) !important;
+  }
+  .compact-dashboard section,
+  .compact-dashboard article,
+  .compact-dashboard .glass-card,
+  .compact-dashboard .glass-premium {
+    border-radius: 1rem !important;
+  }
+}
+
+/* V37 - Compact UI Global: fontes menores, cards mais enxutos e Copa em grupos verticais */
+@layer base {
+  html {
+    font-size: 14px;
+  }
+
+  @media (min-width: 1280px) {
+    html {
+      font-size: 13.5px;
+    }
+  }
+
+  body {
+    letter-spacing: -0.01em;
+  }
+}
+
+@layer components {
+  .compact-dashboard {
+    font-size: 0.92rem;
+  }
+
+  .compact-dashboard h1,
+  .compact-dashboard .text-6xl,
+  .compact-dashboard .md\:text-6xl,
+  .compact-dashboard .text-5xl {
+    font-size: clamp(2.35rem, 4.2vw, 4.25rem) !important;
+    line-height: 0.95 !important;
+  }
+
+  .compact-dashboard h2,
+  .compact-dashboard .text-4xl,
+  .compact-dashboard .text-3xl {
+    font-size: clamp(1.45rem, 2.4vw, 2.35rem) !important;
+    line-height: 1.05 !important;
+  }
+
+  .compact-dashboard h3,
+  .compact-dashboard .text-2xl {
+    font-size: clamp(1.1rem, 1.6vw, 1.55rem) !important;
+    line-height: 1.15 !important;
+  }
+
+  .compact-dashboard .rounded-3xl {
+    border-radius: 1.25rem !important;
+  }
+
+  .compact-dashboard section.p-6,
+  .compact-dashboard section.md\:p-8,
+  .compact-dashboard .p-8 {
+    padding: 1.25rem !important;
+  }
+
+  .compact-dashboard .p-6 {
+    padding: 1rem !important;
+  }
+
+  .compact-dashboard .p-5 {
+    padding: 0.9rem !important;
+  }
+
+  .compact-dashboard .gap-6 {
+    gap: 1rem !important;
+  }
+
+  .compact-dashboard .gap-5 {
+    gap: 0.85rem !important;
+  }
+
+  .compact-dashboard .gap-4 {
+    gap: 0.75rem !important;
+  }
+
+  .compact-dashboard .space-y-5 > :not([hidden]) ~ :not([hidden]) {
+    margin-top: 0.85rem !important;
+  }
+
+  .compact-dashboard button,
+  .compact-dashboard a,
+  .compact-dashboard input,
+  .compact-dashboard select {
+    font-size: 0.86rem;
+  }
+
+  .compact-dashboard table {
+    font-size: 0.82rem;
+  }
+
+  .compact-dashboard .text-sm {
+    font-size: 0.78rem !important;
+  }
+
+  .compact-dashboard .text-xs {
+    font-size: 0.68rem !important;
+  }
+
+  .compact-dashboard .grid-cols-2 > .rounded-xl,
+  .compact-dashboard .grid-cols-2 > .rounded-2xl {
+    min-height: 0 !important;
+  }
+
+  .worldcup-groups-vertical {
+    max-width: 360px;
+  }
+
+  .worldcup-groups-vertical img {
+    display: block;
+  }
+
+  .worldcup-ticker a {
+    padding-left: 0.7rem !important;
+    padding-right: 0.7rem !important;
+  }
+
+  .worldcup-ticker [aria-label] {
+    height: 22px !important;
+    width: 38px !important;
+  }
+}
+
+/* V38 - Compactação final do seletor de times + fonte global menor */
+@layer base {
+  @media (min-width: 1024px) {
+    html { font-size: 12.75px; }
+  }
+  @media (min-width: 1440px) {
+    html { font-size: 12.5px; }
+  }
+}
+
+@layer components {
+  .team-picker-modal {
+    max-height: min(76vh, 720px) !important;
+  }
+
+  .team-picker-search {
+    display: flex !important;
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  .team-picker-search input {
+    display: block !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    opacity: 1 !important;
+  }
+
+  .team-picker-list {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(250, 204, 21, .45) rgba(255,255,255,.05);
+  }
+
+  .team-picker-option {
+    min-height: 46px !important;
+    border-radius: 0.85rem !important;
+  }
+
+  .team-logo-mini img {
+    max-width: 100% !important;
+    max-height: 100% !important;
+    object-fit: contain !important;
+  }
+
+  .compact-dashboard .text-7xl,
+  .compact-dashboard .text-6xl,
+  .compact-dashboard .md\:text-6xl,
+  .compact-dashboard .text-5xl {
+    font-size: clamp(2rem, 3.35vw, 3.8rem) !important;
+  }
+
+  .compact-dashboard .text-4xl,
+  .compact-dashboard .text-3xl {
+    font-size: clamp(1.25rem, 2vw, 2rem) !important;
+  }
+
+  .compact-dashboard .text-2xl {
+    font-size: clamp(1rem, 1.35vw, 1.35rem) !important;
+  }
+
+  aside {
+    font-size: .88rem !important;
+  }
+
+  aside nav a,
+  aside nav button {
+    padding-top: .55rem !important;
+    padding-bottom: .55rem !important;
+  }
+}

@@ -1,0 +1,1 @@
+Atualização: aba Relatórios agora funcional com API real, cards dinâmicos e bloqueio por plano.

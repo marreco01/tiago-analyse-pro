@@ -1,0 +1,27 @@
+ALTERAÇÃO REALIZADA
+
+1. Aba Jogos ao Vivo
+- Adicionado botão para ligar/desligar alertas sonoros.
+- Criados alertas de tendência para:
+  - possibilidade de gol;
+  - possibilidade de escanteio;
+  - tendência de ambas marcam;
+  - possibilidade de cartão.
+- Os alertas usam pressão ofensiva, índice de atividade, chutes, chutes no gol, escanteios, cartões, minuto e placar.
+- Foi adicionado controle para não tocar alerta repetido toda hora no mesmo jogo.
+- A atualização dos jogos ao vivo passou para 60 segundos.
+
+2. Sala ao vivo por partida
+- O botão "Sala ao vivo" agora abre o chat já com o contexto da partida.
+- Mensagens enviadas por essa sala recebem identificação da sala do jogo.
+- O cabeçalho do chat mostra a partida selecionada.
+- O usuário pode voltar para o chat geral.
+
+3. Chat liberado FREE
+- O backend também foi liberado temporariamente para usuários FREE logados.
+- Antes o frontend estava liberado, mas o servidor ainda bloqueava alguns endpoints para não PRO/VIP.
+
+Arquivos principais alterados:
+- client/src/pages/LiveGames.tsx
+- client/src/components/LiveChat.tsx
+- server/chat.ts

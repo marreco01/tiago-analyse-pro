@@ -1,0 +1,14 @@
+V31 - COPA MASTER GLOBAL
+
+Criado módulo avançado dentro do Robô Copa:
+- Ranking Master das seleções
+- Ranking FIFA estimado + Elo interno
+- Ataque, defesa, forma 20 jogos e últimos 5
+- Scanner Copa com Top Over 1.5, Over 2.5, BTTS, Escanteios e Favoritos
+- Simulador de campeão
+- Jogadores em destaque: gols, assistências, participação e MVP
+- Integração do retorno /api/world-cup/robot com master
+- Nova aba pública "Copa Master" dentro da Copa
+- Robô Copa agora respeita cache por tempo e não fica preso no primeiro carregamento
+
+Obs: quando fonte pública não entrega dado completo, o sistema usa projeção Master + cache para não deixar tela vazia.

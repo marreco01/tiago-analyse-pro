@@ -1,0 +1,5 @@
+Correção solicitada:
+- Removido o atalho/ícone mobile de avisos apontando para área administrativa.
+- O sino do topo mobile agora aponta para /live e representa alertas ao vivo.
+- A faixa de notificações mobile agora mostra alertas de gol, escanteios, ambas marcam e cartões.
+- Nenhuma dependência foi alterada.

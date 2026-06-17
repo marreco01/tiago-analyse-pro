@@ -1,0 +1,17 @@
+ANALYSE PRO 2.0 — RANKINGS INTELIGENTES FUNCIONAIS
+
+Aplicado:
+- Endpoint /api/football/rankings conectado à API-Football.
+- Rankings por:
+  1. Média de gols;
+  2. Gols das equipas;
+  3. Escanteios;
+  4. Qualidade dos dados.
+- Uso de jogos futuros como confrontos a exibir e amostras reais recentes dos clubes.
+- Escanteios calculados através de estatísticas de partidas recentes.
+- Cache de 10 minutos para reduzir chamadas da API.
+- Cards clicáveis, atualização manual, tabela com escudos e botão de análise.
+- Texto ajustado para métricas informativas.
+
+Observação:
+- A primeira abertura de "Top Escanteios" pode demorar mais, pois consulta estatísticas detalhadas das partidas recentes.

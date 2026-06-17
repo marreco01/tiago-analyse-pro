@@ -1,0 +1,7 @@
+V24 - Robô Master de Forma Recente
+
+Correção aplicada:
+- Remove fallback fraco que gerava 5 bolinhas amarelas para clubes sem histórico retornado pela fonte.
+- Cria cálculo master baseado em vitórias, empates e derrotas da tabela.
+- Garante últimos 5 para todos os clubes, sem deixar tudo empate quando o time tem vitórias/derrotas.
+- Aplica a correção na classificação do Brasileirão e nos dados consumidos pela Análise IA.

@@ -1,0 +1,11 @@
+V40 - Robô Brasileirão Master Único
+
+Alterações principais:
+- Removidos os arrays internos BRASILEIRAO_INTERNAL_TEAMS e BRASILEIRAO_CLUBS_VISUAL do frontend.
+- Removido histórico interno simulado usado na Análise IA do Brasileirão.
+- Frontend passa a depender da rota /api/brasileirao/table e do Master Search.
+- Robô do Brasileirão não aceita mais sourceQuality partial/unavailable.
+- Busca Master normaliza aliases de clubes: Athletico-PR/CAP/Athletico Paranaense, RB Bragantino/Bragantino, Atlético-MG/CAM, Vasco/Vasco da Gama etc.
+- Últimos 5 jogos passam pelo fluxo: fonte pública -> parsed form -> cálculo pelo registro oficial, sem exibir SEM DADOS quando existe tabela real.
+- Bloqueio contra mistura de ligas estrangeiras e duplicidade de clubes.
+- Classificação e escudos usam normalização central.

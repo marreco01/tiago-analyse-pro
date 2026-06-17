@@ -1,0 +1,8 @@
+Banco de gols da Copa atualizado.
+
+- 48 seleções cadastradas.
+- 10 jogos por seleção.
+- Gols marcados e sofridos em cada jogo.
+- Vitórias, empates, derrotas, saldo e médias calculados.
+- Dados disponíveis em server/data/worldcup-history.json e client/src/data/worldcupHistory.ts.
+- A aba Análise de Times passa a exibir histórico em vez de Sem histórico importado.

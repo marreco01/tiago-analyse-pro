@@ -1,0 +1,13 @@
+V44 - Brasileirão Master Correto
+
+- Frontend do Brasileirão deixou de consumir /api/football/brasileirao como fonte paralela.
+- A página Brasileirao.tsx agora consome somente /api/brasileirao/table.
+- Removido preenchimento da grade com fallbackClubs quando o Robô Master falhar.
+- Removido gerador de forma falsa por campanha.
+- Análise IA do Brasileirão passou a usar os standings reais recebidos do Robô Master.
+- Textos internos trocados para Robô Master.
+- Backend do Robô Brasileirão grava snapshot válido em server/cache/brasileirao-master-snapshot.json.
+- Se a fonte pública falhar, usa cache/snapshot válido; não inventa tabela, rodada ou bolinhas.
+- Removido gerador de próxima rodada por pares de classificação.
+- Removida artilharia gerada artificialmente.
+- Últimos 5 só vêm de partida finalizada real, form real da fonte, cache anterior ou snapshot válido.

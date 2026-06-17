@@ -1,0 +1,1 @@
+Correção aplicada: build testado localmente com sucesso. Corrigido export deletePayment e deleteCancelledPayments em server/app-data.ts.

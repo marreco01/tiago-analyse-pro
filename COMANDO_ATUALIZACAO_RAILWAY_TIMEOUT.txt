@@ -1,0 +1,20 @@
+COMANDO PARA SUBIR CORRECAO DO BUILD RAILWAY
+
+cd C:\Users\edmil\Downloads\analyse-pro-cache-brasileirao-reset-api-build-fix
+
+Remove-Item -Recurse -Force .git -ErrorAction SilentlyContinue
+
+git init
+git branch -M main
+git remote add origin https://github.com/marreco01/tiago-analyse-pro.git
+
+git add .
+git commit -m "Corrige build Railway pnpm timeout"
+
+git push -f origin main
+
+O QUE FOI AJUSTADO:
+- .npmrc agora força registry publico do npm
+- aumento de timeout e tentativas do pnpm
+- nixpacks.toml deixa o install separado do build
+- railway.toml define buildCommand como pnpm run build

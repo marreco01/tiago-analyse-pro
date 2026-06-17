@@ -1,0 +1,8 @@
+CORREÇÃO DO ÍCONE/BOTÃO DE ATIVAR CHAT
+
+- Corrigido botão Sala ao vivo para impedir navegação/acesso errado antes de abrir o chat.
+- O clique agora usa preventDefault e stopPropagation no mobile e desktop.
+- LiveChat agora aceita eventos tap-open-live-chat e analyse-open-match-chat.
+- Adicionado suporte a botões com data-chat-room-id.
+- Adicionada rota /chat com botão de teste para ativar o chat.
+- Mantido chat por partida, sem chat geral misturando salas.

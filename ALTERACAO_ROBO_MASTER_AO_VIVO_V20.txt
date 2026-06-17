@@ -1,0 +1,16 @@
+V20 - Robô Master Ao Vivo
+
+Correções aplicadas:
+- Robô ao vivo deixou de depender de uma única fonte.
+- Busca pública em ESPN scoreboard por competição.
+- Enriquecimento por ESPN summary para tentar trazer estatísticas detalhadas.
+- Reforço com TheSportsDB livescore.
+- Prioridade para Copa do Mundo, Mundial de Clubes, Libertadores, Champions, Brasileirão e principais ligas.
+- Atualização em até 45 segundos.
+- Deduplicação por confronto.
+- Merge de dados quando o mesmo jogo aparece em fontes diferentes.
+- Leitura de chutes, chutes no gol, escanteios, cartões e posse quando a fonte entregar esses campos.
+- Placar e minuto reais continuam aparecendo mesmo quando estatísticas detalhadas não são liberadas pela fonte.
+
+Observação:
+O sistema não inventa estatísticas. Quando fonte pública não entrega chutes/cantos/posse, o jogo aparece ao vivo com placar/minuto e as estatísticas ficam como indisponíveis até outra fonte preencher.

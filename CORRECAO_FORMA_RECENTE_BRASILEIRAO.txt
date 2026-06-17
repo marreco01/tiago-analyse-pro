@@ -1,0 +1,9 @@
+Correção aplicada na aba Brasileirão
+
+- Corrigido o parser das últimas partidas no frontend.
+- O token D agora é tratado como empate (Draw), não como derrota.
+- Isso evita bolinhas vermelhas falsas nas sequências recentes dos clubes.
+- Mantida a regra: sem últimos jogos reais suficientes, exibir sem dados reais/buscando em vez de inventar forma.
+
+Arquivo alterado:
+- client/src/pages/Brasileirao.tsx

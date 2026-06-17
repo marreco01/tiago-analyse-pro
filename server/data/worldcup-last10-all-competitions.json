@@ -1,0 +1,897 @@
+{
+  "updatedAt": "2026-06-10",
+  "mode": "TODOS_OS_CAMPEONATOS",
+  "description": "Últimos 10 jogos por seleção incluindo amistosos, eliminatórias e torneios oficiais.",
+  "teams": [
+    {
+      "team": "Canadá",
+      "sourceType": "all_competitions_last_10",
+      "last10": [],
+      "stats": {
+        "wins": 0,
+        "draws": 0,
+        "losses": 0,
+        "goalsFor": 0,
+        "goalsAgainst": 0,
+        "avgGoalsFor": 0.0,
+        "avgGoalsAgainst": 0.0,
+        "form": [],
+        "gamesCount": 0
+      }
+    },
+    {
+      "team": "Estados Unidos",
+      "sourceType": "all_competitions_last_10",
+      "last10": [],
+      "stats": {
+        "wins": 0,
+        "draws": 0,
+        "losses": 0,
+        "goalsFor": 0,
+        "goalsAgainst": 0,
+        "avgGoalsFor": 0.0,
+        "avgGoalsAgainst": 0.0,
+        "form": [],
+        "gamesCount": 0
+      }
+    },
+    {
+      "team": "México",
+      "sourceType": "all_competitions_last_10",
+      "last10": [],
+      "stats": {
+        "wins": 0,
+        "draws": 0,
+        "losses": 0,
+        "goalsFor": 0,
+        "goalsAgainst": 0,
+        "avgGoalsFor": 0.0,
+        "avgGoalsAgainst": 0.0,
+        "form": [],
+        "gamesCount": 0
+      }
+    },
+    {
+      "team": "Brasil",
+      "sourceType": "all_competitions_last_10",
+      "last10": [
+        {
+          "date": "2026-06-06",
+          "displayDate": "sáb., 6 jun.",
+          "home": "Brasil",
+          "away": "Egito",
+          "homeGoals": 2,
+          "awayGoals": 1,
+          "score": "2 - 1",
+          "status": "Finalizado",
+          "competition": "Amistoso internacional"
+        },
+        {
+          "date": "2026-05-31",
+          "displayDate": "dom., 31 mai.",
+          "home": "Brasil",
+          "away": "Panamá",
+          "homeGoals": 6,
+          "awayGoals": 2,
+          "score": "6 - 2",
+          "status": "Finalizado",
+          "competition": "Amistoso internacional"
+        },
+        {
+          "date": "2026-03-31",
+          "displayDate": "ter., 31 mar.",
+          "home": "Brasil",
+          "away": "Croácia",
+          "homeGoals": 3,
+          "awayGoals": 1,
+          "score": "3 - 1",
+          "status": "Finalizado",
+          "competition": "Amistoso internacional"
+        },
+        {
+          "date": "2026-03-26",
+          "displayDate": "qui., 26 mar.",
+          "home": "Brasil",
+          "away": "França",
+          "homeGoals": 1,
+          "awayGoals": 2,
+          "score": "1 - 2",
+          "status": "Finalizado",
+          "competition": "Amistoso internacional"
+        },
+        {
+          "date": "2025-11-18",
+          "displayDate": "ter., 18 nov.",
+          "home": "Brasil",
+          "away": "Tunísia",
+          "homeGoals": 1,
+          "awayGoals": 1,
+          "score": "1 - 1",
+          "status": "Finalizado",
+          "competition": "Amistoso internacional"
+        },
+        {
+          "date": "2025-11-15",
+          "displayDate": "sáb., 15 nov.",
+          "home": "Brasil",
+          "away": "Senegal",
+          "homeGoals": 2,
+          "awayGoals": 0,
+          "score": "2 - 0",
+          "status": "Finalizado",
+          "competition": "Amistoso internacional"
+        },
+        {
+          "date": "2025-10-14",
+          "displayDate": "ter., 14 out.",
+          "home": "Japão",
+          "away": "Brasil",
+          "homeGoals": 3,
+          "awayGoals": 2,
+          "score": "3 - 2",
+          "status": "Finalizado",
+          "competition": "Amistoso internacional"
+        },
+        {
+          "date": "2025-10-10",
+          "displayDate": "sex., 10 out.",
+          "home": "Coreia do Sul",
+          "away": "Brasil",
+          "homeGoals": 0,
+          "awayGoals": 5,
+          "score": "0 - 5",
+          "status": "Finalizado",
+          "competition": "Amistoso internacional"
+        },
+        {
+          "date": "2025-09-09",
+          "displayDate": "ter., 9 set.",
+          "home": "Bolívia",
+          "away": "Brasil",
+          "homeGoals": 1,
+          "awayGoals": 0,
+          "score": "1 - 0",
+          "status": "Finalizado",
+          "competition": "Eliminatórias da Copa"
+        },
+        {
+          "date": "2025-09-04",
+          "displayDate": "qui., 4 set.",
+          "home": "Brasil",
+          "away": "Chile",
+          "homeGoals": 3,
+          "awayGoals": 0,
+          "score": "3 - 0",
+          "status": "Finalizado",
+          "competition": "Eliminatórias da Copa"
+        }
+      ],
+      "stats": {
+        "wins": 6,
+        "draws": 1,
+        "losses": 3,
+        "goalsFor": 25,
+        "goalsAgainst": 11,
+        "avgGoalsFor": 2.5,
+        "avgGoalsAgainst": 1.1,
+        "form": [
+          "V",
+          "V",
+          "V",
+          "D",
+          "E",
+          "V",
+          "D",
+          "V",
+          "D",
+          "V"
+        ],
+        "gamesCount": 10
+      }
+    },
+    {
+      "team": "França",
+      "sourceType": "all_competitions_last_10",
+      "last10": [],
+      "stats": {
+        "wins": 0,
+        "draws": 0,
+        "losses": 0,
+        "goalsFor": 0,
+        "goalsAgainst": 0,
+        "avgGoalsFor": 0.0,
+        "avgGoalsAgainst": 0.0,
+        "form": [],
+        "gamesCount": 0
+      }
+    },
+    {
+      "team": "Alemanha",
+      "sourceType": "all_competitions_last_10",
+      "last10": [],
+      "stats": {
+        "wins": 0,
+        "draws": 0,
+        "losses": 0,
+        "goalsFor": 0,
+        "goalsAgainst": 0,
+        "avgGoalsFor": 0.0,
+        "avgGoalsAgainst": 0.0,
+        "form": [],
+        "gamesCount": 0
+      }
+    },
+    {
+      "team": "Espanha",
+      "sourceType": "all_competitions_last_10",
+      "last10": [],
+      "stats": {
+        "wins": 0,
+        "draws": 0,
+        "losses": 0,
+        "goalsFor": 0,
+        "goalsAgainst": 0,
+        "avgGoalsFor": 0.0,
+        "avgGoalsAgainst": 0.0,
+        "form": [],
+        "gamesCount": 0
+      }
+    },
+    {
+      "team": "Inglaterra",
+      "sourceType": "all_competitions_last_10",
+      "last10": [],
+      "stats": {
+        "wins": 0,
+        "draws": 0,
+        "losses": 0,
+        "goalsFor": 0,
+        "goalsAgainst": 0,
+        "avgGoalsFor": 0.0,
+        "avgGoalsAgainst": 0.0,
+        "form": [],
+        "gamesCount": 0
+      }
+    },
+    {
+      "team": "Portugal",
+      "sourceType": "all_competitions_last_10",
+      "last10": [],
+      "stats": {
+        "wins": 0,
+        "draws": 0,
+        "losses": 0,
+        "goalsFor": 0,
+        "goalsAgainst": 0,
+        "avgGoalsFor": 0.0,
+        "avgGoalsAgainst": 0.0,
+        "form": [],
+        "gamesCount": 0
+      }
+    },
+    {
+      "team": "Argentina",
+      "sourceType": "all_competitions_last_10",
+      "last10": [],
+      "stats": {
+        "wins": 0,
+        "draws": 0,
+        "losses": 0,
+        "goalsFor": 0,
+        "goalsAgainst": 0,
+        "avgGoalsFor": 0.0,
+        "avgGoalsAgainst": 0.0,
+        "form": [],
+        "gamesCount": 0
+      }
+    },
+    {
+      "team": "Holanda",
+      "sourceType": "all_competitions_last_10",
+      "last10": [],
+      "stats": {
+        "wins": 0,
+        "draws": 0,
+        "losses": 0,
+        "goalsFor": 0,
+        "goalsAgainst": 0,
+        "avgGoalsFor": 0.0,
+        "avgGoalsAgainst": 0.0,
+        "form": [],
+        "gamesCount": 0
+      }
+    },
+    {
+      "team": "Bélgica",
+      "sourceType": "all_competitions_last_10",
+      "last10": [],
+      "stats": {
+        "wins": 0,
+        "draws": 0,
+        "losses": 0,
+        "goalsFor": 0,
+        "goalsAgainst": 0,
+        "avgGoalsFor": 0.0,
+        "avgGoalsAgainst": 0.0,
+        "form": [],
+        "gamesCount": 0
+      }
+    },
+    {
+      "team": "Croácia",
+      "sourceType": "all_competitions_last_10",
+      "last10": [],
+      "stats": {
+        "wins": 0,
+        "draws": 0,
+        "losses": 0,
+        "goalsFor": 0,
+        "goalsAgainst": 0,
+        "avgGoalsFor": 0.0,
+        "avgGoalsAgainst": 0.0,
+        "form": [],
+        "gamesCount": 0
+      }
+    },
+    {
+      "team": "Itália",
+      "sourceType": "all_competitions_last_10",
+      "last10": [],
+      "stats": {
+        "wins": 0,
+        "draws": 0,
+        "losses": 0,
+        "goalsFor": 0,
+        "goalsAgainst": 0,
+        "avgGoalsFor": 0.0,
+        "avgGoalsAgainst": 0.0,
+        "form": [],
+        "gamesCount": 0
+      }
+    },
+    {
+      "team": "Dinamarca",
+      "sourceType": "all_competitions_last_10",
+      "last10": [],
+      "stats": {
+        "wins": 0,
+        "draws": 0,
+        "losses": 0,
+        "goalsFor": 0,
+        "goalsAgainst": 0,
+        "avgGoalsFor": 0.0,
+        "avgGoalsAgainst": 0.0,
+        "form": [],
+        "gamesCount": 0
+      }
+    },
+    {
+      "team": "Uruguai",
+      "sourceType": "all_competitions_last_10",
+      "last10": [],
+      "stats": {
+        "wins": 0,
+        "draws": 0,
+        "losses": 0,
+        "goalsFor": 0,
+        "goalsAgainst": 0,
+        "avgGoalsFor": 0.0,
+        "avgGoalsAgainst": 0.0,
+        "form": [],
+        "gamesCount": 0
+      }
+    },
+    {
+      "team": "Suíça",
+      "sourceType": "all_competitions_last_10",
+      "last10": [],
+      "stats": {
+        "wins": 0,
+        "draws": 0,
+        "losses": 0,
+        "goalsFor": 0,
+        "goalsAgainst": 0,
+        "avgGoalsFor": 0.0,
+        "avgGoalsAgainst": 0.0,
+        "form": [],
+        "gamesCount": 0
+      }
+    },
+    {
+      "team": "Colômbia",
+      "sourceType": "all_competitions_last_10",
+      "last10": [],
+      "stats": {
+        "wins": 0,
+        "draws": 0,
+        "losses": 0,
+        "goalsFor": 0,
+        "goalsAgainst": 0,
+        "avgGoalsFor": 0.0,
+        "avgGoalsAgainst": 0.0,
+        "form": [],
+        "gamesCount": 0
+      }
+    },
+    {
+      "team": "Japão",
+      "sourceType": "all_competitions_last_10",
+      "last10": [],
+      "stats": {
+        "wins": 0,
+        "draws": 0,
+        "losses": 0,
+        "goalsFor": 0,
+        "goalsAgainst": 0,
+        "avgGoalsFor": 0.0,
+        "avgGoalsAgainst": 0.0,
+        "form": [],
+        "gamesCount": 0
+      }
+    },
+    {
+      "team": "Senegal",
+      "sourceType": "all_competitions_last_10",
+      "last10": [],
+      "stats": {
+        "wins": 0,
+        "draws": 0,
+        "losses": 0,
+        "goalsFor": 0,
+        "goalsAgainst": 0,
+        "avgGoalsFor": 0.0,
+        "avgGoalsAgainst": 0.0,
+        "form": [],
+        "gamesCount": 0
+      }
+    },
+    {
+      "team": "Marrocos",
+      "sourceType": "all_competitions_last_10",
+      "last10": [],
+      "stats": {
+        "wins": 0,
+        "draws": 0,
+        "losses": 0,
+        "goalsFor": 0,
+        "goalsAgainst": 0,
+        "avgGoalsFor": 0.0,
+        "avgGoalsAgainst": 0.0,
+        "form": [],
+        "gamesCount": 0
+      }
+    },
+    {
+      "team": "Irã",
+      "sourceType": "all_competitions_last_10",
+      "last10": [],
+      "stats": {
+        "wins": 0,
+        "draws": 0,
+        "losses": 0,
+        "goalsFor": 0,
+        "goalsAgainst": 0,
+        "avgGoalsFor": 0.0,
+        "avgGoalsAgainst": 0.0,
+        "form": [],
+        "gamesCount": 0
+      }
+    },
+    {
+      "team": "Coreia do Sul",
+      "sourceType": "all_competitions_last_10",
+      "last10": [],
+      "stats": {
+        "wins": 0,
+        "draws": 0,
+        "losses": 0,
+        "goalsFor": 0,
+        "goalsAgainst": 0,
+        "avgGoalsFor": 0.0,
+        "avgGoalsAgainst": 0.0,
+        "form": [],
+        "gamesCount": 0
+      }
+    },
+    {
+      "team": "Austrália",
+      "sourceType": "all_competitions_last_10",
+      "last10": [],
+      "stats": {
+        "wins": 0,
+        "draws": 0,
+        "losses": 0,
+        "goalsFor": 0,
+        "goalsAgainst": 0,
+        "avgGoalsFor": 0.0,
+        "avgGoalsAgainst": 0.0,
+        "form": [],
+        "gamesCount": 0
+      }
+    },
+    {
+      "team": "Arábia Saudita",
+      "sourceType": "all_competitions_last_10",
+      "last10": [],
+      "stats": {
+        "wins": 0,
+        "draws": 0,
+        "losses": 0,
+        "goalsFor": 0,
+        "goalsAgainst": 0,
+        "avgGoalsFor": 0.0,
+        "avgGoalsAgainst": 0.0,
+        "form": [],
+        "gamesCount": 0
+      }
+    },
+    {
+      "team": "Equador",
+      "sourceType": "all_competitions_last_10",
+      "last10": [],
+      "stats": {
+        "wins": 0,
+        "draws": 0,
+        "losses": 0,
+        "goalsFor": 0,
+        "goalsAgainst": 0,
+        "avgGoalsFor": 0.0,
+        "avgGoalsAgainst": 0.0,
+        "form": [],
+        "gamesCount": 0
+      }
+    },
+    {
+      "team": "Gana",
+      "sourceType": "all_competitions_last_10",
+      "last10": [],
+      "stats": {
+        "wins": 0,
+        "draws": 0,
+        "losses": 0,
+        "goalsFor": 0,
+        "goalsAgainst": 0,
+        "avgGoalsFor": 0.0,
+        "avgGoalsAgainst": 0.0,
+        "form": [],
+        "gamesCount": 0
+      }
+    },
+    {
+      "team": "Polônia",
+      "sourceType": "all_competitions_last_10",
+      "last10": [],
+      "stats": {
+        "wins": 0,
+        "draws": 0,
+        "losses": 0,
+        "goalsFor": 0,
+        "goalsAgainst": 0,
+        "avgGoalsFor": 0.0,
+        "avgGoalsAgainst": 0.0,
+        "form": [],
+        "gamesCount": 0
+      }
+    },
+    {
+      "team": "Tunísia",
+      "sourceType": "all_competitions_last_10",
+      "last10": [],
+      "stats": {
+        "wins": 0,
+        "draws": 0,
+        "losses": 0,
+        "goalsFor": 0,
+        "goalsAgainst": 0,
+        "avgGoalsFor": 0.0,
+        "avgGoalsAgainst": 0.0,
+        "form": [],
+        "gamesCount": 0
+      }
+    },
+    {
+      "team": "Sérvia",
+      "sourceType": "all_competitions_last_10",
+      "last10": [],
+      "stats": {
+        "wins": 0,
+        "draws": 0,
+        "losses": 0,
+        "goalsFor": 0,
+        "goalsAgainst": 0,
+        "avgGoalsFor": 0.0,
+        "avgGoalsAgainst": 0.0,
+        "form": [],
+        "gamesCount": 0
+      }
+    },
+    {
+      "team": "Noruega",
+      "sourceType": "all_competitions_last_10",
+      "last10": [],
+      "stats": {
+        "wins": 0,
+        "draws": 0,
+        "losses": 0,
+        "goalsFor": 0,
+        "goalsAgainst": 0,
+        "avgGoalsFor": 0.0,
+        "avgGoalsAgainst": 0.0,
+        "form": [],
+        "gamesCount": 0
+      }
+    },
+    {
+      "team": "Ucrânia",
+      "sourceType": "all_competitions_last_10",
+      "last10": [],
+      "stats": {
+        "wins": 0,
+        "draws": 0,
+        "losses": 0,
+        "goalsFor": 0,
+        "goalsAgainst": 0,
+        "avgGoalsFor": 0.0,
+        "avgGoalsAgainst": 0.0,
+        "form": [],
+        "gamesCount": 0
+      }
+    },
+    {
+      "team": "Turquia",
+      "sourceType": "all_competitions_last_10",
+      "last10": [],
+      "stats": {
+        "wins": 0,
+        "draws": 0,
+        "losses": 0,
+        "goalsFor": 0,
+        "goalsAgainst": 0,
+        "avgGoalsFor": 0.0,
+        "avgGoalsAgainst": 0.0,
+        "form": [],
+        "gamesCount": 0
+      }
+    },
+    {
+      "team": "Suécia",
+      "sourceType": "all_competitions_last_10",
+      "last10": [],
+      "stats": {
+        "wins": 0,
+        "draws": 0,
+        "losses": 0,
+        "goalsFor": 0,
+        "goalsAgainst": 0,
+        "avgGoalsFor": 0.0,
+        "avgGoalsAgainst": 0.0,
+        "form": [],
+        "gamesCount": 0
+      }
+    },
+    {
+      "team": "País de Gales",
+      "sourceType": "all_competitions_last_10",
+      "last10": [],
+      "stats": {
+        "wins": 0,
+        "draws": 0,
+        "losses": 0,
+        "goalsFor": 0,
+        "goalsAgainst": 0,
+        "avgGoalsFor": 0.0,
+        "avgGoalsAgainst": 0.0,
+        "form": [],
+        "gamesCount": 0
+      }
+    },
+    {
+      "team": "Catar",
+      "sourceType": "all_competitions_last_10",
+      "last10": [],
+      "stats": {
+        "wins": 0,
+        "draws": 0,
+        "losses": 0,
+        "goalsFor": 0,
+        "goalsAgainst": 0,
+        "avgGoalsFor": 0.0,
+        "avgGoalsAgainst": 0.0,
+        "form": [],
+        "gamesCount": 0
+      }
+    },
+    {
+      "team": "Costa Rica",
+      "sourceType": "all_competitions_last_10",
+      "last10": [],
+      "stats": {
+        "wins": 0,
+        "draws": 0,
+        "losses": 0,
+        "goalsFor": 0,
+        "goalsAgainst": 0,
+        "avgGoalsFor": 0.0,
+        "avgGoalsAgainst": 0.0,
+        "form": [],
+        "gamesCount": 0
+      }
+    },
+    {
+      "team": "Camarões",
+      "sourceType": "all_competitions_last_10",
+      "last10": [],
+      "stats": {
+        "wins": 0,
+        "draws": 0,
+        "losses": 0,
+        "goalsFor": 0,
+        "goalsAgainst": 0,
+        "avgGoalsFor": 0.0,
+        "avgGoalsAgainst": 0.0,
+        "form": [],
+        "gamesCount": 0
+      }
+    },
+    {
+      "team": "Egito",
+      "sourceType": "all_competitions_last_10",
+      "last10": [],
+      "stats": {
+        "wins": 0,
+        "draws": 0,
+        "losses": 0,
+        "goalsFor": 0,
+        "goalsAgainst": 0,
+        "avgGoalsFor": 0.0,
+        "avgGoalsAgainst": 0.0,
+        "form": [],
+        "gamesCount": 0
+      }
+    },
+    {
+      "team": "Costa do Marfim",
+      "sourceType": "all_competitions_last_10",
+      "last10": [],
+      "stats": {
+        "wins": 0,
+        "draws": 0,
+        "losses": 0,
+        "goalsFor": 0,
+        "goalsAgainst": 0,
+        "avgGoalsFor": 0.0,
+        "avgGoalsAgainst": 0.0,
+        "form": [],
+        "gamesCount": 0
+      }
+    },
+    {
+      "team": "África do Sul",
+      "sourceType": "all_competitions_last_10",
+      "last10": [],
+      "stats": {
+        "wins": 0,
+        "draws": 0,
+        "losses": 0,
+        "goalsFor": 0,
+        "goalsAgainst": 0,
+        "avgGoalsFor": 0.0,
+        "avgGoalsAgainst": 0.0,
+        "form": [],
+        "gamesCount": 0
+      }
+    },
+    {
+      "team": "Paraguai",
+      "sourceType": "all_competitions_last_10",
+      "last10": [],
+      "stats": {
+        "wins": 0,
+        "draws": 0,
+        "losses": 0,
+        "goalsFor": 0,
+        "goalsAgainst": 0,
+        "avgGoalsFor": 0.0,
+        "avgGoalsAgainst": 0.0,
+        "form": [],
+        "gamesCount": 0
+      }
+    },
+    {
+      "team": "Chile",
+      "sourceType": "all_competitions_last_10",
+      "last10": [],
+      "stats": {
+        "wins": 0,
+        "draws": 0,
+        "losses": 0,
+        "goalsFor": 0,
+        "goalsAgainst": 0,
+        "avgGoalsFor": 0.0,
+        "avgGoalsAgainst": 0.0,
+        "form": [],
+        "gamesCount": 0
+      }
+    },
+    {
+      "team": "Peru",
+      "sourceType": "all_competitions_last_10",
+      "last10": [],
+      "stats": {
+        "wins": 0,
+        "draws": 0,
+        "losses": 0,
+        "goalsFor": 0,
+        "goalsAgainst": 0,
+        "avgGoalsFor": 0.0,
+        "avgGoalsAgainst": 0.0,
+        "form": [],
+        "gamesCount": 0
+      }
+    },
+    {
+      "team": "Nova Zelândia",
+      "sourceType": "all_competitions_last_10",
+      "last10": [],
+      "stats": {
+        "wins": 0,
+        "draws": 0,
+        "losses": 0,
+        "goalsFor": 0,
+        "goalsAgainst": 0,
+        "avgGoalsFor": 0.0,
+        "avgGoalsAgainst": 0.0,
+        "form": [],
+        "gamesCount": 0
+      }
+    },
+    {
+      "team": "Jamaica",
+      "sourceType": "all_competitions_last_10",
+      "last10": [],
+      "stats": {
+        "wins": 0,
+        "draws": 0,
+        "losses": 0,
+        "goalsFor": 0,
+        "goalsAgainst": 0,
+        "avgGoalsFor": 0.0,
+        "avgGoalsAgainst": 0.0,
+        "form": [],
+        "gamesCount": 0
+      }
+    },
+    {
+      "team": "Panamá",
+      "sourceType": "all_competitions_last_10",
+      "last10": [],
+      "stats": {
+        "wins": 0,
+        "draws": 0,
+        "losses": 0,
+        "goalsFor": 0,
+        "goalsAgainst": 0,
+        "avgGoalsFor": 0.0,
+        "avgGoalsAgainst": 0.0,
+        "form": [],
+        "gamesCount": 0
+      }
+    },
+    {
+      "team": "Honduras",
+      "sourceType": "all_competitions_last_10",
+      "last10": [],
+      "stats": {
+        "wins": 0,
+        "draws": 0,
+        "losses": 0,
+        "goalsFor": 0,
+        "goalsAgainst": 0,
+        "avgGoalsFor": 0.0,
+        "avgGoalsAgainst": 0.0,
+        "form": [],
+        "gamesCount": 0
+      }
+    }
+  ]
+}

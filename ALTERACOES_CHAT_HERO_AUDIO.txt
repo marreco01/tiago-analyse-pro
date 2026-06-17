@@ -1,0 +1,6 @@
+AJUSTES:
+- Chat admin/dono agora exibe ANALYSE PRO 2.0 como nome.
+- Removida seção de Tips da página inicial.
+- Imagem do jogador ajustada no hero para não cortar, usando object-contain à direita.
+- Chat agora mostra indicador de gravação com tempo e Enter para enviar áudio.
+- Fallback de escudo alterado para logo do site.

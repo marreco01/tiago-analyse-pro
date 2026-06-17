@@ -1,0 +1,29 @@
+ANALYSE PRO 2.0 — ATUALIZAÇÃO ÚNICA
+
+1) MEUS TIMES + ALERTAS
+- Nova página /favorite-teams.
+- Até 10 clubes favoritos por utilizador.
+- Feed de próximos jogos ligado à API-Football.
+- Alertas de início, intervalo e fim quando o app/site está aberto.
+- Consulta automática a cada 3 minutos quando alertas estão ativos.
+
+2) ASSINATURAS AUTOMÁTICAS PRO E VIP
+- PRO e VIP passam a oferecer duas escolhas:
+  a) Assinatura automática mensal pelo Mercado Pago.
+  b) Pagamento único por 30 dias.
+- Sócio VIP Fundador permanece pagamento único anual.
+- Configure no Mercado Pago Webhooks os eventos:
+  payment
+  subscription_preapproval
+  subscription_authorized_payment
+- A liberação/renovação depende da confirmação recebida pelo webhook.
+
+3) APLICATIVO PARA TELEMÓVEL (PWA)
+- Manifesto PWA e Service Worker adicionados.
+- Página Configurações com botão Instalar app.
+- Acesso rápido pela tela inicial do telemóvel.
+- Cache básico da interface para melhor abertura.
+
+IMPORTANTE
+- Alertas em segundo plano com o app totalmente fechado exigem uma etapa futura de push server (VAPID/Push Service). Nesta versão os alertas funcionam com o app ou site aberto.
+- O conteúdo permanece informativo: jogos, estatísticas e comparações.

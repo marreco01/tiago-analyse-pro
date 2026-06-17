@@ -1,0 +1,35 @@
+ALTERAÇÃO RANKING V13 - ROBÔ SCANNER DE OPORTUNIDADES
+
+Criado/atualizado o Robô Ranking V13 para alimentar a aba Rankings Inteligentes com novos mercados:
+
+- Top Over 1.5
+- Top Over 2.5
+- Top Ambas Marcam (BTTS)
+- Top Favoritos da Rodada
+- Top Média de Gols
+- Top Escanteios
+- Top Qualidade dos Dados
+
+Backend:
+- server/scraper/rankingRobotScraper.ts
+  - novos tipos: over15, over25, btts, favorites
+  - cálculo de percentuais Over 1.5, Over 2.5, BTTS e Favorito
+  - atualização baseada no Robô Próximos Jogos
+  - cache de 10 minutos
+  - sem consumo automático da API-Football
+
+- server/football-live.ts
+  - rota /api/football/rankings aceita os novos tipos
+  - notice atualizado para ROBÔ RANKING V13
+
+Frontend:
+- client/src/pages/Ranking.tsx
+  - cards novos no topo
+  - padrão visual atualizado para scanner automático
+  - ROBÔ RANKING V13 visível
+  - cada linha mostra confronto, indicador e botão Analisar
+
+Comando:
+npm install --legacy-peer-deps
+npm run build
+npm start

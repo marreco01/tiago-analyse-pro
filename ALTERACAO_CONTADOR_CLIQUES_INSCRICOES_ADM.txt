@@ -1,0 +1,29 @@
+ALTERAÇÃO FEITA — CONTADOR DE CLIQUES E INSCRIÇÕES NA ÁREA ADM
+
+1) Contador de cliques por IP
+- Foi criado o endpoint público: POST /api/analytics/click
+- O site agora registra automaticamente cliques em botões, links e campos importantes.
+- Cada clique salva: IP, página, texto do botão/link, navegador e data/hora.
+
+2) Contador de inscrições/cadastros
+- A área ADM agora mostra o total de usuários cadastrados, excluindo o admin.
+- Também mostra quantos usuários se cadastraram hoje.
+
+3) Nova visualização em /admin/system
+- Cliques totais
+- Cliques hoje
+- IPs únicos
+- Inscrições totais
+- Inscrições hoje
+- Ranking de IPs com mais cliques
+- Lista dos últimos cliques com IP, página e horário
+
+4) Dados salvos
+- As informações continuam sendo salvas no arquivo local:
+  .data/tiago-analyse-pro.json
+
+5) Arquivos alterados
+- server/app-data.ts
+- server/auth-payments.ts
+- client/src/App.tsx
+- client/src/pages/AdminSystem.tsx

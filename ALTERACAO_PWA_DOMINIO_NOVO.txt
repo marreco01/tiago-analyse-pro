@@ -1,0 +1,12 @@
+Correção aplicada:
+- Removidas referências ao domínio antigo tiago-analyse-pro-production.up.railway.app.
+- Atualizado domínio oficial para analyse-pro-production.up.railway.app.
+- Corrigido manifest.webmanifest com id/start_url/scope corretos.
+- Atualizado service worker para cache novo analyse-pro-pwa-v2.
+- Mantidos ícones de instalação 192x192, 512x512 e Apple Touch.
+
+Após publicar:
+1. Abrir no celular: https://analyse-pro-production.up.railway.app/manifest.webmanifest
+2. Abrir no celular: https://analyse-pro-production.up.railway.app/sw.js
+3. No Chrome Android: Configurações > Configurações do site > Dados armazenados > limpar dados do domínio antigo, se necessário.
+4. Reabrir o site e tocar em menu ⋮ > Instalar app.

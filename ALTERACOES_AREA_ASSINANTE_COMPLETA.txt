@@ -1,0 +1,14 @@
+ANALYSE PRO 2.0 — ÁREA DO ASSINANTE COMPLETA
+
+Aplicado:
+- Nova rota /account com página Minha Assinatura.
+- Plano atual: FREE, PRO, VIP ou SÓCIO VIP FUNDADOR.
+- Data de vencimento e dias restantes.
+- Limite diário e quantidade de análises utilizadas.
+- SÓCIO VIP exibindo limite de 500 análises/dia.
+- Botões de renovação e upgrade.
+- Histórico de pagamentos Mercado Pago com status.
+- Informação e acesso ao Chat PRO conforme plano.
+- Vencimento automático conferido em requisições autenticadas.
+- Consumo individual persistido em DATA_DIR=/data.
+- Menu Minha conta, Meu Plano, Assinatura e Pagamentos ligado à nova área.

@@ -1,0 +1,7 @@
+BRASILEIRÃO V7
+- Removido o bloco "Todos os clubes" do topo do Brasileirão.
+- Adicionado card "Melhor partida da rodada" no topo.
+- Card calcula automaticamente o melhor jogo usando a grade de próximos jogos e índice IA.
+- Mostra mandante x visitante, data, hora, estádio, rodada, IA, Over 1.5 e BTTS.
+- Botão "Analisar agora" seleciona os dois clubes e abre a aba Análise IA.
+- Mantém robô de grade pública com atualização a cada 10 minutos.
