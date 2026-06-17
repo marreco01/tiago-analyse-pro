@@ -18,7 +18,8 @@ import { Brand, GlassCard, PremiumPage } from "@/components/PremiumShell";
 import { logoutLocalUser } from "@/lib/localAuth";
 
 const mainLinks = [
-{ href: "/live", label: "Hoje + 48h", icon: Zap },  { href: "/upcoming", label: "Próximos jogos", desc: "Calendário e confrontos", icon: CalendarDays },
+
+ { href: "/upcoming", label: "Próximos jogos", desc: "Calendário e confrontos", icon: CalendarDays },
   { href: "/analyze", label: "Análises IA", desc: "Gerar análise de confronto", icon: BarChart3 },
   { href: "/compare", label: "Comparar times", desc: "Forma, histórico e indicadores", icon: Shield },
   { href: "/ranking", label: "Rankings", desc: "Índice Analyse Pro", icon: Trophy },
