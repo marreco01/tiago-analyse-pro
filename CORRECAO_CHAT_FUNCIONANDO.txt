@@ -1,0 +1,6 @@
+Correção aplicada:
+- O componente LiveChat agora fica montado nas páginas públicas do site.
+- Os botões "Sala ao vivo" voltam a abrir o chat.
+- O chat continua separado por partida através do roomId match:<fixture>.
+- Área /admin, login, cadastro e home continuam sem chat flutuante.
+- Usuário sem login verá o aviso para entrar/criar conta, em vez de não aparecer nada.

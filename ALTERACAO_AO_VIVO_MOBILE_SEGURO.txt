@@ -1,0 +1,8 @@
+Atualização segura aplicada:
+- Apenas client/src/pages/LiveGames.tsx foi alterado.
+- Não mexemos em package.json, pnpm-lock, railway.toml, nixpacks.toml ou dependências.
+- Criado card mobile compacto para jogos ao vivo.
+- Cards desktop preservados.
+- Filtros mobile com rolagem horizontal.
+- Métricas mobile simplificadas: placar, chutes, no gol, cantos, cartões, atividade e pressão.
+- Botão/card abre Centro do Jogo quando houver fixtureId.

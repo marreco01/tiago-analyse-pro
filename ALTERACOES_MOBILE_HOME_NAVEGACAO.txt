@@ -1,0 +1,15 @@
+ANALYSE PRO 2.0 — MOBILE PRIMEIRA ETAPA
+
+Aplicado:
+- Home mobile refeita no padrão aprovado.
+- Topo mobile com logo, sino e conta.
+- Menu superior em cards horizontais.
+- Hero mobile com jogador, CTA e texto.
+- Atalhos principais: jogos ao vivo, próximos, comparar, ranking, chat.
+- Cards mobile: jogo ao vivo e plano PRO.
+- Sócio VIP destacado.
+- Bottom navigation fixa.
+- PremiumAppShell ganhou navegação mobile global para páginas internas.
+
+Próximas etapas recomendadas:
+- Ajustar cada página interna para layout mobile específico: Análises, Ao Vivo, Ranking, Copa 2026 e Minha Conta.

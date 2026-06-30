@@ -1,0 +1,23 @@
+ALTERAÇÕES PRIORIDADE 1 — PAGAMENTO PIX MANUAL
+
+Implementado:
+- Página /payments adaptada para PIX manual.
+- Chave PIX configurada: b7a5a2d2-4245-4b39-8ced-d56bcbe757ef.
+- Banco informado na tela: Santander.
+- Planos:
+  PRO = R$ 19,90/mês
+  VIP = R$ 39,90/mês
+- Botão para copiar chave PIX.
+- Upload de comprovante.
+- Campo de observação do pagamento.
+- Pagamento criado no backend como pending.
+- Admin pode visualizar comprovante em /admin/payments.
+- Admin aprova manualmente e libera PRO/VIP por 30 dias.
+- Integração Mercado Pago removida do fluxo principal de /payments.
+
+Comandos:
+npm install
+npm run build
+git add .
+git commit -m "Prioridade 1 pagamento pix manual"
+git push -f origin main

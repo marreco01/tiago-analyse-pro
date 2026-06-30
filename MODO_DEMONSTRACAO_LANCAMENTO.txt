@@ -1,0 +1,24 @@
+MODO DEMONSTRAÇÃO — ANALYSE PRO
+
+Objetivo:
+Permitir testar o site antes do lançamento sem depender da API-Football original e sem gastar chamadas.
+
+Como ativar no Railway:
+1. Abra o projeto no Railway.
+2. Vá em Variables.
+3. Adicione:
+   DEMO_MODE=true
+4. Faça um novo deploy.
+
+Como desativar:
+DEMO_MODE=false
+
+O que fica disponível no modo demonstração:
+- Jogos simulados ao vivo.
+- Salas de chat separadas por partida.
+- Chat geral separado.
+- Alertas visuais de gol, escanteio, ambas marcam e cartão.
+- Teste mobile sem depender da API real.
+
+Aviso exibido no site:
+Modo demonstração ativo — dados simulados para teste antes do lançamento.

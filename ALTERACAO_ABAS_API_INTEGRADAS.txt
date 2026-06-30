@@ -1,0 +1,24 @@
+ALTERAÇÃO - ABAS INTEGRADAS COM API REAL
+
+Foram configuradas as abas que estavam paradas ou usando apenas dados locais:
+
+1. NOTÍCIAS/RANKING
+- Agora consulta /api/football/rankings para Gols, Ambos Marcam e Escanteios.
+- Botão Atualizar API.
+- Mostra última atualização.
+
+2. HISTÓRICO
+- Mantém histórico local do usuário.
+- Agora também consulta /api/jogos-hoje para sugerir jogos reais para nova análise.
+- Botão Atualizar API e horário da última consulta.
+
+3. FAVORITOS
+- Continua exibindo favoritos locais.
+- Agora sincroniza com /api/favorites quando o usuário está logado.
+- Também consulta /api/football/favorite-feed para mostrar próximos jogos reais dos times favoritos.
+
+4. PRÓXIMOS JOGOS
+- Já estava integrado em /api/football/upcoming e foi mantido.
+
+OBSERVAÇÃO:
+As abas dependem de API_FOOTBALL_KEY configurada no ambiente do deploy.

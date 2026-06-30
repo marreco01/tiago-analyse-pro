@@ -1,0 +1,13 @@
+ANALYSE PRO 2.0 — SÓCIO VIP FUNDADOR
+
+Aplicado:
+- SÓCIO VIP FUNDADOR distinguido do VIP mensal no backend.
+- VIP mensal: 200 análises/dia.
+- SÓCIO VIP FUNDADOR: 500 análises/dia.
+- Nova variável: API_ANALYSIS_LIMIT_SOCIO_VIP=500.
+- Pagamentos já aprovados como SOCIO_VIP também são reconhecidos pela nova regra.
+- Painel Admin permite identificar/aplicar SÓCIO VIP.
+- Card do plano e checkout informam o novo benefício.
+
+Observação:
+- O limite de 500 é de ações de análise do utilizador; o controle geral da API continua protegido por limite seguro, cache e reserva essencial.

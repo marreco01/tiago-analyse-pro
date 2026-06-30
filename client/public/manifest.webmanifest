@@ -1,0 +1,35 @@
+{
+  "name": "ANALYSE PRO 2.0",
+  "short_name": "Analyse Pro",
+  "description": "Estatísticas e acompanhamento de futebol.",
+  "start_url": "/dashboard?source=pwa",
+  "display": "standalone",
+  "background_color": "#030405",
+  "theme_color": "#facc15",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "id": "/dashboard",
+  "scope": "/",
+  "categories": [
+    "sports",
+    "utilities"
+  ]
+}

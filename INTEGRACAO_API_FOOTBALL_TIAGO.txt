@@ -1,0 +1,28 @@
+INTEGRAÇÃO API-FOOTBALL — ANALYSE PRO
+
+O que foi ajustado:
+1. Backend reforçado em server/football-live.ts
+2. Nova rota principal: /api/jogos-hoje
+3. Alias: /api/football/today
+4. Rota de status: /api/football/status
+5. Próximos jogos: /api/football/upcoming
+6. Últimos jogos por time: /api/football/team/:teamId/last
+7. Dados do jogo: /api/football/fixture/:fixtureId
+8. Estatísticas do jogo: /api/football/fixture/:fixtureId/statistics
+9. Escalações: /api/football/fixture/:fixtureId/lineups
+10. H2H: /api/football/h2h?teamA=ID&teamB=ID
+11. Tabela: /api/football/standings?league=ID&season=2026
+12. Cache simples de 3 minutos para economizar o plano grátis da API-Football.
+13. Dashboard agora mostra um bloco "Jogos reais de hoje" puxando da API.
+
+Variáveis necessárias no Railway:
+API_FOOTBALL_KEY=SUA_CHAVE_AQUI
+API_FOOTBALL_BASE_URL=https://v3.football.api-sports.io
+
+Como testar depois do deploy:
+1. Abrir: /api/football/status
+2. Abrir: /api/jogos-hoje
+3. Abrir o dashboard e verificar o bloco "Jogos reais de hoje".
+
+Observação:
+O plano grátis tem limite baixo. O cache ajuda, mas para site com usuários reais será preciso plano pago depois.

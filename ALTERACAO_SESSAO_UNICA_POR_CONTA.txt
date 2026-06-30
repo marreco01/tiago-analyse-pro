@@ -1,0 +1,19 @@
+ALTERAÇÃO - SESSÃO ÚNICA POR CONTA
+
+Implementado controle profissional de acesso:
+
+1. Cada conta de usuário comum mantém apenas 1 sessão ativa.
+2. Quando a mesma conta entra em outro dispositivo, a sessão anterior é removida automaticamente.
+3. Administradores continuam com sessões ilimitadas.
+4. O frontend verifica a sessão ativa a cada 60 segundos e também ao focar a janela.
+5. Se a sessão antiga for derrubada, o usuário recebe aviso e volta para o login.
+6. Criada área ADMIN > SESSÕES para visualizar sessões ativas.
+7. A área de sessões mostra usuário, plano, IP, dispositivo, navegador e última atividade.
+8. O administrador pode encerrar sessões manualmente.
+
+Arquivos principais alterados:
+- server/app-data.ts
+- server/auth-payments.ts
+- client/src/App.tsx
+- client/src/components/PremiumShell.tsx
+- client/src/pages/AdminSessions.tsx

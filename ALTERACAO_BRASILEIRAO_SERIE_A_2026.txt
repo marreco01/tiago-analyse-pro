@@ -1,0 +1,15 @@
+ANALYSE PRO 2.0 — BRASILEIRÃO SÉRIE A 2026
+
+Aplicado:
+- Nova rota /brasileirao.
+- Nova aba no menu Especial, abaixo da Copa do Mundo.
+- Tema visual verde, amarelo e azul inspirado no Campeonato Brasileiro.
+- Bloco com clubes/escudos.
+- Troféu e identidade visual de campeonato.
+- Abas: Jogos, Classificação e Resultados.
+- Tabela de classificação.
+- Filtros por clube/cidade e rodada.
+- Link para Centro do Jogo quando houver fixtureId.
+- Backend /api/football/brasileirao usando league=71 e season=2026.
+- Cache de 10 minutos no controle de API.
+- Fallback visual para clubes se a API ainda não retornar dados da temporada.

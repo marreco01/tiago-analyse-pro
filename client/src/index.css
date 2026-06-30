@@ -1,0 +1,803 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+:root {
+  --primary: oklch(0.623 0.214 259.815);
+  --primary-foreground: oklch(0.985 0 0);
+  --sidebar-primary: oklch(0.623 0.214 259.815);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --chart-1: oklch(0.623 0.214 259.815);
+  --chart-2: oklch(0.623 0.214 259.815);
+  --chart-3: oklch(0.623 0.214 259.815);
+  --chart-4: oklch(0.623 0.214 259.815);
+  --chart-5: oklch(0.623 0.214 259.815);
+  --radius: 0.65rem;
+  /* ANALYSE PRO 2.0 - Tema claro premium global */
+  --background: #f5f7fb;
+  --foreground: #111827;
+  --card: #ffffff;
+  --card-foreground: #111827;
+  --popover: #ffffff;
+  --popover-foreground: #111827;
+  --secondary: #eef2f7;
+  --secondary-foreground: #1f2937;
+  --muted: #e5e7eb;
+  --muted-foreground: #64748b;
+  --accent: #facc15;
+  --accent-foreground: #111827;
+  --destructive: #ef4444;
+  --destructive-foreground: #ffffff;
+  --border: rgba(15, 23, 42, 0.10);
+  --input: rgba(15, 23, 42, 0.12);
+  --ring: #facc15;
+  --sidebar: #ffffff;
+  --sidebar-foreground: #111827;
+  --sidebar-accent: #fff7d6;
+  --sidebar-accent-foreground: #111827;
+  --sidebar-border: rgba(15, 23, 42, 0.10);
+  --sidebar-ring: #facc15;
+}
+
+.dark {
+  --primary: oklch(0.8 0.2 142);
+  --primary-foreground: oklch(0.985 0 0);
+  --sidebar-primary: oklch(0.8 0.2 142);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --background: oklch(0.08 0.01 286);
+  --foreground: oklch(0.95 0.01 65);
+  --card: oklch(0.15 0.01 286);
+  --card-foreground: oklch(0.95 0.01 65);
+  --popover: oklch(0.15 0.01 286);
+  --popover-foreground: oklch(0.95 0.01 65);
+  --secondary: oklch(0.2 0.01 286);
+  --secondary-foreground: oklch(0.85 0.01 65);
+  --muted: oklch(0.3 0.01 286);
+  --muted-foreground: oklch(0.7 0.01 286);
+  --accent: oklch(0.8 0.2 142);
+  --accent-foreground: oklch(0.08 0.01 286);
+  --destructive: oklch(0.704 0.191 22.216);
+  --destructive-foreground: oklch(0.985 0 0);
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: oklch(0.8 0.2 142);
+  --chart-1: oklch(0.8 0.2 142);
+  --chart-2: oklch(0.623 0.214 259.815);
+  --chart-3: oklch(0.7 0.15 200);
+  --chart-4: oklch(0.6 0.15 280);
+  --chart-5: oklch(0.5 0.15 320);
+  --sidebar: oklch(0.12 0.01 286);
+  --sidebar-foreground: oklch(0.95 0.01 65);
+  --sidebar-accent: oklch(0.8 0.2 142);
+  --sidebar-accent-foreground: oklch(0.08 0.01 286);
+  --sidebar-border: oklch(1 0 0 / 10%);
+  --sidebar-ring: oklch(0.8 0.2 142);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Inter', sans-serif;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+  }
+  button:not(:disabled),
+  [role="button"]:not([aria-disabled="true"]),
+  [type="button"]:not(:disabled),
+  [type="submit"]:not(:disabled),
+  [type="reset"]:not(:disabled),
+  a[href],
+  select:not(:disabled),
+  input[type="checkbox"]:not(:disabled),
+  input[type="radio"]:not(:disabled) {
+    @apply cursor-pointer;
+  }
+}
+
+@layer components {
+  /**
+   * Custom container utility that centers content and adds responsive padding.
+   *
+   * This overrides Tailwind's default container behavior to:
+   * - Auto-center content (mx-auto)
+   * - Add responsive horizontal padding
+   * - Set max-width for large screens
+   *
+   * Usage: <div className="container">...</div>
+   *
+   * For custom widths, use max-w-* utilities directly:
+   * <div className="max-w-6xl mx-auto px-4">...</div>
+   */
+  .container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem; /* 16px - mobile padding */
+    padding-right: 1rem;
+  }
+
+  .flex {
+    min-height: 0;
+    min-width: 0;
+  }
+
+  @media (min-width: 640px) {
+    .container {
+      padding-left: 1.5rem; /* 24px - tablet padding */
+      padding-right: 1.5rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .container {
+      padding-left: 2rem; /* 32px - desktop padding */
+      padding-right: 2rem;
+      max-width: 1280px; /* Standard content width */
+    }
+  }
+
+  /* Glassmorphism effects */
+  .glass {
+    @apply bg-white/10 backdrop-blur-md border border-white/20 rounded-lg;
+  }
+
+  .glass-dark {
+    @apply bg-black/20 backdrop-blur-md border border-white/10 rounded-lg;
+  }
+
+  .glass-card {
+    @apply bg-white/5 backdrop-blur-lg border border-white/10 rounded-xl shadow-2xl;
+  }
+
+  .glass-premium {
+    @apply bg-gradient-to-br from-white/10 to-white/5 backdrop-blur-xl border border-white/20 rounded-2xl shadow-2xl;
+  }
+
+  /* Premium buttons */
+  .btn-premium {
+    @apply px-6 py-3 rounded-lg font-semibold transition-all duration-300;
+    @apply bg-gradient-to-r from-green-500 to-emerald-600 text-black;
+    @apply hover:shadow-lg hover:shadow-green-500/50 hover:scale-105;
+  }
+
+  .btn-premium-outline {
+    @apply px-6 py-3 rounded-lg font-semibold transition-all duration-300;
+    @apply border-2 border-green-500 text-green-500 bg-transparent;
+    @apply hover:bg-green-500/10 hover:shadow-lg hover:shadow-green-500/30;
+  }
+
+  /* Gradient text */
+  .gradient-text {
+    @apply bg-gradient-to-r from-green-400 via-blue-500 to-green-500 bg-clip-text text-transparent;
+  }
+
+  /* Smooth animations */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes slideInLeft {
+    from {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+
+  @keyframes glow {
+    0%, 100% {
+      box-shadow: 0 0 5px rgba(34, 197, 94, 0.3);
+    }
+    50% {
+      box-shadow: 0 0 20px rgba(34, 197, 94, 0.6);
+    }
+  }
+
+  .animate-fade-in-up {
+    animation: fadeInUp 0.6s ease-out;
+  }
+
+  .animate-slide-in-left {
+    animation: slideInLeft 0.6s ease-out;
+  }
+
+  .animate-glow {
+    animation: glow 2s ease-in-out infinite;
+  }
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: hsl(var(--background));
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--border));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--muted));
+}
+@keyframes soccerBallFall {
+  0% {
+    transform: translate3d(0, -12vh, 0) rotate(0deg);
+  }
+  100% {
+    transform: translate3d(28px, 112vh, 0) rotate(520deg);
+  }
+}
+
+.soccer-ball-fall {
+  top: -10vh;
+  animation-name: soccerBallFall;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  filter: drop-shadow(0 0 8px rgba(255,255,255,0.35));
+}
+
+@keyframes fall {
+  0% { transform: translateY(-15vh) rotate(0deg); }
+  100% { transform: translateY(120vh) rotate(360deg); }
+}
+
+@keyframes apbar {
+  0%, 100% {
+    transform: translateY(0) scaleY(0.62);
+    opacity: 0.66;
+    filter: brightness(0.92);
+  }
+  50% {
+    transform: translateY(-3px) scaleY(1.16);
+    opacity: 1;
+    filter: brightness(1.08);
+  }
+}
+
+@keyframes loaderDotPulse {
+  0%, 100% {
+    transform: translateY(0) scale(0.9);
+    opacity: 0.45;
+  }
+  50% {
+    transform: translateY(-4px) scale(1.08);
+    opacity: 1;
+  }
+}
+
+
+/* =========================================================
+   ANALYSE PRO 2.0 - Premium Light UI Overrides
+   Mantém a marca, mas deixa o sistema inteiro mais limpo.
+   ========================================================= */
+:root.light {
+  color-scheme: light;
+}
+
+.light body {
+  background:
+    radial-gradient(circle at 10% 0%, rgba(250, 204, 21, 0.12), transparent 28%),
+    linear-gradient(180deg, #f8fafc 0%, #eef2f7 100%) !important;
+  color: #111827 !important;
+}
+
+.light main,
+.light [data-slot="sidebar-inset"],
+.light .min-h-screen {
+  background: transparent !important;
+}
+
+.light [class*="bg-[#02060d]"],
+.light [class*="bg-[#030405]"],
+.light [class*="bg-[#05070b]"],
+.light [class*="bg-[#07080c]"],
+.light [class*="bg-[#07090d]"],
+.light [class*="bg-[#07111f]"],
+.light [class*="bg-slate-950"],
+.light [class*="bg-black/"],
+.light [class*="bg-white/[0.03]"],
+.light [class*="bg-white/[0.035]"],
+.light [class*="bg-white/[0.04]"],
+.light [class*="bg-white/[0.05]"],
+.light .glass,
+.light .glass-dark,
+.light .glass-card,
+.light .glass-premium {
+  background: rgba(255, 255, 255, 0.92) !important;
+  border-color: rgba(15, 23, 42, 0.10) !important;
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.08) !important;
+  backdrop-filter: blur(14px);
+}
+
+.light [class*="border-white/"],
+.light [class*="border-yellow-400/"] {
+  border-color: rgba(15, 23, 42, 0.10) !important;
+}
+
+.light .text-white,
+.light [class*="text-slate-100"],
+.light [class*="text-slate-200"] {
+  color: #111827 !important;
+}
+
+.light [class*="text-slate-300"],
+.light [class*="text-slate-400"],
+.light [class*="text-slate-500"] {
+  color: #64748b !important;
+}
+
+.light .text-yellow-300,
+.light .text-yellow-400,
+.light [class*="text-yellow-300"],
+.light [class*="text-yellow-400"] {
+  color: #b77900 !important;
+}
+
+.light input,
+.light textarea,
+.light select,
+.light button[role="combobox"] {
+  background-color: #ffffff !important;
+  color: #111827 !important;
+  border-color: rgba(15, 23, 42, 0.14) !important;
+}
+
+.light input::placeholder,
+.light textarea::placeholder {
+  color: #94a3b8 !important;
+}
+
+.light .bg-gradient-to-r,
+.light .bg-gradient-to-br {
+  box-shadow: 0 14px 30px rgba(15, 23, 42, 0.10);
+}
+
+.light .bg-green-500,
+.light .bg-red-500,
+.light .bg-orange-500,
+.light .from-orange-500,
+.light .from-red-500,
+.light .from-green-500,
+.light .to-red-500,
+.light .to-orange-500,
+.light .to-emerald-600 {
+  color: #ffffff !important;
+}
+
+.light .from-yellow-400,
+.light .to-yellow-400,
+.light .to-orange-500,
+.light .bg-yellow-400 {
+  color: #111827 !important;
+}
+
+.light .shadow-2xl,
+.light [class*="shadow-[0_0"] {
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.10) !important;
+}
+
+.light h1,
+.light h2,
+.light h3 {
+  letter-spacing: -0.035em;
+}
+
+.light h1 {
+  font-size: clamp(1.9rem, 3.5vw, 3.2rem);
+}
+
+.light h2 {
+  font-size: clamp(1.25rem, 2vw, 1.7rem);
+}
+
+.light .rounded-\[2rem\],
+.light .rounded-3xl {
+  border-radius: 1.35rem !important;
+}
+
+.light .rounded-\[1\.5rem\],
+.light .rounded-2xl {
+  border-radius: 1.1rem !important;
+}
+
+.light [data-sidebar="sidebar"],
+.light [data-slot="sidebar"],
+.light aside {
+  background: rgba(255, 255, 255, 0.96) !important;
+  color: #111827 !important;
+  border-right: 1px solid rgba(15, 23, 42, 0.10) !important;
+  box-shadow: 12px 0 35px rgba(15, 23, 42, 0.06) !important;
+}
+
+.light [data-sidebar="menu-button"],
+.light [data-slot="sidebar-menu-button"] {
+  color: #334155 !important;
+}
+
+.light [data-active="true"],
+.light [data-state="active"] {
+  background: linear-gradient(135deg, rgba(250,204,21,.22), rgba(249,115,22,.12)) !important;
+  color: #111827 !important;
+}
+
+/* Página de análise: visual claro com botão central e seletores laterais */
+.light .analyse-selector-grid,
+.light .analysis-selector-grid {
+  background: #ffffff !important;
+  border-color: rgba(15,23,42,.10) !important;
+}
+
+.light .analyse-primary-action,
+.light .analysis-primary-action {
+  background: linear-gradient(135deg, #facc15, #fb923c) !important;
+  color: #111827 !important;
+  box-shadow: 0 18px 40px rgba(250, 204, 21, 0.28) !important;
+}
+
+/* =========================================================
+   AUTH / LOGIN BACKGROUND ANIMATIONS
+   ========================================================= */
+@keyframes authFloat {
+  0%, 100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(0, -18px, 0) scale(1.04);
+  }
+}
+
+@keyframes authPulse {
+  0%, 100% {
+    opacity: 0.18;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.34;
+    transform: scale(1.08);
+  }
+}
+
+@keyframes authTwinkle {
+  0%, 100% {
+    opacity: 0.15;
+    transform: scale(0.8);
+  }
+  50% {
+    opacity: 0.95;
+    transform: scale(1.1);
+  }
+}
+
+.auth-stadium-bg {
+  opacity: 0.62;
+  filter: brightness(0.9) saturate(1.15);
+}
+
+.auth-blob {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(60px);
+  pointer-events: none;
+  animation: authFloat 7s ease-in-out infinite;
+}
+
+.auth-blob-one {
+  top: 12%;
+  left: 10%;
+  height: 220px;
+  width: 220px;
+  background: rgba(250, 204, 21, 0.16);
+}
+
+.auth-blob-two {
+  right: 10%;
+  top: 16%;
+  height: 260px;
+  width: 260px;
+  background: rgba(249, 115, 22, 0.14);
+  animation-delay: 1.2s;
+}
+
+.auth-blob-three {
+  bottom: 10%;
+  left: 50%;
+  height: 280px;
+  width: 280px;
+  transform: translateX(-50%);
+  background: rgba(34, 197, 94, 0.1);
+  animation: authPulse 8s ease-in-out infinite;
+}
+
+.auth-particles {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.auth-particle {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  border-radius: 9999px;
+  background: rgba(255, 215, 64, 0.95);
+  box-shadow: 0 0 12px rgba(255, 215, 64, 0.75);
+  animation: authTwinkle 5s ease-in-out infinite;
+}
+
+@media (max-width: 640px) {
+  .auth-stadium-bg {
+    opacity: 0.72;
+    filter: brightness(1.02) saturate(1.08);
+  }
+
+  .auth-blob-one,
+  .auth-blob-two,
+  .auth-blob-three {
+    filter: blur(42px);
+    opacity: 0.85;
+  }
+}
+
+
+
+
+/* ANALYSE PRO 2.0 — carregamento personalizado para processos de análise */
+@keyframes analysisChargeFree {
+  0%, 5% { transform: scaleY(0.10); opacity: 0.18; }
+  15%, 82% { transform: scaleY(1); opacity: 1; }
+  96%, 100% { transform: scaleY(0.10); opacity: 0.18; }
+}
+@keyframes analysisChargePro {
+  0%, 18% { transform: scaleY(0.10); opacity: 0.18; }
+  30%, 82% { transform: scaleY(1); opacity: 1; }
+  96%, 100% { transform: scaleY(0.10); opacity: 0.18; }
+}
+@keyframes analysisChargeVip {
+  0%, 33% { transform: scaleY(0.10); opacity: 0.18; }
+  45%, 82% { transform: scaleY(1); opacity: 1; }
+  96%, 100% { transform: scaleY(0.10); opacity: 0.18; }
+}
+@keyframes analysisChargeFounder {
+  0%, 48% { transform: scaleY(0.10); opacity: 0.18; }
+  60%, 82% { transform: scaleY(1); opacity: 1; }
+  96%, 100% { transform: scaleY(0.10); opacity: 0.18; }
+}
+@keyframes analysisTextPulse {
+  0%, 100% { opacity: 0.55; }
+  50% { opacity: 1; }
+}
+@keyframes analysisShellGlow {
+  0%, 100% { box-shadow: inset 0 0 35px rgba(255,255,255,0.03), 0 0 20px rgba(250,204,21,0.07); }
+  50% { box-shadow: inset 0 0 35px rgba(255,255,255,0.04), 0 0 36px rgba(250,204,21,0.17); }
+}
+.analysis-charge-shell {
+  animation: analysisShellGlow 2.2s ease-in-out infinite;
+}
+.analysis-battery-bar {
+  transform-origin: bottom center;
+  will-change: transform, opacity;
+}
+.analysis-battery-free { animation: analysisChargeFree 2.6s cubic-bezier(0.4, 0, 0.2, 1) infinite; }
+.analysis-battery-pro { animation: analysisChargePro 2.6s cubic-bezier(0.4, 0, 0.2, 1) infinite; }
+.analysis-battery-vip { animation: analysisChargeVip 2.6s cubic-bezier(0.4, 0, 0.2, 1) infinite; }
+.analysis-battery-founder { animation: analysisChargeFounder 2.6s cubic-bezier(0.4, 0, 0.2, 1) infinite; }
+.analysis-loading-message { animation: analysisTextPulse 1.6s ease-in-out infinite; }
+
+
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Ajuste global de compactação do Analyse Pro: cards menores e mais dados visíveis */
+@layer components {
+  .ap-compact-card {
+    @apply rounded-xl border border-white/10 bg-[#07090d]/90 shadow-xl backdrop-blur;
+  }
+
+  @media (min-width: 1024px) {
+    .compact-dashboard section,
+    .compact-dashboard article {
+      border-radius: 0.9rem;
+    }
+  }
+}
+
+/* MOBILE FIRST - Analyse Pro app compactado */
+@layer utilities {
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  html, body, #root {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  body {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .mobile-app-header {
+    padding-left: max(0.75rem, env(safe-area-inset-left));
+    padding-right: max(0.75rem, env(safe-area-inset-right));
+  }
+
+  .compact-dashboard {
+    padding-top: 0.1rem;
+  }
+
+  .compact-dashboard h1 {
+    font-size: clamp(1.45rem, 7vw, 2.15rem) !important;
+    line-height: 1.05 !important;
+    letter-spacing: -0.04em !important;
+  }
+
+  .compact-dashboard h2 {
+    font-size: clamp(1.1rem, 5vw, 1.55rem) !important;
+    line-height: 1.12 !important;
+  }
+
+  .compact-dashboard h3 {
+    font-size: 1rem !important;
+  }
+
+  .compact-dashboard .rounded-3xl,
+  .compact-dashboard .rounded-\[2rem\],
+  .compact-dashboard .rounded-\[1\.7rem\],
+  .compact-dashboard .rounded-\[1\.5rem\] {
+    border-radius: 1rem !important;
+  }
+
+  .compact-dashboard .p-8,
+  .compact-dashboard .md\:p-8,
+  .compact-dashboard .lg\:p-10 {
+    padding: 1rem !important;
+  }
+
+  .compact-dashboard .p-7,
+  .compact-dashboard .md\:p-7,
+  .compact-dashboard .p-6,
+  .compact-dashboard .md\:p-6,
+  .compact-dashboard .p-5,
+  .compact-dashboard .md\:p-5 {
+    padding: 0.85rem !important;
+  }
+
+  .compact-dashboard .gap-6,
+  .compact-dashboard .gap-5,
+  .compact-dashboard .space-y-6 > :not([hidden]) ~ :not([hidden]),
+  .compact-dashboard .space-y-5 > :not([hidden]) ~ :not([hidden]) {
+    gap: 0.8rem !important;
+    margin-top: 0.8rem !important;
+  }
+
+  .compact-dashboard .text-5xl,
+  .compact-dashboard .md\:text-5xl {
+    font-size: 2rem !important;
+  }
+
+  .compact-dashboard .text-4xl,
+  .compact-dashboard .md\:text-4xl {
+    font-size: 1.65rem !important;
+  }
+
+  .compact-dashboard .text-3xl {
+    font-size: 1.35rem !important;
+  }
+
+  .compact-dashboard .text-2xl {
+    font-size: 1.15rem !important;
+  }
+
+  .compact-dashboard button,
+  .compact-dashboard a {
+    min-height: 36px;
+  }
+
+  .compact-dashboard table {
+    font-size: 0.78rem;
+  }
+
+  .compact-dashboard th,
+  .compact-dashboard td {
+    padding: 0.45rem !important;
+    white-space: nowrap;
+  }
+}
+
+/* Barra rolante da Copa do Mundo no topo do app */
+@keyframes worldcup-marquee {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.worldcup-ticker-track {
+  animation: worldcup-marquee 90s linear infinite;
+}
+
+.worldcup-ticker:hover .worldcup-ticker-track {
+  animation-play-state: paused;
+}
+
+@media (max-width: 640px) {
+  .worldcup-ticker-track {
+    animation-duration: 70s;
+  }
+}

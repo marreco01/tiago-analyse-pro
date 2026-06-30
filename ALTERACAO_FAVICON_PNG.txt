@@ -1,0 +1,1 @@
+Favicon principal alterado para PNG no index.html, com versão ?v=4bars para forçar atualização de cache. Mantidos SVG alternativo e ICO como fallback.

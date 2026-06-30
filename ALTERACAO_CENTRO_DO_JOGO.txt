@@ -1,0 +1,12 @@
+ANALYSE PRO 2.0 — CENTRO DO JOGO
+
+Aplicado:
+- Nova rota /match-center.
+- Endpoint /api/football/match-center/:fixtureId.
+- Layout PC e mobile com inspiração de navegação compacta, abas e leitura rápida.
+- Sem repetir páginas existentes: concentra somente detalhes do jogo.
+- Abas: Resumo, Estatísticas, Eventos e Escalações.
+- Botão Gerar Análise IA.
+- Links da Copa do Mundo e Dashboard passam a abrir o Centro do Jogo.
+- Mantidas bandeiras da Copa.
+- Mantida correção Railway sem frozen-lockfile.

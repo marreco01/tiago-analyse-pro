@@ -1,0 +1,6 @@
+Adicionado bloco de bandeiras/escudos das seleções no topo da aba Copa do Mundo 2026.
+
+Funcionamento:
+- Primeiro usa as seleções retornadas na classificação dos grupos.
+- Se os grupos ainda não estiverem disponíveis, usa as seleções presentes na grade de jogos.
+- Quando a API final estiver ativa, o bloco atualiza automaticamente com as bandeiras/escudos retornados pela API.

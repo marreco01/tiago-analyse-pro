@@ -1,0 +1,16 @@
+ALTERAÇÃO - BOTÃO DO CHAT NAS ABAS BRASILEIRÃO E COPA
+
+Problema encontrado:
+- O componente LiveChat já existia e escutava o evento tap-open-live-chat.
+- Porém as páginas Brasileirão e Copa do Mundo não tinham botão disparando esse evento nos cards dos jogos.
+- Por isso o chat não abria nessas abas: o LiveChat só aparece depois que uma sala de partida é ativada.
+
+Correção aplicada:
+- Adicionado botão "💬 Ativar chat" em cada card de jogo do Brasileirão.
+- Adicionado botão "💬 Ativar chat" em cada card de jogo da Copa do Mundo.
+- Cada botão abre uma sala exclusiva da partida com roomId, nome da sala e placar/contexto.
+- Mantido o botão "Abrir jogo" separado.
+
+Arquivos alterados:
+- client/src/pages/Brasileirao.tsx
+- client/src/pages/WorldCup.tsx

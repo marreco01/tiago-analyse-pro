@@ -1,0 +1,44 @@
+ALTERAÇÕES FEITAS - CHAT TEMPO REAL
+
+1. Backend do chat criado em server/chat.ts
+   - Stream em tempo real via Server-Sent Events.
+   - Contador de usuários online.
+   - Envio de mensagens para todos os usuários conectados.
+   - Histórico em memória das últimas 120 mensagens.
+   - Bloqueio/desbloqueio de usuário por nome.
+   - Limpeza do chat pelo painel admin.
+
+2. Backend registrado em server/_core/index.ts
+   - Nova chamada registerLiveChat(app).
+
+3. Chat lateral refeito em client/src/components/LiveChat.tsx
+   - Abre/fecha no desktop e celular.
+   - Campo de nome do usuário.
+   - Contador de pessoas online.
+   - Mensagens em tempo real.
+   - Input visível no celular.
+   - Reconexão automática do EventSource.
+
+4. Página admin criada em client/src/pages/AdminChat.tsx
+   - Rota /admin/chat.
+   - Mostra pessoas online.
+   - Lista mensagens em tempo real.
+   - Botão limpar chat.
+   - Bloquear/desbloquear usuários.
+
+5. Rota adicionada em client/src/App.tsx
+   - /admin/chat
+
+COMANDOS PARA SUBIR:
+
+npm install
+npm run build
+git add .
+git commit -m "Chat tempo real com painel admin"
+git push -f origin main
+
+NO RAILWAY:
+Se der erro de pnpm-lock, use em Settings > Build:
+pnpm install --no-frozen-lockfile
+
+Depois Redeploy.

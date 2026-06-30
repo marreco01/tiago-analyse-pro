@@ -1,0 +1,19 @@
+ALTERAÇÃO - CHAT GERAL E SALAS POR PARTIDA
+
+Implementado:
+- Chat Geral separado da conversa das partidas.
+- Cada jogo ao vivo abre uma sala própria usando roomId baseado no fixtureId.
+- Mensagens da sala de uma partida não aparecem em outra partida.
+- Mensagens do Chat Geral não aparecem nas salas dos jogos.
+- Contador de usuários online agora é por sala.
+- Topo do chat mostra nome da sala e placar/minuto da partida.
+- Botão "Geral" permite voltar da sala da partida para o Chat Geral.
+- Backend aceita roomId, roomLabel e matchLabel nos endpoints /api/chat/state, /api/chat/stream e /api/chat/message.
+- Mantido Chat FREE liberado temporariamente.
+- Mantida estrutura de alertas ao vivo sem mostrar área administrativa no mobile.
+
+Arquivos principais alterados:
+- server/chat.ts
+- server/app-data.ts
+- client/src/components/LiveChat.tsx
+- client/src/pages/LiveGames.tsx

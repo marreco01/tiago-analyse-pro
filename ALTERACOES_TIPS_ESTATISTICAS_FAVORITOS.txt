@@ -1,0 +1,9 @@
+Ajustes aplicados:
+- Tips do Dia virou rota /tips com 5 tips para FREE e 10 para PRO/VIP/Admin.
+- Dashboard agora mostra tips reais da lista diária conforme plano do usuário.
+- Criada página /statistics com estatísticas calculadas a partir das tips liberadas e análises salvas.
+- Sidebar atualizada: Tips do Dia aponta para /tips e Estatísticas para /statistics.
+- Removido número falso 12 do item Chat PRO.
+- Cards de análise atualizados para tons amarelo/laranja/vermelho no padrão do site.
+- Favoritos refeito no visual premium preto/dourado.
+- Favicon atualizado para as 3 barras oficiais do ANALYSE PRO 2.0.

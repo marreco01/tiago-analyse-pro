@@ -1,0 +1,7 @@
+Correção aplicada:
+- Card Sócio VIP Fundador removido de fora da seção principal.
+- Card colocado logo abaixo dos 3 planos FREE / PRO / VIP.
+- Card permanece dentro da área "Escolha o plano ideal para você".
+- Mobile preservado.
+- Ao Vivo mobile preservado.
+- Nenhuma alteração em package.json, lockfile, Railway ou dependências.

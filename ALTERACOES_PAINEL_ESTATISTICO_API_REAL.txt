@@ -1,0 +1,20 @@
+ANALYSE PRO 2.0 — PAINEL ESTATÍSTICO COM DADOS REAIS
+
+Aplicado:
+- Nova rota /api/football/statistics-dashboard.
+- Painel Estatístico deixa de usar relatórios fixos.
+- Dados reais API-Football:
+  - jogos disponíveis hoje;
+  - jogos ao vivo;
+  - média de gols;
+  - frequência de gols das duas equipas;
+  - média de escanteios quando disponível;
+  - cobertura/qualidade dos dados;
+  - lista de partidas para analisar.
+- Filtro por competição.
+- Equipas mais analisadas calculadas pelo histórico real do utilizador.
+- Loader personalizado ao carregar/atualizar os dados.
+- Cache de 10 minutos para proteger o consumo da API.
+
+Observação:
+- A média de escanteios depende de partidas já iniciadas/finalizadas com estatísticas detalhadas disponíveis na API.

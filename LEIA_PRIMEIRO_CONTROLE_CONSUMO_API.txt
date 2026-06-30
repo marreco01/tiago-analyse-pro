@@ -1,0 +1,40 @@
+ANALYSE PRO 2.0 — CONTROLE DE CONSUMO API-FOOTBALL
+
+Aplicado no site:
+- Contador diário de chamadas reais enviadas à API-Football.
+- Cache contabilizado como chamadas economizadas.
+- Limite Mega preparado para 150.000 chamadas/dia.
+- Limite seguro interno em 120.000 chamadas/dia.
+- Reserva de 30.000 chamadas para jogos ao vivo.
+- Bloqueio automático de análises/rankings quando a reserva entra em ação.
+- Proteção contra excesso de chamadas por minuto.
+- Limite diário de geração/comparação por utilizador:
+  FREE 10, PRO 80, VIP 200, SÓCIO VIP FUNDADOR 500.
+- Painel Admin > API Status funcional, com alertas e consumo por endpoint.
+- Integração do controle nos endpoints atuais:
+  Jogos ao vivo, próximos jogos, rankings, comparação/análise e rotas antigas TRPC da API-Football.
+
+VARIÁVEIS A COLOCAR NO RAILWAY:
+API_FOOTBALL_DAILY_LIMIT=150000
+API_FOOTBALL_SAFETY_LIMIT=120000
+API_FOOTBALL_ESSENTIAL_RESERVE=30000
+API_FOOTBALL_PER_MINUTE_LIMIT=850
+API_ANALYSIS_LIMIT_FREE=10
+API_ANALYSIS_LIMIT_PRO=80
+API_ANALYSIS_LIMIT_VIP=200
+API_ANALYSIS_LIMIT_SOCIO_VIP=500
+DATA_DIR=/data
+
+IMPORTANTE:
+1. No Railway, adicione um Volume persistente montado em /data.
+   Sem volume, o contador pode ser reiniciado num novo deploy.
+2. Se contratar plano com limite por minuto diferente, ajuste API_FOOTBALL_PER_MINUTE_LIMIT.
+3. O limite interno não substitui o limite do fornecedor; serve para evitar gastar tudo antes do fim do dia.
+
+- Quando a reserva é atingida, fallbacks de comparação também são interrompidos para não desperdiçar chamadas.
+
+REGRA SÓCIO VIP FUNDADOR:
+- O pagamento SÓCIO VIP continua a liberar acesso VIP por 365 dias.
+- O sistema agora guarda a origem SÓCIO_VIP desse acesso.
+- Enquanto estiver ativo, o limite próprio será de 500 análises por dia.
+- A regra também reconhece pagamentos SÓCIO_VIP já aprovados antes desta atualização.

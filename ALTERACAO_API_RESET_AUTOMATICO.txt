@@ -1,0 +1,13 @@
+Reset automático diário da API aplicado.
+
+Alterado somente:
+- server/api-usage-control.ts
+
+Aplicado:
+- Reset automático por data do Brasil.
+- Ao mudar o dia, zera chamadas, bloqueios e contadores.
+- Chamada essencial de teste após bloqueio antigo para destravar API renovada no mesmo dia.
+- Se a API responder HTTP 200, limpa bloqueio antigo.
+- Se a API responder HTTP 429, mantém bloqueio.
+- Endpoint admin opcional POST /api/admin/api-usage/reset.
+- Sem alterar package.json, pnpm-lock, Railway, Nixpacks ou dependências.

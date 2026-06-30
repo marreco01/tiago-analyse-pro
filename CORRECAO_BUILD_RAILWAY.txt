@@ -1,0 +1,8 @@
+CORREÇÃO DO BUILD RAILWAY
+
+Erro resolvido:
+- Import inexistente @/data/dailyRelatórios corrigido para @/data/dailyTips.
+- Variáveis da Dashboard corrigidas para usar os relatórios existentes.
+- Campo da API de jogos ao vivo corrigido para activityIndex.
+
+O ZIP deve ser publicado novamente pelo GitHub/Railway.

@@ -1,0 +1,43 @@
+Alterações implementadas nesta versão:
+
+1. SEO básico completo
+- favicon.ico
+- favicon.svg
+- apple-touch-icon.png
+- robots.txt
+- sitemap.xml
+- meta description
+- Open Graph
+- Twitter Cards
+- canonical URL
+
+2. Novas rotas
+- /login
+- /register
+- /forgot-password
+- /favorites
+- /plans
+
+3. Login local provisório
+- Entrar
+- Registrar
+- Esqueci senha
+- sessão salva no localStorage
+
+4. Histórico e favoritos
+- análise salva automaticamente no histórico após clicar em ANALISAR CONFRONTO
+- favoritos salvos no navegador
+- páginas /history e /favorites atualizadas
+
+5. Área de planos
+- Grátis
+- PRO
+- VIP
+- botões preparados para PIX na próxima fase
+
+6. Menu atualizado
+- Favoritos separado de Histórico
+- Planos adicionados no menu
+- Botão Entrar no topo
+
+Observação: não incluí .env nem .env.local no ZIP por segurança. Configure as variáveis no Railway ou em .env.local localmente.

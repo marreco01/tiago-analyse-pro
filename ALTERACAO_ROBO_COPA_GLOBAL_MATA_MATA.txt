@@ -1,0 +1,8 @@
+Atualização Robô Copa Global - Mata-mata automático
+
+- O endpoint /api/football/world-cup agora tenta alimentar a aba Mata-mata automaticamente.
+- Quando a API retornar placeholders como "16 avos - Mandante" / "Visitante", o robô usa a classificação dos grupos para projetar os classificados.
+- Usa 1º e 2º de cada grupo + melhores terceiros disponíveis para montar os 16 confrontos iniciais.
+- Mantém data, horário, cidade e estádio retornados pela API quando existirem.
+- Quando a API passar a retornar os confrontos reais, o robô respeita os dados reais e deixa de usar projeção.
+- A atualização continua com cache de 10 minutos para economizar chamadas da API.

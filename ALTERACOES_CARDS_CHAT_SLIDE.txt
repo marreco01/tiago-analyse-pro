@@ -1,0 +1,24 @@
+ALTERAÇÕES FEITAS
+
+1. Cards menores no sistema
+- GlassCard global ficou mais compacto.
+- Menu lateral reduzido.
+- Grid principal reduzido de 280px para 260px.
+- Página do Brasileirão compactada: banner, painel, cards, clubes, tabela, botões e linhas de jogos.
+
+2. Chat liberado para FREE
+- hasChatAccess agora libera temporariamente o chat para qualquer usuário logado.
+- Textos alterados de Chat PRO para Chat Livre no botão flutuante e página do chat.
+- Mantida a necessidade de login para evitar chat totalmente anônimo.
+
+3. Slide inicial de apresentação
+- Adicionado slide/banner automático na Home desktop e mobile.
+- Slides: apresentação da plataforma, Brasileirão/rodadas e chat liberado.
+
+4. Brasileirão corrigido visualmente
+- Cards menores.
+- Clubes mais compactos.
+- Se escudo externo falhar, aparece sigla do clube em vez de repetir a logo do Analyse Pro.
+
+5. Build Railway mantido
+- Mantidas as correções do pnpm install que fizeram o deploy passar.

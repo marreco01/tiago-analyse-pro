@@ -1,0 +1,5 @@
+Correção aplicada:
+- Visual do Brasileirão removido do estilo Copa e ajustado para tema verde/amarelo/azul do futebol brasileiro.
+- Fallback de escudos corrigido para usar imagens reais via API-Sports CDN.
+- Mantida a API real quando retornar classificação/jogos.
+- Sem alteração em package.json, lockfile, Railway ou dependências.

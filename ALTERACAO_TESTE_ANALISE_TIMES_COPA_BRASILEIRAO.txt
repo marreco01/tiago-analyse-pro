@@ -1,0 +1,22 @@
+ALTERAÇÃO - MODO TESTE DE ANÁLISE DE TIMES
+
+1. Copa do Mundo
+- Bandeiras da área principal agora são clicáveis.
+- Ao passar o mouse, aparece o nome da seleção.
+- Primeiro clique seleciona Time A.
+- Segundo clique seleciona Time B.
+- Ao selecionar, abre a aba Análise de times.
+- Criado painel de teste com confronto Time A x Time B.
+- A análise teste funciona sem depender da API.
+
+2. Brasileirão
+- Criada aba: Análise de times.
+- Escudos dos clubes agora são clicáveis.
+- Ao passar o mouse, aparece o nome do clube.
+- Primeiro clique seleciona Time A.
+- Segundo clique seleciona Time B.
+- Criado painel de teste com confronto Time A x Time B.
+- A análise teste funciona sem depender da API.
+
+Objetivo:
+Permitir testar a escolha de times manualmente, sem consumo da API e sem depender de jogos disponíveis.

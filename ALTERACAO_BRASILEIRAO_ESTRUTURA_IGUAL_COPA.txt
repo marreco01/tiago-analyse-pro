@@ -1,0 +1,10 @@
+ALTERAÇÃO: Brasileirão com estrutura visual igual à Copa do Mundo
+
+- Cabeçalho do Brasileirão ajustado para usar a mesma organização da Copa do Mundo.
+- Bloco de clubes movido para dentro do hero principal, no centro da tela.
+- Cards laterais de status alinhados no mesmo padrão da Copa.
+- Aba Análise de times mantida em modo teste.
+- Seleção de Time A e Time B por clique nos escudos.
+- Hover nos escudos exibe o nome do clube.
+- Abas renomeadas para seguir o mesmo padrão visual da Copa: Grade de jogos, Classificação, Análise de times, Ao vivo e Resultados.
+- Corrigido erro visual/sintático no botão de escudo da análise do Brasileirão.

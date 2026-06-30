@@ -1,0 +1,5 @@
+Correção da barra rolante da Copa:
+- Contador real permanece fixo à esquerda.
+- Apenas os grupos rolam no topo.
+- Substituídas siglas técnicas por bandeiras emoji + nomes das seleções.
+- Grupos A-L preparados para Copa 2026.

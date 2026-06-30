@@ -1,0 +1,4 @@
+Correção aplicada:
+- O bloco "Todas as seleções" não mostra mais só CAN/EST/MÉX.
+- Enquanto a API ainda não retornar todos os grupos/seleções, aparece uma grade preenchida com 48 bandeiras.
+- Quando a API final retornar as seleções oficiais, os escudos/bandeiras vindos da API substituem automaticamente a grade provisória.

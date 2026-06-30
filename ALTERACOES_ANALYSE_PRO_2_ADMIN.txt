@@ -1,0 +1,24 @@
+ALTERAÇÕES FEITAS
+
+1. Nome/identidade visual
+- Página inicial e cabeçalho da análise alterados para ANALYSE PRO 2.0.
+- Adicionado símbolo com 3 barras de crescimento nas cores: amarela, abóbora e vermelha.
+
+2. Página inicial
+- Removido acesso visual a Pagamentos/Admin da entrada do site.
+- Página inicial fica apenas com apresentação, Entrar, Criar conta, planos e botões comerciais.
+- Chat não aparece mais na página inicial.
+
+3. Área admin
+- /admin/chat protegido.
+- /admin/payments protegido.
+- Usuário comum, grátis, PRO ou VIP não acessa painel administrativo.
+- Apenas usuário com role=admin acessa.
+
+4. Menu superior
+- Pagamentos e Admin só aparecem no menu interno quando o usuário logado for ADMIN.
+- Clientes comuns não veem esses links.
+
+5. Chat
+- Chat só aparece para PRO, VIP ou ADMIN.
+- Plano grátis e visitante não veem o chat.

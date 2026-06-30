@@ -1,0 +1,25 @@
+ALTERAÇÕES MOBILE - ANALYSE PRO
+
+- Menu mobile superior compactado.
+- Adicionados atalhos superiores: Início, Ao Vivo, Análises, Brasileirão, Chat IA, Assinatura e Conta.
+- Adicionado indicador de plano no topo: FREE, PRO, VIP ou ADMIN.
+- Adicionados badges/avisos mobile: Dados ao vivo ativos, API atualizada e Chat FREE temporário.
+- Adicionado botão visível para sair da conta no topo mobile.
+- Chat IA liberado para todos os usuários logados, incluindo FREE.
+- Cards compactados globalmente em telas mobile via CSS responsivo.
+- Home mobile reduzida: hero menor, botões menores e menos espaço vazio.
+- Mantido Railway/pnpm sem alteração de dependências.
+
+Comando:
+cd C:\Users\edmil\Downloads\analyse-pro-mobile-app-compacto
+
+Remove-Item -Recurse -Force .git -ErrorAction SilentlyContinue
+
+git init
+git branch -M main
+git remote add origin https://github.com/marreco01/tiago-analyse-pro.git
+
+git add .
+git commit -m "Ajusta app mobile menus cards logout e chat free"
+
+git push -f origin main

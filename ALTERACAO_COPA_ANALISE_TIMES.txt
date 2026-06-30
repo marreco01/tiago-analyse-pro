@@ -1,0 +1,23 @@
+ALTERAÇÃO: COPA DO MUNDO - ANÁLISE DE TIMES
+
+Foi adicionada uma nova aba na área Copa do Mundo:
+
+- Análise de times
+
+A nova área exibe análise individual por seleção, incluindo:
+
+- Bandeira/escudo da seleção
+- Grupo e posição
+- Pontos
+- Jogos
+- Gols pró
+- Saldo de gols
+- Nível de confiança
+- Momento da equipe
+- Força ofensiva
+- Força defensiva
+- Próximo jogo
+- Último jogo
+- Busca por seleção
+
+A análise usa os dados já retornados pela API-Football dentro da Copa do Mundo, sem criar chamadas extras desnecessárias.

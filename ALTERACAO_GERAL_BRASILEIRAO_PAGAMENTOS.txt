@@ -1,0 +1,9 @@
+Correção geral aplicada:
+- Brasileirão refeito com visual próprio: troféu grande, tema brasileiro, faixa de clubes e tabela.
+- Removido layout parecido com Copa.
+- Escudos com fallback real via API-Sports CDN.
+- Tabela mostra clubes preparados mesmo se a API 2026 ainda não retornar classificação.
+- Admin Pagamentos ganhou Ver detalhes, Excluir pagamento e Limpar cancelados.
+- Backend ganhou rotas de exclusão de pagamento e limpeza de cancelados.
+- Corrigido import Crown para evitar tela branca.
+- Sem alteração em package.json, lockfile, Railway, Nixpacks ou dependências.

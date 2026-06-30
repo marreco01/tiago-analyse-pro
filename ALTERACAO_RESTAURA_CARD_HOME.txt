@@ -1,0 +1,5 @@
+Correção aplicada:
+- Restaurado o card Sócio VIP Fundador na página inicial desktop.
+- Restaurado o card Sócio VIP Fundador na página inicial mobile.
+- Mantida atualização segura da aba Ao Vivo mobile.
+- Não foi alterado package.json, lockfile, Railway, Nixpacks ou dependências.

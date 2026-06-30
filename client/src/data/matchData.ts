@@ -1,0 +1,54 @@
+
+export type MatchFormItem = {
+  id: string;
+  result: "V" | "E" | "D";
+  home: string;
+  away: string;
+  score: string;
+  league: string;
+  date: string;
+};
+
+export type UpcomingMatch = {
+  id: string;
+  date: string;
+  time: string;
+  league: string;
+  home: string;
+  away: string;
+  market: string;
+  confidence: number | null;
+  odd: string;
+};
+
+function hashText(value: string) {
+  return value.split("").reduce((sum, char, index) => sum + char.charCodeAt(0) * (index + 7), 0);
+}
+
+function pad(value: number) {
+  return String(value).padStart(2, "0");
+}
+
+function addDays(days: number) {
+  const date = new Date();
+  date.setHours(0, 0, 0, 0);
+  date.setDate(date.getDate() + days);
+  return date;
+}
+
+export function formatDatePt(date: string | Date) {
+  const d = typeof date === "string" ? new Date(date) : date;
+  if (Number.isNaN(d.getTime())) return "Data indefinida";
+  return d.toLocaleDateString("pt-BR", { day: "2-digit", month: "2-digit", year: "numeric" });
+}
+
+export function getTeamForm(teamName: string, opponentName?: string): MatchFormItem[] {
+  // Dados falsos removidos. A forma recente agora deve vir da API real.
+  // Mantido apenas para compatibilidade com telas antigas.
+  return [];
+}
+
+export function getUpcomingMatches(limit = 12): UpcomingMatch[] {
+  // Dados falsos removidos. Próximos jogos agora devem vir de /api/football/upcoming.
+  return [];
+}
